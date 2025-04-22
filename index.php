@@ -86,14 +86,14 @@
                 <div class="row g-4">
                   <div class="col-6">
                     <div class="info-item">
-                      <span class="label"><img src="assets/img/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;">Mission</span>
+                      <span class="label"><img src="assets/img/svg/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;">Mission</span>
                       <span class="value">To import and deliver the finest organic food products.</span>
                     </div>
                   </div>
 
                   <div class="col-6">
                     <div class="info-item">
-                      <span class="label"><img src="assets/img/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;">Vision</span>
+                      <span class="label"><img src="assets/img/svg/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;">Vision</span>
                       <span class="value">To become a leading global force in organic trade.</span>
                     </div>
                   </div>
@@ -184,19 +184,19 @@
                 <div class="grid">
                   <div class="colu-6">
                     <div class="info-item" style="width: 100%;">
-                      <p><img src="assets/img/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
+                      <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
                         100% Certified Organic Products
                       </p>
-                      <p><img src="assets/img/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
+                      <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
                         Global Logistics Expertise
                       </p>
-                      <p><img src="assets/img/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
+                      <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
                         Property Market Insights
                       </p>
-                      <p><img src="assets/img/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
+                      <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
                         Sustainability-Driven Strategies
                       </p>
-                      <p><img src="assets/img/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
+                      <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
                         Multilingual Support (English, Japanese, etc.)
                       </p>
 
