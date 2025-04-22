@@ -1,6 +1,5 @@
 Thanks for downloading this template!
 
-Template Name: EasyFolio
+Template Name: EasyFolio Customized
 Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Author: Sana PK 2002
