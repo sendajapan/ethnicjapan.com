@@ -6,11 +6,7 @@
         <img src="assets/img/logo.png" alt="" style="width: 12rem;">
       </div>
 
-      <div class="links">
-        <div class="copyright text-center">
-          <p>© <span>Copyright</span> <strong class="px-1 sitename">Ethnic Ltd</strong> <span>All Rights Reserved</span></p>
-        </div>
-  
+      <div class="links" style="padding-left:2rem;">
         <div class="social-links d-flex justify-content-center">
           <a href=""><i class="bi bi-twitter-x"></i></a>
           <a href=""><i class="bi bi-facebook"></i></a>
@@ -24,6 +20,10 @@
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
           Designed by <a href="https://sendajapan.com/">SendaJapan</a>
+        </div>
+        
+        <div class="copyright text-center">
+          <p style="padding-top:1rem;">© <span>Copyright</span> <strong class="px-1 sitename">Ethnic Ltd</strong> <span>All Rights Reserved</span></p>
         </div>
       </div>
     </div>

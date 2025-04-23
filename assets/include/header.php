@@ -8,11 +8,11 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.php" class="active">Home</a></li>
-          <li><a href="about.php">About</a></li>
-          <li><a href="services.php">Services</a></li>
-          <li><a href="testimonials.php">Testimonials</a></li>
-          <li><a href="contact.php">Contact</a></li>
+          <li><a href="index.php" class="item active">Home</a></li>
+          <li><a href="about.php" class="item">About</a></li>
+          <li><a href="services.php" class="item">Services</a></li>
+          <li><a href="testimonials.php" class="item">Testimonials</a></li>
+          <li><a href="contact.php" class="item">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -26,3 +26,10 @@
 
     </div>
   </header>
+
+  <script>
+    $('.navmenu .item').on("click", function() {
+      $('.navmenu .item').removeClass('active');
+      $(this).addClass('active');
+    });
+  </script>

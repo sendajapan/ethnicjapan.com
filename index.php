@@ -16,8 +16,8 @@
 
         <div class="row align-items-center content">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h2>Empowering Organic Living - Globally Sourced</h2>
-            <p class="lead">From fresh organic produce to sustainable property deals and business consultancy.</p>
+            <h2>Empowering Sustainable Growth – Globally Connected</h2>
+            <p class="lead">From conscious commerce to innovative services, we connect ideas, people, and industries for a better tomorrow.</p>
             <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
               <a href="#contact" class="btn btn-outline">Explore Services</a>
             </div>
@@ -76,9 +76,9 @@
             <div class="about-content">
               <span class="subtitle">Who We Are</span>
 
-              <h2>Be Healthy and Eat Only Pure Organic Food</h2>
+              <h2>Innovation-Led Business with Purpose, Progress, and Vision</h2>
 
-              <p class="lead mb-4">We are an international organic trading company committed to importing the finest organic food products, promoting sustainable living, and approaching wellness with eco-friendly solutions.</p>
+              <p class="lead mb-4">ETHNIC LTD is a diverse global enterprise committed to creating meaningful impact across industries. From ethical trade and real estate to consultancy and beyond, we’re building bridges between ideas and opportunities — always with sustainability and innovation at our core.</p>
 
               <!--<p class="mb-4">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>-->
 
@@ -87,14 +87,14 @@
                   <div class="col-6">
                     <div class="info-item">
                       <span class="label"><img src="assets/img/svg/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;">Mission</span>
-                      <span class="value">To import and deliver the finest organic food products.</span>
+                      <span class="value">Empowering ethical progress through diverse, sustainable business solutions.</span>
                     </div>
                   </div>
 
                   <div class="col-6">
                     <div class="info-item">
                       <span class="label"><img src="assets/img/svg/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;">Vision</span>
-                      <span class="value">To become a leading global force in organic trade.</span>
+                      <span class="value">Leading global innovation for impact, growth, and shared success.</span>
                     </div>
                   </div>
                 </div>
@@ -110,8 +110,8 @@
     <section id="skills" class="skills section">
 
       <div class="container section-title" data-aos="fade-up">
-        <h2>Our Core Services</h2>
-        <p>Eco-friendly properties & growth support for your business.</p>
+        <h2>Our Services</h2>
+        <p>Empowering industries with impactful solutions across global business sectors.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -121,8 +121,8 @@
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box">
               <img src="assets/img/services/services1.jpg" alt="" style="width: 14.5rem; padding-bottom: 30px; border-radius: 8px;">
-              <h3>Organic Food <br> Import & Export</h3>
-              <p>Import & retail of globally sourced organic food.</p>
+              <h3>Organic <br> Products</h3>
+              <p>Supplying premium, sustainable goods for a conscious global market.</p>
               <a href="#"><button class="buttons">View Product Range</button></a>
             </div>
           </div>
@@ -130,8 +130,8 @@
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
             <div class="skill-box">
               <img src="assets/img/services/property.jpg" alt="" style="width: 14.5rem; padding-bottom: 30px; border-radius: 8px;">
-              <h3>Property <br> Services</h3>
-              <p>Sustainable property investments & project partnerships.</p>
+              <h3>Real Estate & <br> Investment</h3>
+              <p>Connecting people with trusted investments in real estate worldwide.</p>
               <a href="#"><button class="buttons">Browse Properties</button></a>
             </div>
           </div>
@@ -140,7 +140,7 @@
             <div class="skill-box">
               <img src="assets/img/services/business.jpg" alt="" style="width: 14.5rem; padding-bottom: 30px; border-radius: 8px;">
               <h3>Business <br> Consultancy</h3>
-              <p>Growth strategies tailored for green businesses.</p>
+              <p>Guiding brands with strategic insights, growth, and global direction.</p>
               <a href="#"><button class="buttons">Get Business Advice</button></a>
             </div>
           </div>
@@ -176,7 +176,7 @@
         
               <h2>Why Choose Us</h2>
         
-              <p class="lead mb-4">More than a brand – a global organic lifestyle partner.</p>
+              <p class="lead mb-4">Innovative, reliable, and future-ready across global business sectors.</p>
         
               <!--<p class="mb-4">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>-->
         
@@ -185,16 +185,28 @@
                   <div class="colu-6">
                     <div class="info-item" style="width: 100%;">
                       <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
-                        100% Certified Organic Products
+                        Multi-Industry Expertise
                       </p>
                       <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
-                        Global Logistics Expertise
+                        Innovation at Core
                       </p>
                       <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
-                        Property Market Insights
+                        Client-Centered Approach
                       </p>
                       <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
-                        Sustainability-Driven Strategies
+                        Trusted Global Network
+                      </p>
+                      <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
+                        Sustainable Business Practices
+                      </p>
+                      <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
+                        Tailored Strategic Solutions
+                      </p>
+                      <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
+                        Transparent Communication Always
+                      </p>
+                      <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
+                        Results that Matter
                       </p>
                       <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
                         Multilingual Support (English, Japanese, etc.)
@@ -225,7 +237,7 @@
             <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
           </svg>-->
         </div>
-        <p>Expert tips and stories from the world of organic living.</p>
+        <p>Explore future-driven perspectives, strategies, and solutions from our diverse ventures.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -256,9 +268,9 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Organic</span>
-                  <h3>5 Reasons to Organize an Organic Lifestyle Today</h3>
-                  <p>by Hannah Gonzalez</p>
+                  <span class="category">Global Trade</span>
+                  <h3>Navigating New Markets with Confidence</h3>
+                  <p>Our expertise connects businesses with reliable sourcing and export solutions.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -275,9 +287,9 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Property</span>
-                  <h3>How to Make Your Property Eco-friendly</h3>
-                  <p>by Brian McKenna</p>
+                  <span class="category">Real Estate</span>
+                  <h3>Smarter Property Investments, Locally and Abroad</h3>
+                  <p>Discover growth potential through strategic real estate and land acquisition.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -294,9 +306,9 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Consultancy</span>
-                  <h3>Green Consultancy for Organic Startups</h3>
-                  <p>by Priya Sen</p>
+                  <span class="category">Business Strategy</span>
+                  <h3>Building Better Brands through Bold Advisory</h3>
+                  <p>We offer insights that reshape businesses into competitive global players.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -313,9 +325,9 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Trading</span>
-                  <h3>How Global Trade Powers Local Organic Stores</h3>
-                  <p>by Kyren Inoue</p>
+                  <span class="category">Sustainability</span>
+                  <h3>Driving Positive Change Across Every Sector</h3>
+                  <p>We integrate eco-conscious values into commerce, real estate, and beyond.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -377,7 +389,7 @@
             <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
           </svg>-->
         </div>
-        <p>Real Voices, Real Experiences</p>
+        <p>Real experiences from clients and partners who’ve grown with ETHNIC — through strategic solutions, global insight, and dedicated support.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -404,24 +416,21 @@
               <div class="testimonial-item">
                 <div class="row">
                   <div class="col-lg-8">
-                    <h2>Sed ut perspiciatis unde omnis</h2>
+                    <h2>Business Consultancy</h2>
                     <p>
-                      Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    </p>
-                    <p>
-                      Beatae magnam dolore quia ipsum. Voluptatem totam et qui dolore dignissimos. Amet quia sapiente laudantium nihil illo et assumenda sit cupiditate. Nam perspiciatis perferendis minus consequatur. Enim ut eos quo.
+                    “Working with ETHNIC LTD was a game-changer for us. Their consultancy team didn’t just give advice — they understood our industry challenges and helped us craft a strategy that actually worked. Within six months, our brand presence improved, and we expanded to two new markets.”
                     </p>
                     <div class="profile d-flex align-items-center">
-                      <img src="assets/img/person/company.png" class="profile-img" alt="">
+                      <img src="assets/img/person/person2.png" class="profile-img" alt="">
                       <div class="profile-info">
-                        <h3>GreenSprout</h3>
-                        <span>Farmer's Market</span>
+                        <h3>Sarah Tanaka</h3>
+                        <span>CEO, Horizon Creations</span>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4 d-none d-lg-block">
                     <div class="featured-img-wrapper">
-                      <img src="assets/img/person/company.png" class="featured-img" alt="">
+                      <img src="assets/img/person/person2.png" class="featured-img" alt="">
                     </div>
                   </div>
                 </div>
@@ -432,24 +441,21 @@
               <div class="testimonial-item">
                 <div class="row">
                   <div class="col-lg-8">
-                    <h2>Nemo enim ipsam voluptatem</h2>
+                    <h2>Property Solutions</h2>
                     <p>
-                      Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    </p>
-                    <p>
-                      Dolorem excepturi esse qui amet maxime quibusdam aut repellendus voluptatum. Corrupti enim a repellat cumque est laborum fuga consequuntur. Dolorem nostrum deleniti quas voluptatem iure dolorum rerum. Repudiandae doloribus ut repellat harum vero aut. Modi aut velit aperiam aspernatur odit ut vitae.
+                    “I was nervous about investing in international real estate, but ETHNIC guided me every step of the way. Their team provided legal, financial, and property insights that made the whole process seamless. I now own three properties in emerging markets — all with solid returns.”
                     </p>
                     <div class="profile d-flex align-items-center">
-                      <img src="assets/img/person/company1.png" class="profile-img" alt="">
+                      <img src="assets/img/person/person1.png" class="profile-img" alt="">
                       <div class="profile-info">
-                        <h3>NaturaWellnes Co.</h3>
-                        <span>Supplements Store</span>
+                        <h3>Mohammed Iqbal</h3>
+                        <span>Real Estate Investor</span>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4 d-none d-lg-block">
                     <div class="featured-img-wrapper">
-                      <img src="assets/img/person/company1.png" class="featured-img" alt="">
+                      <img src="assets/img/person/person1.png" class="featured-img" alt="">
                     </div>
                   </div>
                 </div>
@@ -461,53 +467,22 @@
                 <div class="row">
                   <div class="col-lg-8">
                     <h2>
-                      Labore nostrum eos impedit
+                      Global Trade
                     </h2>
                     <p>
-                      Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                    </p>
-                    <p>
-                      Itaque ut explicabo vero occaecati est quam rerum sed. Numquam tempora aut aut quaerat quia illum. Nobis quia autem odit ipsam numquam. Doloribus sit sint corporis eius totam fuga. Hic nostrum suscipit corrupti nam expedita adipisci aut optio.
+                    “ETHNIC LTD helped us find trusted suppliers abroad and set up a smooth logistics chain. Their global sourcing knowledge saved us time and costs, and we’ve seen consistent results ever since. It’s rare to find a team that delivers with such integrity.”
                     </p>
                     <div class="profile d-flex align-items-center">
-                      <img src="assets/img/person/company2.png" class="profile-img" alt="">
+                      <img src="assets/img/person/person3.png" class="profile-img" alt="">
                       <div class="profile-info">
-                        <h3>EarthNest Resorts</h3>
-                        <span>Eco-Resort</span>
+                        <h3>Liam O’Connor</h3>
+                        <span>Director, Urban Goods Ltd.</span>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4 d-none d-lg-block">
                     <div class="featured-img-wrapper">
-                      <img src="assets/img/person/company2.png" class="featured-img" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Testimonial Item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row">
-                  <div class="col-lg-8">
-                    <h2>Impedit dolor facilis nulla</h2>
-                    <p>
-                      Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    </p>
-                    <p>
-                      Omnis aspernatur accusantium qui delectus praesentium repellendus. Facilis sint odio aspernatur voluptas commodi qui qui qui pariatur. Corrupti deleniti itaque quaerat ipsum deleniti culpa tempora tempore. Et consequatur exercitationem hic aspernatur nobis est voluptatibus architecto laborum.
-                    </p>
-                    <div class="profile d-flex align-items-center">
-                      <img src="assets/img/person/company3.png" class="profile-img" alt="">
-                      <div class="profile-info">
-                        <h3>HarvestHub Cafés</h3>
-                        <span>Cafés</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="featured-img-wrapper">
-                      <img src="assets/img/person/company3.png" class="featured-img" alt="">
+                      <img src="assets/img/person/person3.png" class="featured-img" alt="">
                     </div>
                   </div>
                 </div>

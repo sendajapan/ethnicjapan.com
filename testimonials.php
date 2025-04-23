@@ -23,7 +23,7 @@
 
       <div class="title-wrapper">
         <h1>What Our Customers Say</h1>
-        <p>Real Voices, Real Experiences</p>
+        <p>Real experiences from clients and partners who’ve grown with ETHNIC — through strategic solutions, global insight, and dedicated support.</p>
       </div>
     </div><!-- End Page Title -->
 
@@ -34,46 +34,28 @@
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-  <div class="testimonials-slider swiper init-swiper">
-    <script type="application/json" class="swiper-config">
-      {
-        "slidesPerView": 1,
-        "loop": true,
-        "speed": 600,
-        "autoplay": {
-          "delay": 5000
-        },
-        "navigation": {
-          "nextEl": ".swiper-button-next",
-          "prevEl": ".swiper-button-prev"
-        }
-      }
-    </script>
-
-    <div class="swiper-wrapper">
-
-      <div class="swiper-slide">
+  <div class="testimonials-slider swiperr init-swiperr">
+    <div class="swiper-wrapperr">
+      <div class="swiper-slidee">
         <div class="testimonial-item">
           <div class="row">
             <div class="col-lg-8">
-              <h2>Sed ut perspiciatis unde omnis</h2>
+              <h2>Business Consultancy</h2>
               <p>
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                “Working with ETHNIC LTD was a game-changer for us. Their consultancy team didn’t just give advice — they understood our industry challenges and helped us craft a strategy that actually worked. Within six months, our brand presence improved, and we expanded to two new markets.”
               </p>
-              <p>
-                Beatae magnam dolore quia ipsum. Voluptatem totam et qui dolore dignissimos. Amet quia sapiente laudantium nihil illo et assumenda sit cupiditate. Nam perspiciatis perferendis minus consequatur. Enim ut eos quo.
-              </p>
+
               <div class="profile d-flex align-items-center">
-                <img src="assets/img/person/company.png" class="profile-img" alt="">
+                <img src="assets/img/person/person2.png" class="profile-img" alt="">
                 <div class="profile-info">
-                  <h3>GreenSprout</h3>
-                  <span>Farmer's Market</span>
+                  <h3>Sarah Tanaka</h3>
+                  <span>CEO, Horizon Creations</span>
                 </div>
               </div>
             </div>
             <div class="col-lg-4 d-none d-lg-block">
               <div class="featured-img-wrapper">
-                <img src="assets/img/person/company.png" class="featured-img" alt="">
+                <img src="assets/img/person/person2.png" class="featured-img" alt="">
               </div>
             </div>
           </div>
@@ -83,25 +65,23 @@
       <div class="swiper-slide">
         <div class="testimonial-item">
           <div class="row">
-            <div class="col-lg-8">
-              <h2>Nemo enim ipsam voluptatem</h2>
-              <p>
-                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              </p>
-              <p>
-                Dolorem excepturi esse qui amet maxime quibusdam aut repellendus voluptatum. Corrupti enim a repellat cumque est laborum fuga consequuntur. Dolorem nostrum deleniti quas voluptatem iure dolorum rerum. Repudiandae doloribus ut repellat harum vero aut. Modi aut velit aperiam aspernatur odit ut vitae.
-              </p>
-              <div class="profile d-flex align-items-center">
-                <img src="assets/img/person/company1.png" class="profile-img" alt="">
-                <div class="profile-info">
-                  <h3>NaturaWellnes Co.</h3>
-                  <span>Supplements Store</span>
-                </div>
-              </div>
-            </div>
             <div class="col-lg-4 d-none d-lg-block">
               <div class="featured-img-wrapper">
-                <img src="assets/img/person/company1.png" class="featured-img" alt="">
+                <img src="assets/img/person/person1.png" class="featured-img" alt="">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <h2>Property Solutions</h2>
+              <p>
+                “I was nervous about investing in international real estate, but ETHNIC guided me every step of the way. Their team provided legal, financial, and property insights that made the whole process seamless. I now own three properties in emerging markets — all with solid returns.”
+              </p>
+              
+              <div class="profile d-flex align-items-center">
+                <img src="assets/img/person/person1.png" class="profile-img" alt="">
+                <div class="profile-info">
+                  <h3>Mohammed Iqbal</h3>
+                  <span>Real Estate Investor</span>
+                </div>
               </div>
             </div>
           </div>
@@ -113,64 +93,29 @@
           <div class="row">
             <div class="col-lg-8">
               <h2>
-                Labore nostrum eos impedit
+                Global Trade
               </h2>
               <p>
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                “ETHNIC LTD helped us find trusted suppliers abroad and set up a smooth logistics chain. Their global sourcing knowledge saved us time and costs, and we’ve seen consistent results ever since. It’s rare to find a team that delivers with such integrity.”
               </p>
-              <p>
-                Itaque ut explicabo vero occaecati est quam rerum sed. Numquam tempora aut aut quaerat quia illum. Nobis quia autem odit ipsam numquam. Doloribus sit sint corporis eius totam fuga. Hic nostrum suscipit corrupti nam expedita adipisci aut optio.
-              </p>
+             
               <div class="profile d-flex align-items-center">
-                <img src="assets/img/person/company2.png" class="profile-img" alt="">
+                <img src="assets/img/person/person3.png" class="profile-img" alt="">
                 <div class="profile-info">
-                  <h3>EarthNest Resorts</h3>
-                  <span>Eco-Resort</span>
+                  <h3>Liam O’Connor</h3>
+                  <span>Director, Urban Goods Ltd.</span>
                 </div>
               </div>
             </div>
             <div class="col-lg-4 d-none d-lg-block">
               <div class="featured-img-wrapper">
-                <img src="assets/img/person/company2.png" class="featured-img" alt="">
+                <img src="assets/img/person/person3.png" class="featured-img" alt="">
               </div>
             </div>
           </div>
         </div>
       </div><!-- End Testimonial Item -->
 
-      <div class="swiper-slide">
-        <div class="testimonial-item">
-          <div class="row">
-            <div class="col-lg-8">
-              <h2>Impedit dolor facilis nulla</h2>
-              <p>
-                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              </p>
-              <p>
-                Omnis aspernatur accusantium qui delectus praesentium repellendus. Facilis sint odio aspernatur voluptas commodi qui qui qui pariatur. Corrupti deleniti itaque quaerat ipsum deleniti culpa tempora tempore. Et consequatur exercitationem hic aspernatur nobis est voluptatibus architecto laborum.
-              </p>
-              <div class="profile d-flex align-items-center">
-                <img src="assets/img/person/company3.png" class="profile-img" alt="">
-                <div class="profile-info">
-                  <h3>HarvestHub Cafés</h3>
-                  <span>Cafés</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 d-none d-lg-block">
-              <div class="featured-img-wrapper">
-                <img src="assets/img/person/company3.png" class="featured-img" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><!-- End Testimonial Item -->
-
-    </div>
-
-    <div class="swiper-navigation w-100 d-flex align-items-center justify-content-center">
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
     </div>
 
   </div>
@@ -178,27 +123,6 @@
 </div>
 
 </section><!-- /Testimonials Section -->
-
-
-    <!-- Starter Section Section -->
-    <!--<section id="starter-section" class="starter-section section">
-
-       Section Title 
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Starter Section</h2>
-        <div class="title-shape">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>
-        </div>
-        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p>
-      </div> End Section Title 
-
-      <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
-      </div>
-
-    </section> /Starter Section Section -->
 
   </main>
 

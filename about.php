@@ -35,37 +35,14 @@
         <div class="row align-items-center">
           <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
             <div class="about-image">
-              <img src="assets/img/about.png" alt="Profile Image" class="img-fluid rounded-4">
+              <img src="assets/img/portfolio/about.jpg" alt="Profile Image" class="img-fluid rounded-4">
             </div>
           </div>
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="about-content">
-              <span class="subtitle">Who We Are</span>
-
-              <h2>Be Healthy and Eat Only Pure Organic Food</h2>
-
-              <p class="lead mb-4">We are an international organic trading company committed to importing the finest organic food products, promoting sustainable living, and approaching wellness with eco-friendly solutions.</p>
-
-              <!--<p class="mb-4">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>-->
-
-              <div class="personal-info">
-                <div class="row g-4">
-                  <div class="col-6">
-                    <div class="info-item">
-                      <span class="label"><img src="assets/img/svg/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;">Mission</span>
-                      <span class="value">To import and deliver the finest organic food products.</span>
-                    </div>
-                  </div>
-
-                  <div class="col-6">
-                    <div class="info-item">
-                      <span class="label"><img src="assets/img/svg/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;">Vision</span>
-                      <span class="value">To become a leading global force in organic trade.</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <h2>Who We Are</h2>
+              <p class="lead mb-4">At ETHNIC LTD, we are more than just a company — we are a growing ecosystem of ideas, industries, and innovation. With a presence across multiple sectors including global trade, real estate, business consultancy, and organic products, we deliver excellence through purpose-driven services. Our commitment lies in offering high-quality solutions that are tailored, forward-thinking, and built to last. Whether we’re connecting markets, guiding businesses, or facilitating sustainable growth, our goal remains the same: to empower our clients, foster meaningful relationships, and make a lasting difference in every venture we undertake. ETHNIC stands for integrity, progress, and a future where business meets impact.</p>
             </div>
           </div>
         </div>
@@ -143,44 +120,23 @@
 
     </section>/Portfolio Details Section -->
 
-    <!-- Why Choose Us Section -->
+    <!-- Mission Section -->
     <section id="about" class="about section light-background">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-  
         <div class="row align-items-center">
-        
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="about-content">
-        
-              <h2>Why Choose Us</h2>
-        
-              <p class="lead mb-4">More than a brand – a global organic lifestyle partner.</p>
-        
-              <!--<p class="mb-4">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>-->
-        
+
+              <h2>Our Mission</h2>
+              <p class="lead mb-4">Empowering Progress Through Purpose-Driven Solutions</p>
+
               <div class="personal-info" style="width: auto;">
                 <div class="grid">
                   <div class="colu-6">
                     <div class="info-item" style="width: 100%;">
-                      <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
-                        100% Certified Organic Products
+                      <p>
+                        Our mission is to lead with values and vision, offering dynamic services that solve real-world challenges. We strive to empower our partners and clients by delivering customized solutions rooted in innovation, ethics, and quality. At ETHNIC, we believe progress should benefit everyone — that’s why our mission is built around creating value not only for businesses but for communities and the environment too. Through every service we provide, we aim to spark growth, inspire trust, and contribute to a better future.
                       </p>
-                      <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
-                        Global Logistics Expertise
-                      </p>
-                      <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
-                        Property Market Insights
-                      </p>
-                      <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
-                        Sustainability-Driven Strategies
-                      </p>
-                      <p><img src="assets/img/svg/check-mark.svg" alt="" style="width: 35px; padding-right: 10px;">
-                        Multilingual Support (English, Japanese, etc.)
-                      </p>
-
-                      <!--<span class="label"><img src="assets/img/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;">Mission</span>
-                      <span class="value">To import and deliver the finest organic food products.</span>-->
                     </div>
                   </div>
                 </div>
@@ -190,13 +146,188 @@
 
           <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
             <div class="about-image">
-              <img src="assets/img/why.png" alt="Profile Image" class="img-fluid rounded-4">
+              <img src="assets/img/portfolio/mission.jpg" alt="Profile Image" class="img-fluid rounded-4">
             </div>
           </div>
         </div>
       </div>
 
-    </section><!-- /Why Choose Us Section -->
+    </section><!-- /Mission Section -->
+
+    <!-- Vision Section -->
+    <section id="about" class="about section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center">
+
+          <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-image">
+              <img src="assets/img/portfolio/vision.jpg" alt="Profile Image" class="img-fluid rounded-4">
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+
+              <h2>Our Vision</h2>
+              <p class="lead mb-4">A Global Ecosystem of Growth and Impact</p>
+
+              <div class="personal-info" style="width: auto;">
+                <div class="grid">
+                  <div class="colu-6">
+                    <div class="info-item" style="width: 100%;">
+                      <p>
+                        We envision ETHNIC LTD as a globally respected force that transforms industries while staying true to our values. Our vision is to expand our reach across emerging markets, explore new opportunities, and bring together people, ideas, and technologies that shape a better tomorrow. By building an inclusive, future-ready ecosystem, we aim to become the bridge between innovation and implementation — supporting sustainable development and creating long-term value for clients, partners, and society as a whole.                      
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Vision Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+      </div> <!-- /End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>What is ETHNIC Japan and what does it do?</h3>
+                <div class="faq-content">
+                  <p>ETHNIC Japan is a multi-industry company offering a wide range of services, including global product sourcing, business consultancy, property solutions, and organic product supply. We help individuals and businesses grow sustainably by connecting them with innovative, reliable, and ethical solutions.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item -->
+
+              <div class="faq-item">
+                <h3>Which industries does ETHNIC Japan operate in?</h3>
+                <div class="faq-content">
+                  <p>We currently work across several key sectors: organic products, global trading, property investment, and business consultancy. As we grow, we continue expanding into new areas to serve more diverse needs.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item -->
+
+              <div class="faq-item">
+                <h3>Is ETHNIC Japan only focused on organic products?</h3>
+                <div class="faq-content">
+                  <p>Not at all. While organic and sustainable products are an important part of our services, ETHNIC Japan operates across multiple sectors and plans to expand further in the future.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div> <!-- End Faq item -->
+
+              <div class="faq-item">
+                <h3>Where is ETHNIC Japan based? Do you operate globally?</h3>
+                <div class="faq-content">
+                  <p>Our base is in Japan, but our services and partnerships extend globally. We work with clients, suppliers, and investors from various countries to ensure international reach and standards.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item -->
+
+              <div class="faq-item">
+                <h3>Can I collaborate with ETHNIC Japan as a partner or investor?</h3>
+                <div class="faq-content">
+                  <p>Yes! We’re always open to meaningful collaborations. Whether you're looking to invest, partner, or expand your business through us — let’s talk.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item -->
+
+              <div class="faq-item">
+                <h3>How can I get a quote or consultation?</h3>
+                <div class="faq-content">
+                  <p>Simply reach out to us through our contact form, email, or phone. Our team will schedule a consultation to understand your goals and offer tailored solutions.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- /End Faq item -->
+
+              <div class="faq-item">
+                <h3>What makes ETHNIC Japan different from other companies?</h3>
+                <div class="faq-content">
+                  <p>Our versatility, ethical values, and deep understanding of both local and global markets set us apart. We combine quality, transparency, and innovation to deliver results you can trust.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- /End Faq item -->
+
+            </div>
+
+          </div><!-- End Faq Column -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <div class="content" data-aos="fade-up" data-aos-delay="200">
+              <div class="section-category mb-3"></div>
+              <h2 class="display-5 mb-4">Subscribe to Our Newsletter</h2>
+              <p class="lead mb-4">Join our newsletter to receive fresh updates, market insights, and new opportunities.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-body p-4 p-lg-5">
+
+                <form action="forms/contact.php" method="post" class="php-email-form">
+                  <div class="row gy-4">
+
+                    <div class="col-12">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    </div>
+
+                    <div class="col-12 ">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    </div>
+
+                    <!--<div class="col-12">
+                      <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    </div>
+
+                    <div class="col-12">
+                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    </div>
+
+                    <div class="col-12 text-center">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>-->
+
+                      <button type="submit" class="btn btn-submit w-100">Submit</button>
+                    </div>
+
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
 
   </main>
 
