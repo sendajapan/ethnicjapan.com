@@ -727,6 +727,12 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
+.skills .lead{
+  margin: 0 2rem;
+  padding: 0 4rem 1rem 4rem;
+  font-size: 1.2rem;
+}
+
 
 .contact .cta-buttons,
 .hero .cta-buttons {
@@ -942,7 +948,15 @@ section,
 .about .personal-info .info-item {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.3rem;
+}
+
+.about .personal-info .info-item p{
+  margin-bottom: 0;
+}
+
+.info-item img{
+  width: 30px; padding-right: 10px;
 }
 
 .about .personal-info .info-item .label {
@@ -979,6 +993,7 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
+
 .skills .skill-box {
   background-color: var(--surface-color);
   padding: 0.8rem;
@@ -999,6 +1014,11 @@ section,
   font-size: 30px;
   color: var(--accent-color);
   margin: 0 20px;  
+}
+
+.skills .skill-box img{
+  width: 8rem;
+  padding-right: 1rem;
 }
 
 .skills .skill-box h3 {

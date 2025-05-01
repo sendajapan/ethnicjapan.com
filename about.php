@@ -189,6 +189,198 @@
 
     </section><!-- /Vision Section -->
 
+        <!-- Products Section -->
+        <section id="skills" class="skills section light-background">
+
+<div class="container section-title" data-aos="fade-up">
+  <h2 style="font-size: 35px">Promoting Organic Products for a Healthy Life and Wellbeing</h2>
+</div><!-- End Section Title -->
+
+<p class="lead mb-4">In the bustling and health-conscious market of Japan, a new business venture is making waves by introducing South American superfoods, known for their exceptional nutritional benefits. This venture is oriented towards organic products, featuring a diverse range of foods that promise to enhance the health and wellbeing of its consumers. The mission is to establish the brand: Ethnic in Japan as synonymous with a healthy life and wellbeing.</p>
+
+<div class="page-title">
+  <div class="title-wrapper">
+    <h1>Featured Superfoods</h1>
+  </div>
+</div><!-- End Page Title -->
+
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+  <div class="row mt-3 skills-animation justify-content-md-center">
+
+    <div class="col-6" data-aos="fade-up" data-aos-delay="100">
+      <div class="skill-box d-flex">
+        <img src="assets/img/services/chia.webp" alt="">
+        <div class="info-right d-block text-start">
+          <h4>Chia Seeds from Paraguay</h4>
+          <p>Chia seeds are tiny powerhouses of nutrition, packed with omega-3 fatty acids, fiber, protein, and antioxidants. Originating from Paraguay, these seeds are known to promote heart health, improve digestion, and provide sustained energy.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6" data-aos="fade-up" data-aos-delay="200">
+      <div class="skill-box d-flex">
+        <img src="assets/img/services/hemp.png" alt="">
+        <div class="info-right d-block text-start">
+          <h4>Hemp Protein and Hemp Hearts from Paraguay</h4>
+          <p>Hemp protein is a complete plant-based protein source, containing all essential amino acids. Hemp hearts, the soft inner part of the hemp seed, are rich in healthy fats and minerals. Both products from Paraguay contribute to muscle growth, energy levels, and overall health.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row mt-3 skills-animation justify-content-md-center">
+
+    <div class="col-6" data-aos="fade-up" data-aos-delay="300">
+      <div class="skill-box d-flex">
+        <img src="assets/img/services/cocoa.webp" alt="">
+        <div class="info-right d-block text-start">
+          <h4>Cacao from Peru and/or Dominican Republic</h4>
+          <p>Cacao is renowned for its high antioxidant content and mood-enhancing properties. It offers profound health benefits, including improved cardiovascular health and cognitive function.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6" data-aos="fade-up" data-aos-delay="300">
+      <div class="skill-box d-flex">
+        <img src="assets/img/services/quinoa.webp" alt="">
+        <div class="info-right d-block text-start">
+          <h4>Quinoa from Peru and/or Bolivia</h4>
+          <p>Quinoa is a versatile grain high in protein, fiber, and essential nutrients. Originating from Peru and Bolivia, it is a staple in healthy diets for its ability to aid digestion, manage blood sugar levels, and provide a complete protein source.</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="row skills-animation justify-content-md-center mt-3">
+
+    <div class="col-6" data-aos="fade-up" data-aos-delay="100">
+      <div class="skill-box d-flex">
+        <img src="assets/img/services/adzuki.webp" alt="">
+        <div class="info-right d-block text-start">
+          <h4>Adzuki Beans from Argentina</h4>
+          <p>Adzuki beans are small red beans popular in East Asian cuisine. They are high in protein, fiber, and essential minerals, and are known for their role in supporting kidney health, weight management, and improving digestion.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6" data-aos="fade-up" data-aos-delay="200">
+      <div class="skill-box d-flex">
+        <img src="assets/img/services/amaranth.png" alt="">
+        <div class="info-right d-block text-start">
+          <h4>Amaranth from Peru</h4>
+          <p> Amaranth is a gluten-free grain rich in protein, iron, and magnesium. Sourced from Peru, it supports bone health, reduces inflammation, and provides a robust nutritional profile that complements a healthy diet.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row mt-3 skills-animation justify-content-md-center">
+
+    <div class="col-6" data-aos="fade-up" data-aos-delay="300">
+      <div class="skill-box d-flex">
+        <img src="assets/img/services/sesame.webp" alt="">
+        <div class="info-right d-block text-start">
+          <h4>Sesame Seeds from Paraguay</h4> 
+          <p>Sesame seeds are packed with healthy fats, protein, and a range of vitamins and minerals. From Paraguay, they contribute to heart health, improved digestion, and are an excellent source of energy.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6" data-aos="fade-up" data-aos-delay="300">
+      <div class="skill-box d-flex">
+        <img src="assets/img/services/sacha.png" alt="">
+        <div class="info-right d-block text-start">
+          <h4>Maca and Sacha Inchi from Peru</h4> 
+          <p>Maca root is known for its energy-boosting and hormone-balancing properties, while Sacha Inchi is rich in omega-3 fatty acids, protein, and fiber. Both support overall wellness, enhance physical performance, and improve mental clarity.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section> <!--/ End Service Intro -->
+
+
+
+<!-- Service Intro -->
+<section id="skills" class="skills section">
+
+<!-- Page Title -->
+<div class="page-title">
+  <div class="title-wrapper">
+    <h1>Promoted Oils</h1>
+  </div>
+</div><!-- End Page Title -->
+
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+  <div class="row skills-animation justify-content-md-center">
+
+    <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="100">
+      <div class="skill-box d-flex">
+        <img src="assets/img/services/chia-oil.webp" alt="">
+        <div class="info-right d-block text-start">
+          <h4>Chia Oil</h4>
+          <p>Chia oil is extracted from chia seeds and is rich in omega-3 fatty acids and antioxidants. It supports heart health, reduces inflammation, and promotes healthy skin.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 " data-aos="fade-up" data-aos-delay="200">
+      <div class="skill-box d-flex">
+        <img src="assets/img/services/olive-oil.webp" alt="">
+        <div class="info-right d-block text-start">
+          <h4>Chia and Olive Oil Blend</h4>
+          <p>This blend combines the health benefits of chia oil and olive oil, providing a rich source of healthy fats, vitamins, and antioxidants. It enhances cardiovascular health, supports weight management, and adds a nutritional boost to any diet.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="300">
+      <div class="skill-box d-flex">
+        <img src="assets/img/services/sacha-oil.jpg" alt="">
+        <div class="info-right d-block text-start">
+          <h4>Sacha Inchi Oil</h4>
+          <p>Sacha Inchi oil, derived from the seeds of the Sacha Inchi plant, is high in omega-3, 6, and 9 fatty acids. It promotes heart health, improves skin health, and supports brain function.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="lead mb-4 mt-5">The introduction of South American superfoods into the Japanese market represents a fusion of cultures and a commitment to promoting health and wellness. Ethnic is dedicated to providing high-quality, organic products that support a balanced and vibrant life. As the brand continues to grow, it aspires to become a trusted name in the realm of health and wellbeing, encouraging a deeper connection between nutrition and a healthy lifestyle. </p>
+
+</section>
+
+
+<!-- Ethnic Section -->
+<section id="about" class="about section light-background">
+
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+  <div class="row align-items-center">
+
+    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+      <div class="about-content">
+        <h2>Ethnic: A Brand for Healthy Living</h2>
+        <p class="lead mb-4">The overarching goal of this business is to make the brand Ethnic in Japan a beacon of healthy living and wellbeing. By offering a curated selection of organic superfoods and oils, Ethnic aims to inspire the Japanese market to embrace a healthier lifestyle. Each product is selected for its unique health benefits and cultural significance, ensuring that consumers receive the best of what South America has to offer.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
+      <div class="about-image">
+        <img src="assets/img/services/grain.jpg" alt="Profile Image" class="img-fluid rounded-4">
+      </div>
+    </div>
+  </div>
+</div>
+
+</section><!-- /About Section -->
+
     <!-- Faq Section -->
     <section id="faq" class="faq section">
 
