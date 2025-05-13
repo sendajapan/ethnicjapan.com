@@ -1,3 +1,5 @@
+<?php $currentPage = basename($_SERVER['PHP_SELF']); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -206,10 +208,10 @@
 
 <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-  <div class="row mt-3 skills-animation justify-content-md-center">
+  <div class="row mt-3 skills-animation justify-content-md-center align-items-stretch">
 
     <div class="col-6" data-aos="fade-up" data-aos-delay="100">
-      <div class="skill-box d-flex">
+      <div class="skill-box d-flex h-100">
         <img src="assets/img/services/chia.webp" alt="">
         <div class="info-right d-block text-start">
           <h4>Chia Seeds from Paraguay</h4>
@@ -219,7 +221,7 @@
     </div>
 
     <div class="col-6" data-aos="fade-up" data-aos-delay="200">
-      <div class="skill-box d-flex">
+      <div class="skill-box d-flex h-100">
         <img src="assets/img/services/hemp.png" alt="">
         <div class="info-right d-block text-start">
           <h4>Hemp Protein and Hemp Hearts from Paraguay</h4>
@@ -230,10 +232,10 @@
 
   </div>
 
-  <div class="row mt-3 skills-animation justify-content-md-center">
+  <div class="row mt-3 skills-animation justify-content-md-center align-items-stretch">
 
     <div class="col-6" data-aos="fade-up" data-aos-delay="300">
-      <div class="skill-box d-flex">
+      <div class="skill-box d-flex h-100">
         <img src="assets/img/services/cocoa.webp" alt="">
         <div class="info-right d-block text-start">
           <h4>Cacao from Peru and/or Dominican Republic</h4>
@@ -243,7 +245,7 @@
     </div>
 
     <div class="col-6" data-aos="fade-up" data-aos-delay="300">
-      <div class="skill-box d-flex">
+      <div class="skill-box d-flex h-100">
         <img src="assets/img/services/quinoa.webp" alt="">
         <div class="info-right d-block text-start">
           <h4>Quinoa from Peru and/or Bolivia</h4>
@@ -254,10 +256,10 @@
     
   </div>
 
-  <div class="row skills-animation justify-content-md-center mt-3">
+  <div class="row skills-animation justify-content-md-center mt-3 align-items-stretch">
 
     <div class="col-6" data-aos="fade-up" data-aos-delay="100">
-      <div class="skill-box d-flex">
+      <div class="skill-box d-flex h-100">
         <img src="assets/img/services/adzuki.webp" alt="">
         <div class="info-right d-block text-start">
           <h4>Adzuki Beans from Argentina</h4>
@@ -267,8 +269,8 @@
     </div>
 
     <div class="col-6" data-aos="fade-up" data-aos-delay="200">
-      <div class="skill-box d-flex">
-        <img src="assets/img/services/amaranth.png" alt="">
+      <div class="skill-box d-flex h-100">
+        <img src="assets/img/services/amaranth2.png" alt="">
         <div class="info-right d-block text-start">
           <h4>Amaranth from Peru</h4>
           <p> Amaranth is a gluten-free grain rich in protein, iron, and magnesium. Sourced from Peru, it supports bone health, reduces inflammation, and provides a robust nutritional profile that complements a healthy diet.</p>
@@ -278,10 +280,10 @@
 
   </div>
 
-  <div class="row mt-3 skills-animation justify-content-md-center">
+  <div class="row mt-3 skills-animation justify-content-md-center align-items-stretch">
 
     <div class="col-6" data-aos="fade-up" data-aos-delay="300">
-      <div class="skill-box d-flex">
+      <div class="skill-box d-flex h-100">
         <img src="assets/img/services/sesame.webp" alt="">
         <div class="info-right d-block text-start">
           <h4>Sesame Seeds from Paraguay</h4> 
@@ -291,7 +293,7 @@
     </div>
 
     <div class="col-6" data-aos="fade-up" data-aos-delay="300">
-      <div class="skill-box d-flex">
+      <div class="skill-box d-flex h-100">
         <img src="assets/img/services/sacha.png" alt="">
         <div class="info-right d-block text-start">
           <h4>Maca and Sacha Inchi from Peru</h4> 
@@ -318,10 +320,10 @@
 
 <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-  <div class="row skills-animation justify-content-md-center">
+  <div class="row skills-animation justify-content-md-center align-items-stretch">
 
     <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="100">
-      <div class="skill-box d-flex">
+      <div class="skill-box d-flex h-100">
         <img src="assets/img/services/chia-oil.webp" alt="">
         <div class="info-right d-block text-start">
           <h4>Chia Oil</h4>
@@ -331,7 +333,7 @@
     </div>
 
     <div class="col-6 col-md-4 " data-aos="fade-up" data-aos-delay="200">
-      <div class="skill-box d-flex">
+      <div class="skill-box d-flex h-100">
         <img src="assets/img/services/olive-oil.webp" alt="">
         <div class="info-right d-block text-start">
           <h4>Chia and Olive Oil Blend</h4>
@@ -341,7 +343,7 @@
     </div>
 
     <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="300">
-      <div class="skill-box d-flex">
+      <div class="skill-box d-flex h-100">
         <img src="assets/img/services/sacha-oil.jpg" alt="">
         <div class="info-right d-block text-start">
           <h4>Sacha Inchi Oil</h4>
@@ -466,11 +468,11 @@
     <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" ><!--data-aos="fade-up" data-aos-delay="100"-->
 
         <div class="row g-5">
           <div class="col-lg-6">
-            <div class="content" data-aos="fade-up" data-aos-delay="200">
+            <div class="content" ><!--data-aos="fade-up" data-aos-delay="200"-->
               <div class="section-category mb-3"></div>
               <h2 class="display-5 mb-4">Subscribe to Our Newsletter</h2>
               <p class="lead mb-4">Join our newsletter to receive fresh updates, market insights, and new opportunities.</p>
@@ -478,7 +480,7 @@
           </div>
 
           <div class="col-lg-6">
-            <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
+            <div class="contact-form card" ><!--data-aos="fade-up" data-aos-delay="300"-->
               <div class="card-body p-4 p-lg-5">
 
                 <form action="forms/contact.php" method="post" class="php-email-form">
@@ -505,7 +507,8 @@
                       <div class="error-message"></div>
                       <div class="sent-message">Your message has been sent. Thank you!</div>-->
 
-                      <button type="submit" class="btn btn-submit w-100">Submit</button>
+                      <button type="submit" class="btn btn-submit w-100">Submit</
+                      >
                     </div>
 
                   </div>

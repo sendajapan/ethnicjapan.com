@@ -1,3 +1,5 @@
+<?php $currentPage = basename($_SERVER['PHP_SELF']); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,28 +31,28 @@
 
     <section id="skills" class="skills section" >
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
 
-        <div class="row g-3 skills-animation justify-content-md-center">
+        <div class="row g-3 skills-animation justify-content-md-center align-items-stretch">
 
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <div class="skill-box">
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-box h-100">
               <img src="assets/img/svg/mail.svg" alt="" style="width: 5rem; padding-bottom: 25px; ">
               <p>E-mail</p>
-              <h3>info@ethnicltd.com</h3>
+              <h3>sales@ethnicltd.com</h3>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-            <div class="skill-box">
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-box h-100">
               <img src="assets/img/svg/phone.svg" alt="" style="width: 5rem; padding-bottom: 25px; ">
               <p>Phone</p>
               <h3>03-5826-7885</h3>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="skill-box">
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-box h-100">
               <img src="assets/img/svg/location.svg" alt="" style="width: 5rem; padding-bottom: 25px; ">
               <p>Location</p>
               <h3>Tokyo, Taito Ku <br> Higashi Ueno 5-24-9</h3>
@@ -64,11 +66,11 @@
     <section id="contact" class="contact section light-background">
 
     <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
+    <div class="container section-title">
         <h2>Send Us a Message!</h2>
       </div> <!-- /End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
       
         <div class="row g-5">
           <div class="col-lg-6">
@@ -76,7 +78,7 @@
           </div>
       
           <div class="col-lg-6">
-            <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
+            <div class="contact-form card">
               <div class="card-body p-2 p-lg-3">
       
                 <form action="forms/contact.php" method="post" class="php-email-form">
@@ -389,10 +391,12 @@
 
 
       <!-- Map Section -->
-      <div class="map" style="display: grid; justify-content: center; margin: 5rem 0;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.4345855706442!2d139.78022167457334!3d35.71552912809114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188e99ff32ba29%3A0x977ee388968b506f!2s5-ch%C5%8Dme-24-9%20Higashiueno%2C%20Taito%20City%2C%20Tokyo%20110-0015%2C%20Japan!5e0!3m2!1sen!2scl!4v1745281474903!5m2!1sen!2scl" width="800" height="400" style="border:0;" 
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+      <div class="container-fluid p-0">
+        <div class="map light-background">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.4345855706442!2d139.78022167457334!3d35.71552912809114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188e99ff32ba29%3A0x977ee388968b506f!2s5-ch%C5%8Dme-24-9%20Higashiueno%2C%20Taito%20City%2C%20Tokyo%20110-0015%2C%20Japan!5e0!3m2!1sen!2scl!4v1745281474903!5m2!1sen!2scl" width="100%" height="500" style="border:0;" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
       </div><!--/Map Section-->
 
   </main>

@@ -1,3 +1,5 @@
+<?php $currentPage = basename($_SERVER['PHP_SELF']); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +21,7 @@
             <h2>Empowering Sustainable Growth – Globally Connected</h2>
             <p class="lead">From conscious commerce to innovative services, we connect ideas, people, and industries for a better tomorrow.</p>
             <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-              <a href="#contact" class="btn btn-outline">Explore Services</a>
+              <a href="services.php" class="btn btn-outline">Explore Services</a>
             </div>
             <!--<div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
               <div class="stat-item">
@@ -53,14 +55,9 @@
     <section id="about" class="about section light-background">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <div class="title-shape">
-          <!--<svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>-->
-        </div>
-        <p></p>
+        <p>Empowering Sustainable Growth Through Creative Strategy and Meaningful Impact.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -68,7 +65,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
             <div class="about-image">
-              <img src="assets/img/about.png" alt="Profile Image" class="img-fluid rounded-4">
+              <img src="assets/img/services/seeds.webp" alt="Profile Image" class="img-fluid rounded-4">
             </div>
           </div>
 
@@ -116,39 +113,39 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row g-4 skills-animation">
+        <div class="row g-4 skills-animation align-items-stretch">
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <div class="skill-box">
-              <img src="assets/img/services/services1.jpg" alt="" style="width: 14.5rem; padding-bottom: 30px; border-radius: 8px;">
+            <div class="skill-box h-100">
+              <img src="assets/img/services/services1.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
               <h3>Organic <br> Products</h3>
               <p>Supplying premium, sustainable goods for a conscious global market.</p>
-              <a href="#"><button class="buttons">View Product Range</button></a>
+              <a href="#products"><button class="buttons">View Product Range</button></a>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-            <div class="skill-box">
-              <img src="assets/img/services/property.jpg" alt="" style="width: 14.5rem; padding-bottom: 30px; border-radius: 8px;">
+            <div class="skill-box h-100">
+              <img src="assets/img/services/seeds.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
               <h3>Real Estate & <br> Investment</h3>
               <p>Connecting people with trusted investments in real estate worldwide.</p>
-              <a href="#"><button class="buttons">Browse Properties</button></a>
+              <a href="services.php"><button class="buttons">Browse Properties</button></a>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="skill-box">
-              <img src="assets/img/services/business.jpg" alt="" style="width: 14.5rem; padding-bottom: 30px; border-radius: 8px;">
+            <div class="skill-box h-100">
+              <img src="assets/img/services/grains.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
               <h3>Business <br> Consultancy</h3>
               <p>Guiding brands with strategic insights, growth, and global direction.</p>
-              <a href="#"><button class="buttons">Get Business Advice</button></a>
+              <a href="services.php"><button class="buttons">Get Business Advice</button></a>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <div class="skill-box" style="background-image: url('assets/img/services/organic.jpg'); background-size: contain; background-color: rgba(255,255,255,0.6); background-blend-mode: lighten; height: 23rem; align-items: center; border-radius: 8px; padding: 150px 0;">
+            <div class="skill-box h-100" style="background-image: url('assets/img/services/organic.jpg'); background-size: contain; background-color: rgba(255,255,255,0.6); background-blend-mode: lighten; align-items: center; border-radius: 8px; padding: 150px 0;">
                 <h3>Explore More <br> Organic Solutions</h3>
-                <a href="#"><button class="buttons">See All Products</button></a>
+                <a href="services.php"><button class="buttons">See All Products</button></a>
             </div>
           </div>
 
@@ -168,7 +165,7 @@
 
       <p class="lead mb-4">In the bustling and health-conscious market of Japan, a new business venture is making waves by introducing South American superfoods, known for their exceptional nutritional benefits. This venture is oriented towards organic products, featuring a diverse range of foods that promise to enhance the health and wellbeing of its consumers. The mission is to establish the brand: Ethnic in Japan as synonymous with a healthy life and wellbeing.</p>
 
-      <div class="page-title">
+      <div class="page-title"  id="products">
         <div class="title-wrapper">
           <h1>Featured Superfoods</h1>
         </div>
@@ -176,10 +173,10 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
       
-        <div class="row mt-3 skills-animation justify-content-md-center">
+        <div class="row mt-3 skills-animation justify-content-md-center align-items-stretch">
       
           <div class="col-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="skill-box d-flex">
+            <div class="skill-box d-flex h-100">
               <img src="assets/img/services/chia.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4>Chia Seeds from Paraguay</h4>
@@ -189,7 +186,7 @@
           </div>
       
           <div class="col-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="skill-box d-flex">
+            <div class="skill-box d-flex h-100">
               <img src="assets/img/services/hemp.png" alt="">
               <div class="info-right d-block text-start">
                 <h4>Hemp Protein and Hemp Hearts from Paraguay</h4>
@@ -200,10 +197,10 @@
 
         </div>
 
-        <div class="row mt-3 skills-animation justify-content-md-center">
+        <div class="row mt-3 skills-animation justify-content-md-center align-items-stretch">
       
           <div class="col-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="skill-box d-flex">
+            <div class="skill-box d-flex h-100">
               <img src="assets/img/services/cocoa.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4>Cacao from Peru and/or Dominican Republic</h4>
@@ -213,7 +210,7 @@
           </div>
 
           <div class="col-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="skill-box d-flex">
+            <div class="skill-box d-flex h-100">
               <img src="assets/img/services/quinoa.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4>Quinoa from Peru and/or Bolivia</h4>
@@ -224,10 +221,10 @@
           
         </div>
       
-        <div class="row skills-animation justify-content-md-center mt-3">
+        <div class="row skills-animation justify-content-md-center mt-3 align-items-stretch">
       
           <div class="col-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="skill-box d-flex">
+            <div class="skill-box d-flex h-100">
               <img src="assets/img/services/adzuki.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4>Adzuki Beans from Argentina</h4>
@@ -237,8 +234,8 @@
           </div>
       
           <div class="col-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="skill-box d-flex">
-              <img src="assets/img/services/amaranth.png" alt="">
+            <div class="skill-box d-flex h-100">
+              <img src="assets/img/services/amaranth2.png" alt="">
               <div class="info-right d-block text-start">
                 <h4>Amaranth from Peru</h4>
                 <p> Amaranth is a gluten-free grain rich in protein, iron, and magnesium. Sourced from Peru, it supports bone health, reduces inflammation, and provides a robust nutritional profile that complements a healthy diet.</p>
@@ -248,10 +245,10 @@
 
         </div>
 
-        <div class="row mt-3 skills-animation justify-content-md-center">
+        <div class="row mt-3 skills-animation justify-content-md-center align-items-stretch">
       
           <div class="col-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="skill-box d-flex">
+            <div class="skill-box d-flex h-100">
               <img src="assets/img/services/sesame.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4>Sesame Seeds from Paraguay</h4> 
@@ -261,7 +258,7 @@
           </div>
 
           <div class="col-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="skill-box d-flex">
+            <div class="skill-box d-flex h-100">
               <img src="assets/img/services/sacha.png" alt="">
               <div class="info-right d-block text-start">
                 <h4>Maca and Sacha Inchi from Peru</h4> 
@@ -288,10 +285,10 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row skills-animation justify-content-md-center">
+        <div class="row skills-animation justify-content-md-center align-items-stretch">
 
           <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="skill-box d-flex">
+            <div class="skill-box d-flex h-100">
               <img src="assets/img/services/chia-oil.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4>Chia Oil</h4>
@@ -301,7 +298,7 @@
           </div>
 
           <div class="col-6 col-md-4 " data-aos="fade-up" data-aos-delay="200">
-            <div class="skill-box d-flex">
+            <div class="skill-box d-flex h-100">
               <img src="assets/img/services/olive-oil.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4>Chia and Olive Oil Blend</h4>
@@ -311,7 +308,7 @@
           </div>
 
           <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="skill-box d-flex">
+            <div class="skill-box d-flex h-100">
               <img src="assets/img/services/sacha-oil.jpg" alt="">
               <div class="info-right d-block text-start">
                 <h4>Sacha Inchi Oil</h4>
@@ -453,12 +450,12 @@
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/organic-warehousing.jpg" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
+                  <!--<div class="portfolio-overlay">
                     <div class="portfolio-actions">
                       <a href="#" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
                       <a href="#" class="details-link"><i class="bi bi-arrow-right"></i></a>
                     </div>
-                  </div>
+                  </div>-->
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Global Trade</span>
@@ -471,13 +468,7 @@
             <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
               <div class="portfolio-card">
                 <div class="portfolio-image">
-                  <img src="assets/img/portfolio/home.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="#" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
+                  <img src="assets/img/services/chia+cover.jpeg" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Real Estate</span>
@@ -491,12 +482,6 @@
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/business.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="#" class="glightbox preview-link" data-gallery="portfolio-gallery-motion"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Business Strategy</span>
@@ -510,12 +495,6 @@
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/wholesale.jpg" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="#" class="glightbox preview-link" data-gallery="portfolio-gallery-brand"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Sustainability</span>
@@ -843,11 +822,11 @@
     <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" ><!--data-aos="fade-up" data-aos-delay="100"-->
 
         <div class="row g-5">
           <div class="col-lg-6">
-            <div class="content" data-aos="fade-up" data-aos-delay="200">
+            <div class="content" ><!--data-aos="fade-up" data-aos-delay="200"-->
               <div class="section-category mb-3">Contact</div>
               <h2 class="display-5 mb-4">Subscribe to Our Newsletter</h2>
               <p class="lead mb-4">Join our newsletter to receive fresh updates, market insights, and new opportunities.</p>
@@ -873,7 +852,7 @@
           </div>
 
           <div class="col-lg-6">
-            <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
+            <div class="contact-form card" ><!--data-aos="fade-up" data-aos-delay="300"-->
               <div class="card-body p-4 p-lg-5">
 
                 <form action="forms/contact.php" method="post" class="php-email-form">

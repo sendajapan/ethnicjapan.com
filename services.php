@@ -1,3 +1,5 @@
+<?php $currentPage = basename($_SERVER['PHP_SELF']); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -117,7 +119,7 @@
               <p>Our Key Strengths:</p>
           
               <div class="d-flex">
-                <div class="personal-info mt-0" style="width: auto;">
+                <div class="personal-info mt-0" style="width: auto; height:fit-content;">
                   <div class="grid">
                     <div class="colu-6">
                       <div class="info-item" style="width: 100%;">
@@ -151,7 +153,7 @@
                 </div>
                 <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
                   <div class="about-image">
-                    <img src="assets/img/services/meeting.jpg" alt="Profile Image" class="img-fluid rounded-4">
+                    <img src="assets/img/services/grain.avif" alt="Profile Image" class="img-fluid rounded-4">
                   </div>
                 </div>
               </div>
@@ -271,7 +273,7 @@
               <p class="lead mb-4">From an early stage start-up's growth strategies to helping existing businesses, we have done it all! The results speak for themselves. Our services work. </p>
 
               <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-                <a href="#" class="btn btn-outline">Let's Develop Together</a>
+                <a href="contact.php" class="btn btn-outline">Let's Develop Together</a>
               </div>
             </div>
           </div>

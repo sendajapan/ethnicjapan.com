@@ -1,3 +1,5 @@
+<?php $currentPage = basename($_SERVER['PHP_SELF']); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +38,7 @@
 
   <div class="testimonials-slider swiperr init-swiperr">
     <div class="swiper-wrapperr">
-      <div class="swiper-slidee">
+      <div class="swiper-slidee mb-3">
         <div class="testimonial-item">
           <div class="row">
             <div class="col-lg-8">
@@ -62,9 +64,9 @@
         </div>
       </div><!-- End Testimonial Item -->
 
-      <div class="swiper-slide">
+      <div class="swiper-slide mb-3">
         <div class="testimonial-item">
-          <div class="row">
+          <div class="row ">
             <div class="col-lg-4 d-none d-lg-block">
               <div class="featured-img-wrapper">
                 <img src="assets/img/person/person1.png" class="featured-img" alt="">

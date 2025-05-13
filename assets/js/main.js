@@ -11,7 +11,7 @@
 
   /**
    * Apply .scrolled class to the body as the page is scrolled down
-   */
+  */
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
@@ -20,7 +20,7 @@
   }
 
   document.addEventListener('scroll', toggleScrolled);
-  window.addEventListener('load', toggleScrolled);
+  window.addEventListener('load', toggleScrolled); 
 
   /**
    * Mobile nav toggle
@@ -199,7 +199,7 @@
 
   /**
    * Navmenu Scrollspy
-   
+   */
   let navmenulinks = document.querySelectorAll('.navmenu a');
 
   function navmenuScrollspy() {
@@ -217,11 +217,11 @@
     })
   }
   window.addEventListener('load', navmenuScrollspy);
-  document.addEventListener('scroll', navmenuScrollspy);*/
+  document.addEventListener('scroll', navmenuScrollspy);
 
 
 
-  /* NAV MENU ACTIVE 
+  /* NAV MENU ACTIVE */
   var header = document.getElementById("navmenu");
   var btns = header.getElementsByClassName(".item");
   for (var i = 0; i < btns.length; i++) {
@@ -230,7 +230,7 @@
     current[0].className = current[0].className.replace(".active", "");
     this.className += " active";
     });
-  }*/
+  }
 
 })();
 
