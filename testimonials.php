@@ -1,4 +1,5 @@
 <?php $currentPage = basename($_SERVER['PHP_SELF']); ?>
+<?php include "assets/include/init.php"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,19 +14,10 @@
 
     <!-- Page Title -->
     <div class="page-title">
-      <!--<div class="breadcrumbs">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i> Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Category</a></li>
-            <li class="breadcrumb-item active current">Starter Page</li>
-          </ol>
-        </nav>
-      </div>-->
-
+      
       <div class="title-wrapper">
-        <h1>What Our Customers Say</h1>
-        <p>Real experiences from clients and partners who’ve grown with ETHNIC — through strategic solutions, global insight, and dedicated support.</p>
+        <h1><?= $language["testimonial_title"] ?></h1>
+        <p><?= $language["testimonial_paragraph"] ?></p>
       </div>
     </div><!-- End Page Title -->
 
@@ -42,16 +34,14 @@
         <div class="testimonial-item">
           <div class="row">
             <div class="col-lg-8">
-              <h2>Business Consultancy</h2>
-              <p>
-                “Working with ETHNIC LTD was a game-changer for us. Their consultancy team didn’t just give advice — they understood our industry challenges and helped us craft a strategy that actually worked. Within six months, our brand presence improved, and we expanded to two new markets.”
-              </p>
+              <h2><?= $language["testimonials"][0]["title"] ?></h2>
+              <p><?= $language["testimonials"][0]["testimonial"] ?></p>
 
               <div class="profile d-flex align-items-center">
                 <img src="assets/img/person/person2.png" class="profile-img" alt="">
                 <div class="profile-info">
-                  <h3>Sarah Tanaka</h3>
-                  <span>CEO, Horizon Creations</span>
+                  <h3><?= $language["testimonials"][0]["name"] ?></h3>
+                  <span><?= $language["testimonials"][0]["position"] ?></span>
                 </div>
               </div>
             </div>
@@ -73,16 +63,14 @@
               </div>
             </div>
             <div class="col-lg-8">
-              <h2>Property Solutions</h2>
-              <p>
-                “I was nervous about investing in international real estate, but ETHNIC guided me every step of the way. Their team provided legal, financial, and property insights that made the whole process seamless. I now own three properties in emerging markets — all with solid returns.”
-              </p>
+              <h2><?= $language["testimonials"][1]["title"] ?></h2>
+              <p><?= $language["testimonials"][1]["testimonial"] ?></p>
               
               <div class="profile d-flex align-items-center">
                 <img src="assets/img/person/person1.png" class="profile-img" alt="">
                 <div class="profile-info">
-                  <h3>Mohammed Iqbal</h3>
-                  <span>Real Estate Investor</span>
+                  <h3><?= $language["testimonials"][1]["name"] ?></h3>
+                  <span><?= $language["testimonials"][1]["position"] ?></span>
                 </div>
               </div>
             </div>
@@ -94,18 +82,14 @@
         <div class="testimonial-item">
           <div class="row">
             <div class="col-lg-8">
-              <h2>
-                Global Trade
-              </h2>
-              <p>
-                “ETHNIC LTD helped us find trusted suppliers abroad and set up a smooth logistics chain. Their global sourcing knowledge saved us time and costs, and we’ve seen consistent results ever since. It’s rare to find a team that delivers with such integrity.”
-              </p>
+              <h2><?= $language["testimonials"][2]["title"] ?></h2>
+              <p><?= $language["testimonials"][2]["testimonial"] ?></p>
              
               <div class="profile d-flex align-items-center">
                 <img src="assets/img/person/person3.png" class="profile-img" alt="">
                 <div class="profile-info">
-                  <h3>Liam O’Connor</h3>
-                  <span>Director, Urban Goods Ltd.</span>
+                  <h3><?= $language["testimonials"][2]["name"] ?></h3>
+                  <span><?= $language["testimonials"][2]["position"] ?></span>
                 </div>
               </div>
             </div>

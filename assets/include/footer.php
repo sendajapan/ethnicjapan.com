@@ -15,15 +15,11 @@
         </div>
   
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://sendajapan.com/">SendaJapan</a>
+          <?= $language["footer_credits"]?> <a href="https://sendajapan.com/"><?= $language["footer_link"]?></a>
         </div>
         
         <div class="copyright text-center">
-          <p style="padding-top:1rem;">© <span>Copyright</span> <strong class="px-1 sitename">Ethnic Ltd</strong> <span>All Rights Reserved</span></p>
+          <p style="padding-top:1rem;"><?= $language["footer_copyright_sign"]?>  <span><?= $language["footer_copyright"]?></span> <strong class="px-1 sitename"><?= $language["footer_logo"]?></strong> <span><?= $language["footer_rights"]?></span></p>
         </div>
       </div>
     </div>

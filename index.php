@@ -1,4 +1,18 @@
 <?php $currentPage = basename($_SERVER['PHP_SELF']); ?>
+<?php
+session_start();
+
+$default_lang = 'en';
+$lang = $_SESSION['ethnic']['selected_lang'] ?? $default_lang;
+
+$allowed_langs = ['en', 'jp'];
+if (!in_array($lang, $allowed_langs)) {
+    $lang = $default_lang;
+}
+
+include(__DIR__ . "/assets/include/$lang.php");
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,30 +32,16 @@
 
         <div class="row align-items-center content">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h2>Empowering Sustainable Growth – Globally Connected</h2>
-            <p class="lead">From conscious commerce to innovative services, we connect ideas, people, and industries for a better tomorrow.</p>
+            <h2><?= $language["hero_title"]; ?></h2>
+            <p class="lead"><?= $language["hero_paragraph"]; ?></p>
             <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-              <a href="services.php" class="btn btn-outline">Explore Services</a>
+              <a href="services.php" class="btn btn-outline"><?= $language["hero_button"]; ?></a>
             </div>
-            <!--<div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
-              <div class="stat-item">
-                <span class="stat-number">5+</span>
-                <span class="stat-label">Years Experience</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">100+</span>
-                <span class="stat-label">Projects Completed</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">50+</span>
-                <span class="stat-label">Happy Clients</span>
-              </div>
-            </div>-->
           </div>
           <div class="col-lg-6">
             <div class="hero-image">
-              <img src="assets/img/portfolio/org.png" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300" style="position:absolute; bottom:50px; left:10px; z-index: 0; width: 30rem;">
-              <img src="assets/img/portfolio/houses.webp" alt="" style="position:absolute; bottom:20px; left:300px; z-index: 1; width: 20rem;">
+              <img src="assets/img/portfolio/org.jpg" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300" style="position:absolute; bottom:30px; left:10px; z-index: 0; width: 20rem;">
+              <img src="assets/img/portfolio/houses.webp" alt="" style="position:absolute; bottom:0px; left:300px; z-index: 1; width: 12rem;">
               <img src="assets/img/portfolio/business1.webp" alt="" style="position:absolute; top:0px; left:110px; z-index: 2; width: 18rem;">
             </div>
           </div>
@@ -56,8 +56,8 @@
 
       <!-- Section Title -->
        <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>Empowering Sustainable Growth Through Creative Strategy and Meaningful Impact.</p>
+        <h2><?= $language["about_title"]; ?></h2>
+        <p><?= $language["about_sub"]; ?></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -71,11 +71,11 @@
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="about-content">
-              <span class="subtitle">Who We Are</span>
+              <span class="subtitle"><?= $language["about_subtitle"]; ?></span>
 
-              <h2>Innovation-Led Business with Purpose, Progress, and Vision</h2>
+              <h2><?= $language["about_main_title"]; ?></h2>
 
-              <p class="lead mb-4">ETHNIC LTD is a diverse global enterprise committed to creating meaningful impact across industries. From ethical trade and real estate to consultancy and beyond, we’re building bridges between ideas and opportunities — always with sustainability and innovation at our core.</p>
+              <p class="lead mb-4"><?= $language["about_paragraph"]; ?></p>
 
               <!--<p class="mb-4">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>-->
 
@@ -83,15 +83,15 @@
                 <div class="row g-4">
                   <div class="col-6">
                     <div class="info-item">
-                      <span class="label"><img src="assets/img/svg/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;">Mission</span>
-                      <span class="value">Empowering ethical progress through diverse, sustainable business solutions.</span>
+                      <span class="label"><img src="assets/img/svg/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;"><?= $language["about_mission_title"]; ?></span>
+                      <span class="value"><?= $language["about_mission_paragraph"]; ?></span>
                     </div>
                   </div>
 
                   <div class="col-6">
                     <div class="info-item">
-                      <span class="label"><img src="assets/img/svg/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;">Vision</span>
-                      <span class="value">Leading global innovation for impact, growth, and shared success.</span>
+                      <span class="label"><img src="assets/img/svg/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;"><?= $language["about_vision_title"]; ?></span>
+                      <span class="value"><?= $language["about_vision_paragraph"]; ?></span>
                     </div>
                   </div>
                 </div>
@@ -107,8 +107,8 @@
     <section id="skills" class="skills section">
 
       <div class="container section-title" data-aos="fade-up">
-        <h2>Our Services</h2>
-        <p>Empowering industries with impactful solutions across global business sectors.</p>
+        <h2><?= $language["services_title"]; ?></h2>
+        <p><?= $language["service_paragraph"]; ?></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -118,34 +118,34 @@
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box h-100">
               <img src="assets/img/services/services1.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
-              <h3>Organic <br> Products</h3>
-              <p>Supplying premium, sustainable goods for a conscious global market.</p>
-              <a href="#products"><button class="buttons">View Product Range</button></a>
+              <h3><?= $language["services"][0]["title"] ?></h3>
+              <p><?= $language["services"][0]["paragraph"] ?></p>
+              <a href="#products"><button class="buttons"><?= $language["services"][0]["button"] ?></button></a>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
             <div class="skill-box h-100">
               <img src="assets/img/services/seeds.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
-              <h3>Real Estate & <br> Investment</h3>
-              <p>Connecting people with trusted investments in real estate worldwide.</p>
-              <a href="services.php"><button class="buttons">Browse Properties</button></a>
+              <h3><?= $language["services"][1]["title"] ?></h3>
+              <p><?= $language["services"][1]["paragraph"] ?></p>
+              <a href="services.php"><button class="buttons"><?= $language["services"][1]["button"] ?></button></a>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
             <div class="skill-box h-100">
-              <img src="assets/img/services/grains.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
-              <h3>Business <br> Consultancy</h3>
-              <p>Guiding brands with strategic insights, growth, and global direction.</p>
-              <a href="services.php"><button class="buttons">Get Business Advice</button></a>
+              <img src="assets/img/services/meeting.webp" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
+              <h3><?= $language["services"][2]["title"] ?></h3>
+              <p><?= $language["services"][2]["paragraph"] ?></p>
+              <a href="services.php"><button class="buttons"><?= $language["services"][2]["button"] ?></button></a>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
             <div class="skill-box h-100" style="background-image: url('assets/img/services/organic.jpg'); background-size: contain; background-color: rgba(255,255,255,0.6); background-blend-mode: lighten; align-items: center; border-radius: 8px; padding: 150px 0;">
-                <h3>Explore More <br> Organic Solutions</h3>
-                <a href="services.php"><button class="buttons">See All Products</button></a>
+                <h3><?= $language["services"][3]["title"] ?></h3>
+                <a href="services.php"><button class="buttons"><?= $language["services"][3]["button"] ?></button></a>
             </div>
           </div>
 
@@ -160,14 +160,14 @@
     <section id="skills" class="skills section light-background">
 
       <div class="container section-title" data-aos="fade-up">
-        <h2 style="font-size: 35px">Promoting Organic Products for a Healthy Life and Wellbeing</h2>
+        <h2 style="font-size: 35px"><?= $language["promoting_organic"]; ?></h2>
       </div><!-- End Section Title -->
 
-      <p class="lead mb-4">In the bustling and health-conscious market of Japan, a new business venture is making waves by introducing South American superfoods, known for their exceptional nutritional benefits. This venture is oriented towards organic products, featuring a diverse range of foods that promise to enhance the health and wellbeing of its consumers. The mission is to establish the brand: Ethnic in Japan as synonymous with a healthy life and wellbeing.</p>
+      <p class="lead mb-4"><?= $language["promoting_organic_paragraph"]; ?></p>
 
       <div class="page-title"  id="products">
         <div class="title-wrapper">
-          <h1>Featured Superfoods</h1>
+          <h1><?= $language["featured_super_foods"]; ?></h1>
         </div>
       </div><!-- End Page Title -->
 
@@ -179,8 +179,8 @@
             <div class="skill-box d-flex h-100">
               <img src="assets/img/services/chia.webp" alt="">
               <div class="info-right d-block text-start">
-                <h4>Chia Seeds from Paraguay</h4>
-                <p>Chia seeds are tiny powerhouses of nutrition, packed with omega-3 fatty acids, fiber, protein, and antioxidants. Originating from Paraguay, these seeds are known to promote heart health, improve digestion, and provide sustained energy.</p>
+                <h4><?= $language["super_foods"][0]["title"] ?></h4>
+                <p><?= $language["super_foods"][0]["paragraph"] ?></p>
               </div>
             </div>
           </div>
@@ -189,8 +189,8 @@
             <div class="skill-box d-flex h-100">
               <img src="assets/img/services/hemp.png" alt="">
               <div class="info-right d-block text-start">
-                <h4>Hemp Protein and Hemp Hearts from Paraguay</h4>
-                <p>Hemp protein is a complete plant-based protein source, containing all essential amino acids. Hemp hearts, the soft inner part of the hemp seed, are rich in healthy fats and minerals. Both products from Paraguay contribute to muscle growth, energy levels, and overall health.</p>
+                <h4><?= $language["super_foods"][1]["title"] ?></h4>
+                <p><?= $language["super_foods"][1]["paragraph"] ?></p>
               </div>
             </div>
           </div>
@@ -203,8 +203,8 @@
             <div class="skill-box d-flex h-100">
               <img src="assets/img/services/cocoa.webp" alt="">
               <div class="info-right d-block text-start">
-                <h4>Cacao from Peru and/or Dominican Republic</h4>
-                <p>Cacao is renowned for its high antioxidant content and mood-enhancing properties. It offers profound health benefits, including improved cardiovascular health and cognitive function.</p>
+                <h4><?= $language["super_foods"][2]["title"] ?></h4>
+                <p><?= $language["super_foods"][2]["paragraph"] ?></p>
               </div>
             </div>
           </div>
@@ -213,8 +213,8 @@
             <div class="skill-box d-flex h-100">
               <img src="assets/img/services/quinoa.webp" alt="">
               <div class="info-right d-block text-start">
-                <h4>Quinoa from Peru and/or Bolivia</h4>
-                <p>Quinoa is a versatile grain high in protein, fiber, and essential nutrients. Originating from Peru and Bolivia, it is a staple in healthy diets for its ability to aid digestion, manage blood sugar levels, and provide a complete protein source.</p>
+                <h4><?= $language["super_foods"][3]["title"] ?></h4>
+                <p><?= $language["super_foods"][3]["paragraph"] ?></p>
               </div>
             </div>
           </div>
@@ -227,8 +227,8 @@
             <div class="skill-box d-flex h-100">
               <img src="assets/img/services/adzuki.webp" alt="">
               <div class="info-right d-block text-start">
-                <h4>Adzuki Beans from Argentina</h4>
-                <p>Adzuki beans are small red beans popular in East Asian cuisine. They are high in protein, fiber, and essential minerals, and are known for their role in supporting kidney health, weight management, and improving digestion.</p>
+                <h4><?= $language["super_foods"][4]["title"] ?></h4>
+                <p><?= $language["super_foods"][4]["paragraph"] ?></p>
               </div>
             </div>
           </div>
@@ -237,8 +237,8 @@
             <div class="skill-box d-flex h-100">
               <img src="assets/img/services/amaranth2.png" alt="">
               <div class="info-right d-block text-start">
-                <h4>Amaranth from Peru</h4>
-                <p> Amaranth is a gluten-free grain rich in protein, iron, and magnesium. Sourced from Peru, it supports bone health, reduces inflammation, and provides a robust nutritional profile that complements a healthy diet.</p>
+                <h4><?= $language["super_foods"][5]["title"] ?></h4>
+                <p> <?= $language["super_foods"][5]["paragraph"] ?></p>
               </div>
             </div>
           </div>
@@ -251,8 +251,8 @@
             <div class="skill-box d-flex h-100">
               <img src="assets/img/services/sesame.webp" alt="">
               <div class="info-right d-block text-start">
-                <h4>Sesame Seeds from Paraguay</h4> 
-                <p>Sesame seeds are packed with healthy fats, protein, and a range of vitamins and minerals. From Paraguay, they contribute to heart health, improved digestion, and are an excellent source of energy.</p>
+                <h4><?= $language["super_foods"][6]["title"] ?></h4> 
+                <p><?= $language["super_foods"][6]["paragraph"] ?></p>
               </div>
             </div>
           </div>
@@ -261,8 +261,8 @@
             <div class="skill-box d-flex h-100">
               <img src="assets/img/services/sacha.png" alt="">
               <div class="info-right d-block text-start">
-                <h4>Maca and Sacha Inchi from Peru</h4> 
-                <p>Maca root is known for its energy-boosting and hormone-balancing properties, while Sacha Inchi is rich in omega-3 fatty acids, protein, and fiber. Both support overall wellness, enhance physical performance, and improve mental clarity.</p>
+                <h4><?= $language["super_foods"][7]["title"] ?></h4> 
+                <p><?= $language["super_foods"][7]["paragraph"] ?></p>
               </div>
             </div>
           </div>
@@ -279,7 +279,8 @@
       <!-- Page Title -->
       <div class="page-title">
         <div class="title-wrapper">
-          <h1>Promoted Oils</h1>
+          <h1><?= $language["promoted_oils"] ?></h1>
+          <p class="lead mb-4 mt-5"><?= $language["promoted_oils_paragraph"] ?></p>
         </div>
       </div><!-- End Page Title -->
 
@@ -291,8 +292,8 @@
             <div class="skill-box d-flex h-100">
               <img src="assets/img/services/chia-oil.webp" alt="">
               <div class="info-right d-block text-start">
-                <h4>Chia Oil</h4>
-                <p>Chia oil is extracted from chia seeds and is rich in omega-3 fatty acids and antioxidants. It supports heart health, reduces inflammation, and promotes healthy skin.</p>
+                <h4><?= $language["promoted_oils_list"][0]["title"] ?></h4>
+                <p><?= $language["promoted_oils_list"][0]["paragraph"] ?></p>
               </div>
             </div>
           </div>
@@ -301,8 +302,8 @@
             <div class="skill-box d-flex h-100">
               <img src="assets/img/services/olive-oil.webp" alt="">
               <div class="info-right d-block text-start">
-                <h4>Chia and Olive Oil Blend</h4>
-                <p>This blend combines the health benefits of chia oil and olive oil, providing a rich source of healthy fats, vitamins, and antioxidants. It enhances cardiovascular health, supports weight management, and adds a nutritional boost to any diet.</p>
+                <h4><?= $language["promoted_oils_list"][1]["title"] ?></h4>
+                <p><?= $language["promoted_oils_list"][1]["paragraph"] ?></p>
               </div>
             </div>
           </div>
@@ -311,15 +312,13 @@
             <div class="skill-box d-flex h-100">
               <img src="assets/img/services/sacha-oil.jpg" alt="">
               <div class="info-right d-block text-start">
-                <h4>Sacha Inchi Oil</h4>
-                <p>Sacha Inchi oil, derived from the seeds of the Sacha Inchi plant, is high in omega-3, 6, and 9 fatty acids. It promotes heart health, improves skin health, and supports brain function.</p>
+                <h4><?= $language["promoted_oils_list"][2]["title"] ?></h4>
+                <p><?= $language["promoted_oils_list"][2]["paragraph"] ?></p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <p class="lead mb-4 mt-5">The introduction of South American superfoods into the Japanese market represents a fusion of cultures and a commitment to promoting health and wellness. Ethnic is dedicated to providing high-quality, organic products that support a balanced and vibrant life. As the brand continues to grow, it aspires to become a trusted name in the realm of health and wellbeing, encouraging a deeper connection between nutrition and a healthy lifestyle. </p>
 
     </section>
 
@@ -333,8 +332,8 @@
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="about-content">
-              <h2>Ethnic: A Brand for Healthy Living</h2>
-              <p class="lead mb-4">The overarching goal of this business is to make the brand Ethnic in Japan a beacon of healthy living and wellbeing. By offering a curated selection of organic superfoods and oils, Ethnic aims to inspire the Japanese market to embrace a healthier lifestyle. Each product is selected for its unique health benefits and cultural significance, ensuring that consumers receive the best of what South America has to offer.</p>
+              <h2><?= $language["ethnic_a_brand"] ?></h2>
+              <p class="lead mb-4"><?= $language["ethnic_a_brand_paragraph"] ?></p>
             </div>
           </div>
 
@@ -357,53 +356,28 @@
         <div class="row align-items-center">
           <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
             <div class="about-image">
-              <img src="assets/img/why.png" alt="Profile Image" class="img-fluid rounded-4">
+              <img src="assets/img//services/farmers.jpg" alt="Profile Image" class="img-fluid rounded-4">
             </div>
           </div>
         
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="about-content">
         
-              <h2>Why Choose Us</h2>
+              <h2><?= $language["why_choose_us"] ?></h2>
         
-              <p class="lead mb-4">Innovative, reliable, and future-ready across global business sectors.</p>
-        
-              <!--<p class="mb-4">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>-->
-        
+              <p class="lead mb-4"><?= $language["why_choose_us_paragraph"] ?></p>
+                
               <div class="personal-info" style="width: auto;">
                 <div class="grid">
                   <div class="colu-6">
                     <div class="info-item" style="width: 100%;">
-                      <p><img src="assets/img/svg/check-mark.svg" alt="">
-                        Multi-Industry Expertise
-                      </p>
-                      <p><img src="assets/img/svg/check-mark.svg" alt="">
-                        Innovation at Core
-                      </p>
-                      <p><img src="assets/img/svg/check-mark.svg" alt="">
-                        Client-Centered Approach
-                      </p>
-                      <p><img src="assets/img/svg/check-mark.svg" alt="">
-                        Trusted Global Network
-                      </p>
-                      <p><img src="assets/img/svg/check-mark.svg" alt="">
-                        Sustainable Business Practices
-                      </p>
-                      <p><img src="assets/img/svg/check-mark.svg" alt="">
-                        Tailored Strategic Solutions
-                      </p>
-                      <p><img src="assets/img/svg/check-mark.svg" alt="">
-                        Transparent Communication Always
-                      </p>
-                      <p><img src="assets/img/svg/check-mark.svg" alt="">
-                        Results that Matter
-                      </p>
-                      <p><img src="assets/img/svg/check-mark.svg" alt="">
-                        Multilingual Support (English, Japanese, etc.)
-                      </p>
 
-                      <!--<span class="label"><img src="assets/img/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;">Mission</span>
-                      <span class="value">To import and deliver the finest organic food products.</span>-->
+                      <?php foreach ($language["why_choose_us_list"] as $item): ?>
+                        <p><img src="assets/img/svg/check-mark.svg" alt="">
+                          <?= $item ?>
+                        </p>
+                      <?php endforeach; ?>
+
                     </div>
                   </div>
                 </div>
@@ -421,128 +395,67 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Insights That Grow With You</h2>
-        <div class="title-shape">
-          <!--<svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>-->
-        </div>
-        <p>Explore future-driven perspectives, strategies, and solutions from our diverse ventures.</p>
+        <h2><?= $language["insights_that"] ?></h2>
+        <p><?= $language["insights_that_paragraph"] ?></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <!--<div class="portfolio-filters-container" data-aos="fade-up" data-aos-delay="200">
-            <ul class="portfolio-filters isotope-filters">
-              <li data-filter="*" class="filter-active">All Work</li>
-              <li data-filter=".filter-web">Web Design</li>
-              <li data-filter=".filter-graphics">Graphics</li>
-              <li data-filter=".filter-motion">Motion</li>
-              <li data-filter=".filter-brand">Branding</li>
-            </ul>
-          </div>-->
-
-          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+          <div class="row g-4 isotope-container align-items-stretch" data-aos="fade-up" data-aos-delay="300">
 
             <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
+              <div class="portfolio-card h-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/portfolio/organic-warehousing.jpg" class="img-fluid" alt="" loading="lazy">
-                  <!--<div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="#" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                      <a href="#" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>-->
+                  <img src="assets/img/portfolio/organic.jpg" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Global Trade</span>
-                  <h3>Navigating New Markets with Confidence</h3>
-                  <p>Our expertise connects businesses with reliable sourcing and export solutions.</p>
+                  <span class="category"><?= $language["insights_that_list"][0]["title"] ?></span>
+                  <h3><?= $language["insights_that_list"][0]["subtitle"] ?></h3>
+                  <p><?= $language["insights_that_list"][0]["paragraph"] ?></p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
-              <div class="portfolio-card">
+              <div class="portfolio-card h-100">
                 <div class="portfolio-image">
                   <img src="assets/img/services/chia+cover.jpeg" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Real Estate</span>
-                  <h3>Smarter Property Investments, Locally and Abroad</h3>
-                  <p>Discover growth potential through strategic real estate and land acquisition.</p>
+                  <span class="category"><?= $language["insights_that_list"][1]["title"] ?></span>
+                  <h3><?= $language["insights_that_list"][1]["subtitle"] ?></h3>
+                  <p><?= $language["insights_that_list"][1]["paragraph"] ?></p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
-              <div class="portfolio-card">
+              <div class="portfolio-card h-100">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/business.webp" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Business Strategy</span>
-                  <h3>Building Better Brands through Bold Advisory</h3>
-                  <p>We offer insights that reshape businesses into competitive global players.</p>
+                  <span class="category"><?= $language["insights_that_list"][2]["title"] ?></span>
+                  <h3><?= $language["insights_that_list"][2]["subtitle"] ?></h3>
+                  <p><?= $language["insights_that_list"][2]["paragraph"] ?></p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-brand">
-              <div class="portfolio-card">
+              <div class="portfolio-card h-100">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/wholesale.jpg" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Sustainability</span>
-                  <h3>Driving Positive Change Across Every Sector</h3>
-                  <p>We integrate eco-conscious values into commerce, real estate, and beyond.</p>
+                  <span class="category"><?= $language["insights_that_list"][3]["title"] ?></span>
+                  <h3><?= $language["insights_that_list"][3]["subtitle"] ?></h3>
+                  <p><?= $language["insights_that_list"][3]["paragraph"] ?></p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-
-           <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Web Design</span>
-                  <h3>E-commerce Platform</h3>
-                  <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                </div>
-              </div>
-            </div> End Portfolio Item 
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-11.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Graphics</span>
-                  <h3>Digital Art Collection</h3>
-                  <p>Cras mattis consectetur purus sit amet fermentum.</p>
-                </div>
-              </div>
-            </div> End Portfolio Item 
-
-          </div> End Portfolio Container -->
 
         </div>
 
@@ -555,13 +468,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>What Our Customers Say</h2>
-        <div class="title-shape">
-          <!--<svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>-->
-        </div>
-        <p>Real experiences from clients and partners who’ve grown with ETHNIC — through strategic solutions, global insight, and dedicated support.</p>
+        <h2><?= $language["testimonial_title"] ?></h2>
+        <p><?= $language["testimonial_paragraph"] ?></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -588,15 +496,13 @@
               <div class="testimonial-item">
                 <div class="row">
                   <div class="col-lg-8">
-                    <h2>Business Consultancy</h2>
-                    <p>
-                    “Working with ETHNIC LTD was a game-changer for us. Their consultancy team didn’t just give advice — they understood our industry challenges and helped us craft a strategy that actually worked. Within six months, our brand presence improved, and we expanded to two new markets.”
-                    </p>
+                    <h2><?= $language["testimonials"][0]["title"] ?></h2>
+                    <p><?= $language["testimonials"][0]["testimonial"] ?> </p>
                     <div class="profile d-flex align-items-center">
                       <img src="assets/img/person/person2.png" class="profile-img" alt="">
                       <div class="profile-info">
-                        <h3>Sarah Tanaka</h3>
-                        <span>CEO, Horizon Creations</span>
+                        <h3><?= $language["testimonials"][0]["name"] ?></h3>
+                        <span><?= $language["testimonials"][0]["position"] ?></span>
                       </div>
                     </div>
                   </div>
@@ -613,15 +519,13 @@
               <div class="testimonial-item">
                 <div class="row">
                   <div class="col-lg-8">
-                    <h2>Property Solutions</h2>
-                    <p>
-                    “I was nervous about investing in international real estate, but ETHNIC guided me every step of the way. Their team provided legal, financial, and property insights that made the whole process seamless. I now own three properties in emerging markets — all with solid returns.”
-                    </p>
+                    <h2><?= $language["testimonials"][1]["title"] ?></h2>
+                    <p><?= $language["testimonials"][1]["testimonial"] ?></p>
                     <div class="profile d-flex align-items-center">
                       <img src="assets/img/person/person1.png" class="profile-img" alt="">
                       <div class="profile-info">
-                        <h3>Mohammed Iqbal</h3>
-                        <span>Real Estate Investor</span>
+                        <h3><?= $language["testimonials"][1]["name"] ?></h3>
+                        <span><?= $language["testimonials"][1]["position"] ?></span>
                       </div>
                     </div>
                   </div>
@@ -638,17 +542,13 @@
               <div class="testimonial-item">
                 <div class="row">
                   <div class="col-lg-8">
-                    <h2>
-                      Global Trade
-                    </h2>
-                    <p>
-                    “ETHNIC LTD helped us find trusted suppliers abroad and set up a smooth logistics chain. Their global sourcing knowledge saved us time and costs, and we’ve seen consistent results ever since. It’s rare to find a team that delivers with such integrity.”
-                    </p>
+                    <h2><?= $language["testimonials"][2]["title"] ?></h2>
+                    <p><?= $language["testimonials"][2]["testimonial"] ?></p>
                     <div class="profile d-flex align-items-center">
                       <img src="assets/img/person/person3.png" class="profile-img" alt="">
                       <div class="profile-info">
-                        <h3>Liam O’Connor</h3>
-                        <span>Director, Urban Goods Ltd.</span>
+                        <h3><?= $language["testimonials"][2]["name"] ?></h3>
+                        <span><?= $language["testimonials"][2]["position"] ?></span>
                       </div>
                     </div>
                   </div>
@@ -674,178 +574,33 @@
 
     </section><!-- /Testimonials Section -->
 
-    <!-- Services Section 
-    <section id="services" class="services section">
-
-      Section Title 
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <div class="title-shape">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>
-        </div>
-        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p>
-      </div> End Section Title
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center">
-          <div class="col-lg-4 mb-5 mb-lg-0">
-            <h2 class="fw-bold mb-4 servies-title">Consectetur adipiscing elit sed do eiusmod tempor</h2>
-            <p class="mb-4">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh volutpat velit class aptent taciti sociosqu ad litora.</p>
-            <a href="#" class="btn btn-outline-primary">See all services</a>
-          </div>
-          <div class="col-lg-8">
-            <div class="row g-4">
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-item">
-                  <i class="bi bi-activity icon"></i>
-                  <h3><a href="service-details.html">Eget nulla facilisi etiam</a></h3>
-                  <p>Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla.</p>
-                </div>
-              </div>End Service Item 
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="service-item">
-                  <i class="bi bi-easel icon"></i>
-                  <h3><a href="service-details.html">Duis aute irure dolor</a></h3>
-                  <p>Auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor.</p>
-                </div>
-              </div> End Service Item 
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="service-item">
-                  <i class="bi bi-broadcast icon"></i>
-                  <h3><a href="service-details.html">Excepteur sint occaecat</a></h3>
-                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
-                </div>
-              </div> End Service Item
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                <div class="service-item">
-                  <i class="bi bi-bounding-box-circles icon"></i>
-                  <h3><a href="service-details.html">Tempor incididunt ut labore</a></h3>
-                  <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
-                </div>
-              </div>End Service Item
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section> /Services Section 
-
-     Faq Section 
-    <section id="faq" class="faq section">
-
-      Section Title 
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
-        <div class="title-shape">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>
-        </div>
-        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p>
-      </div> End Section Title 
-
-      <div class="container">
-
-        <div class="row justify-content-center">
-
-          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="faq-container">
-
-              <div class="faq-item faq-active">
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>End Faq item
-
-              <div class="faq-item">
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>End Faq item
-
-              <div class="faq-item">
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div> End Faq item
-
-              <div class="faq-item">
-                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>End Faq item
-
-              <div class="faq-item">
-                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
-                <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>End Faq item
-
-              <div class="faq-item">
-                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
-                <div class="faq-content">
-                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>End Faq item
-
-            </div>
-
-          </div>End Faq Column
-
-        </div>
-
-      </div>
-
-    </section>/Faq Section -->
-
+  
     <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
 
-      <div class="container" ><!--data-aos="fade-up" data-aos-delay="100"-->
+      <div class="container" >
 
         <div class="row g-5">
           <div class="col-lg-6">
-            <div class="content" ><!--data-aos="fade-up" data-aos-delay="200"-->
-              <div class="section-category mb-3">Contact</div>
-              <h2 class="display-5 mb-4">Subscribe to Our Newsletter</h2>
-              <p class="lead mb-4">Join our newsletter to receive fresh updates, market insights, and new opportunities.</p>
+            <div class="content" >
+              <div class="section-category mb-3"><?= $language["contact"] ?></div>
+              <h2 class="display-5 mb-4"><?= $language["contact_title"] ?></h2>
+              <p class="lead mb-4"><?= $language["contact_paragraph"] ?></p>
 
               <div class="contact-info mt-5">
-                <!--<div class="info-item d-flex mb-3">
+                <div class="info-item d-flex mb-3">
                   <i class="bi bi-envelope-at me-3"></i>
-                  <span>info@example.com</span>
-                </div>-->
+                  <span><?= $language["contact_email"] ?></span>
+                </div>
 
                 <div class="info-item d-flex mb-3">
                   <i class="bi bi-telephone me-3"></i>
-                  <span>03-5826-7885</span>
+                  <span><?= $language["contact_phone"] ?></span>
                 </div>
 
                 <div class="info-item d-flex mb-4">
                   <i class="bi bi-geo-alt me-3"></i>
-                  <span>Tokyo, Taito Ku, Higashi Ueno <br> 5-24-9
-                  </span>
+                  <span><?= $language["contact_address"] ?></span>
                 </div>
               </div>
             </div>
@@ -879,7 +634,7 @@
                       <div class="error-message"></div>
                       <div class="sent-message">Your message has been sent. Thank you!</div>-->
 
-                      <button type="submit" class="btn btn-submit w-100">Submit</button>
+                      <button type="submit" class="btn btn-submit w-100"><?= $language["contact_submit"]?></button>
                     </div>
 
                   </div>
