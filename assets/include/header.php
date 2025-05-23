@@ -1,5 +1,5 @@
 <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <div class="header-container container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.php" class="logo d-flex align-items-center me-auto me-xl-0">
         <img src="assets/img/icon.png" alt="">
@@ -11,6 +11,8 @@
           <li><a href="index.php" class="item <?= ($currentPage == 'index.php') ? 'active' : '' ?>"><?= $language["header_home"]; ?> </a></li>
           <li><a href="about.php" class="item <?= ($currentPage == 'about.php') ? 'active' : '' ?>"><?= $language["header_about"]; ?> </a></li>
           <li><a href="services.php" class="item <?= ($currentPage == 'services.php') ? 'active' : '' ?>"><?= $language["header_services"]; ?> </a></li>
+          <li><a href="blogs.php" class="item <?= ($currentPage == 'blogs.php') ? 'active' : '' ?>"><?= $language["header_blogs"]; ?> </a></li>
+          <li><a href="recipes.php" class="item <?= ($currentPage == 'recipes.php') ? 'active' : '' ?>"><?= $language["header_recipes"]; ?> </a></li>
           <li><a href="testimonials.php" class="item <?= ($currentPage == 'testimonials.php') ? 'active' : '' ?>"><?= $language["header_testimonials"]; ?> </a></li>
           <li><a href="contact.php" class="item <?= ($currentPage == 'contact.php') ? 'active' : '' ?>"><?= $language["header_contact"]; ?> </a></li>
         </ul>
@@ -35,8 +37,8 @@
 				  </a>
 
           <ul class="drop-down">
-            <li style="border-bottom: 1px solid rgba(190, 190, 190, 0.5);"><a href="http://localhost/ethnicjapan.com/assets/include/switch_lang.php?lang=jp"><span id='flag' class="fi fi-jp" ></span><span id='country'><?= $language["header_jp"]; ?> </span></a></li>
-            <li><a href="http://localhost/ethnicjapan.com/assets/include/switch_lang.php?lang=en"><span id='flag' class="fi fi-us" ></span><span id='country'><?= $language["header_en"]; ?> </span></a></li>
+            <li style="border-bottom: 1px solid rgba(190, 190, 190, 0.5);"><a href="http://ethnicjapan.com/assets/include/switch_lang.php?lang=jp"><span id='flag' class="fi fi-jp" ></span><span id='country'><?= $language["header_jp"]; ?> </span></a></li>
+            <li><a href="http://ethnicjapan.com/assets/include/switch_lang.php?lang=en"><span id='flag' class="fi fi-us" ></span><span id='country'><?= $language["header_en"]; ?> </span></a></li>
           </ul>
         </li>
       </div>

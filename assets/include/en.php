@@ -4,15 +4,19 @@ $language = [];
 $language["header_logo"] = "ETHNIC LTD";
 $language["header_home"] = "Home";
 $language["header_about"] = "About";
-$language["header_testimonials"] = "Testimonials";
 $language["header_services"] = "Services";
+$language["header_blogs"] = "Blogs";
+$language["header_recipes"] = "Recipes";
+$language["header_testimonials"] = "Testimonials";
 $language["header_contact"] = "Contact";
-$language["header_jp"] = "Japanese";
-$language["header_en"] = "English";
+$language["header_jp"] = "日本語 - JA";
+$language["header_en"] = "English - EN";
+
 // hero section
 $language["hero_title"] = "Empowering Sustainable Growth – Globally Connected";
 $language["hero_paragraph"] = "From conscious commerce to innovative services, we connect ideas, people, and industries for a better tomorrow.";
 $language["hero_button"] = "Explore Our Solutions";
+
 // about section
 $language["about_title"] = "About";
 $language["about_sub"] = "Empowering Sustainable Growth Through Creative Strategy and Meaningful Impact.";
@@ -23,6 +27,7 @@ $language["about_mission_title"] = "Mission";
 $language["about_mission_paragraph"] = "Empowering ethical progress through diverse, sustainable business solutions.";
 $language["about_vision_title"] = "Vision";
 $language["about_vision_paragraph"] = "Leading global innovation for impact, growth, and shared success.";
+
 // services section
 $language["services_title"] = "Our Services";
 $language["service_paragraph"] = "Empowering industries with impactful solutions across global business sectors.";
@@ -51,6 +56,7 @@ $language["services"] = [
         "button" => "See All Products"
     ]
 ];
+
 // Featured Super Foods section
 $language["promoting_organic"] = "Promoting Organic Products for a Healthy Life and Wellbeing";
 $language["promoting_organic_paragraph"] = "In the bustling and health-conscious market of Japan, a new business venture is making waves by introducing South American superfoods, known for their exceptional nutritional benefits. This venture is oriented towards organic products, featuring a diverse range of foods that promise to enhance the health and wellbeing of its consumers. The mission is to establish the brand: Ethnic in Japan as synonymous with a healthy life and wellbeing.";
@@ -98,6 +104,7 @@ $language["super_foods"] = [
         "paragraph" => "Maca root is known for its energy-boosting and hormone-balancing properties, while Sacha Inchi is rich in omega-3 fatty acids, protein, and fiber. Both support overall wellness, enhance physical performance, and improve mental clarity.",
     ]
 ];
+
 // promoted oils section
 $language["promoted_oils"] = "Promoted Oils";
 $language["promoted_oils_paragraph"] = "The introduction of South American superfoods into the Japanese market represents a fusion of cultures and a commitment to promoting health and wellness. Ethnic is dedicated to providing high-quality, organic products that support a balanced and vibrant life. As the brand continues to grow, it aspires to become a trusted name in the realm of health and wellbeing, encouraging a deeper connection between nutrition and a healthy lifestyle.";
@@ -193,6 +200,7 @@ $language["contact_phone"] = "03-5826-7885";
 $language["contact_email"] = "sales@ethnicjapan.com";
 $language["contact_address"] = "Tokyo, Taito Ku, <br> Higashi Ueno 5-24-9";
 $language["contact_submit"] = "Submit";
+
 // About Us Page
 $language["about_us_page_title"] = "About Us";
 $language["about_us_page_paragraph"] = "Empowering organic living - globally sourced. From fresh organic produce to sustainable property deals and business consultancy.";
@@ -204,6 +212,7 @@ $language["about_us_page_mission_main"] = "Our mission is to lead with values an
 $language["about_us_page_vision_title"] = "Our Vision";
 $language["about_us_page_vision_paragraph"] = "A Global Ecosystem of Growth and Impact.";
 $language["about_us_page_vision_main"] = "We envision ETHNIC LTD as a globally respected force that transforms industries while staying true to our values. Our vision is to expand our reach across emerging markets, explore new opportunities, and bring together people, ideas, and technologies that shape a better tomorrow. By building an inclusive, future-ready ecosystem, we aim to become the bridge between innovation and implementation — supporting sustainable development and creating long-term value for clients, partners, and society as a whole.";
+
 //Faqs Section
 $language["faqs_title"] = "Frequently Asked Questions";
 $language["faqs"] = [
@@ -243,6 +252,7 @@ $language["faqs"] = [
         "answer" => "Our versatility, ethical values, and deep understanding of both local and global markets set us apart. We combine quality, transparency, and innovation to deliver results you can trust."
     ],
 ];
+
 // service page
 $language["service_page_title"] = "Service Details";
 $language["service_page_details"] = [
@@ -328,13 +338,95 @@ $language["service_page_explore_our_expertise_list"] = [
 $language["service_page_lets_collaborate"] = "Let's Collaborate With Us!";
 $language["service_page_lets_collaborate_paragraph"] = "From an early stage start-up's growth strategies to helping existing businesses, we have done it all! The results speak for themselves. Our services work.";
 $language["service_page_button"] = "Let's Develop Together";
+
+//blog page
+$language["blogs_title"] = "Our Blogs";
+
+//blog detail page
+$language["blog_detail_title"] = "Navigating New Markets with Confidence";
+$language["blog_detail_subtitle"] = "Global Trade";
+$language["blog_detail_paragraph"] = "Our expertise connects businesses with reliable sourcing and export solutions.";
+$language["blogs_you_may_like_title"] = "Blogs You May Like";
+$language["blogs_you_may_like_date1"] = "June 22, 2024";
+$language["blogs_you_may_like_date2"] = "April 28, 2025";
+
+
+//recipe page
+$language["recipes_title"] = "Recipes";
+$language["recipes_subtitle"] = "Explore seasonal, organic recipes made with real ingredients.";
+$language["recipes"] = [
+    [
+        "id" => 1,
+        "title" => "Desserts",
+        "subtitle" => "Chia Seed Pudding",
+        "paragraph" => "Chia Seed Pudding with Berries topped with Agave Syrup, Ideal for Breakfast."
+    ],
+    [
+        "id" => 2,
+        "title" => "Desserts",
+        "subtitle" => "Cacao Nibs Brownie Bites",
+        "paragraph" => "Raw Cacao Bites, a Healthy Take on a Classic Sweet Treat: Brownies."
+    ],
+    [
+        "id" => 3,
+        "title" => "Healthy Snacks",
+        "subtitle" => "Quinoa and Chickpea Salad",
+        "paragraph" => "This Quinoa Chickpea Salad is All About Fresh Ingredients and Vibrant Flavors."
+    ],
+    [
+        "id" => 4,
+        "title" => "Healthy Snacks",
+        "subtitle" => "Peanut & Sesame Brittle",
+        "paragraph" => "Peanut & Sesame Brittle with Jaggery as Sweetener, a Crunchy and Nutty Snack."
+    ],
+];
+
+//recipe detail page
+$language["recipe_detail_ingredient_title"] = "Ingredients";
+$language["recipe_detail_ingredients"] = [
+    "3 tbsp Chia Seeds",
+    "1 cup Almond Milk",
+    "1 tbsp Maple Syrup",
+    "½ tsp Vanilla Extract",
+    "Fresh Berries"
+];
+$language["recipe_detail_instruction_title"] = "Instructions";
+$language["recipe_detail_instructions"] = [
+    "In a bowl, mix chia seeds, almond milk, maple syrup, and vanilla extract.",
+    "Let sit for 10 minutes, stir, then refrigerate for at least 2 hours or overnight.",
+    "Top with berries and agave syrup before serving."
+];
+
+$language["recipe_detail_time"] = [
+    [
+        "id" => 1,
+        "title" => "Prep Time",
+        "info" => "10 mins"
+    ],
+    [
+        "id" => 1,
+        "title" => "Total Time",
+        "info" => "20 mins"
+    ],
+    [
+        "id" => 1,
+        "title" => "Servings",
+        "info" => "2 People"
+    ],
+    [
+        "id" => 1,
+        "title" => "Yield",
+        "info" => "1 Medium Bowl"
+    ]
+];
+
 //contact page
 $language["contact_us"] = "Contact Us";
 $language["contact_cards"] = [
     [
         "id" => 1,
         "title" => "E-mail",
-        "paragraph" => "sales@ethnicltd.com"
+        "paragraph" => "sales@ethnicjapan.com"
     ],
     [
         "id" => 2,

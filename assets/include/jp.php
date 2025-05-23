@@ -6,9 +6,11 @@ $language["header_home"] = "トップページ";
 $language["header_about"] = "当社について";
 $language["header_testimonials"] = "お客様の声";
 $language["header_services"] = "サービス ";
+$language["header_blogs"] = "ブログ";
+$language["header_recipes"] = "レシピ";
 $language["header_contact"] = "お問い合わせ";
-$language["header_jp"] = "日本語 ";
-$language["header_en"] = "英語 ";
+$language["header_jp"] = "日本語 - JA";
+$language["header_en"] = "English - EN";
 // hero section
 $language["hero_title"] = "持続可能な成長の促進";
 $language["hero_paragraph"] = "商取引から革新的なサービスまで、私たちはより良い明日へ向けて、アイデア、人、産業をつなぎます。";
@@ -322,6 +324,88 @@ $language["service_page_explore_our_expertise_list"] = [
 $language["service_page_lets_collaborate"] = "一緒に協力しましょう！";
 $language["service_page_lets_collaborate_paragraph"] = "スタートアップの成長戦略から既存のビジネスの支援まで、私たちはすべて経験しています！その結果は実績が証明しています。私たちのサービスは確実に効果を発揮します。";
 $language["service_page_button"] = "一緒に開発しましょう";
+
+//blog page
+$language["blogs_title"] = "私たちのブログ";
+
+//blog detail page
+$language["blog_detail_title"] = "Navigating New Markets with Confidence";
+$language["blog_detail_subtitle"] = "Global Trade";
+$language["blog_detail_paragraph"] = "Our expertise connects businesses with reliable sourcing and export solutions.";
+$language["blogs_you_may_like_title"] = "Blogs You May Like";
+$language["blogs_you_may_like_date1"] = "June 22, 2024";
+$language["blogs_you_may_like_date2"] = "April 28, 2025";
+
+//recipe page
+$language["recipes_title"] = "レシピ";
+$language["recipes_subtitle"] = "旬の食材とオーガニック素材で作る、体にやさしいレシピをご紹介します。";
+$language["recipes"] = [
+    [
+        "id" => 1,
+        "title" => "デザート",
+        "subtitle" => "チアプディング",
+        "paragraph" => "ベリーとアガベシロップをのせたチアシードプディング。朝食にぴったりの一品です。"
+    ],
+    [
+        "id" => 2,
+        "title" => "デザート",
+        "subtitle" => "カカオニブ入りブラウニーバイト",
+        "paragraph" => "ローカカオバイト。クラシックなおやつ「ブラウニー」をヘルシーにアレンジした一品です。"
+    ],
+    [
+        "id" => 3,
+        "title" => "ヘルシーおやつ",
+        "subtitle" => "キヌアとひよこ豆のサラダ",
+        "paragraph" => "キヌアとひよこ豆のサラダは、新鮮な食材と彩り豊かな風味が魅力の一品です。"
+    ],
+    [
+        "id" => 4,
+        "title" => "ヘルシーおやつ",
+        "subtitle" => "ごまとピーナッツのブリトル",
+        "paragraph" => "ピーナッツとごまのブリトル。素朴な甘さの粗糖を使った、カリッと香ばしいおやつです。"
+    ],
+];
+
+//recipe detail page
+$language["recipe_detail_ingredient_title"] = "Ingredients";
+$language["recipe_detail_ingredients"] = [
+    "3 tbsp Chia Seeds",
+    "1 cup Almond Milk",
+    "1 tbsp Maple Syrup",
+    "½ tsp Vanilla Extract",
+    "Fresh Berries"
+];
+$language["recipe_detail_instruction_title"] = "Instructions";
+$language["recipe_detail_instructions"] = [
+    "In a bowl, mix chia seeds, almond milk, maple syrup, and vanilla extract.",
+    "Let sit for 10 minutes, stir, then refrigerate for at least 2 hours or overnight.",
+    "Top with berries and agave syrup before serving."
+];
+
+$language["recipe_detail_time"] = [
+    [
+        "id" => 1,
+        "title" => "Prep Time",
+        "info" => "10 mins"
+    ],
+    [
+        "id" => 1,
+        "title" => "Total Time",
+        "info" => "20 mins"
+    ],
+    [
+        "id" => 1,
+        "title" => "Servings",
+        "info" => "2 People"
+    ],
+    [
+        "id" => 1,
+        "title" => "Yield",
+        "info" => "1 Medium Bowl"
+    ]
+];
+
+
 //contact page
 $language["contact_us"] = "お問い合わせ";
 $language["contact_cards"] = [
