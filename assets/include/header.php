@@ -14,12 +14,12 @@
           <li><a href="blogs.php" class="item <?= ($currentPage == 'blogs.php') ? 'active' : '' ?>"><?= $language["header_blogs"]; ?> </a></li>
           <li><a href="recipes.php" class="item <?= ($currentPage == 'recipes.php') ? 'active' : '' ?>"><?= $language["header_recipes"]; ?> </a></li>
           <li><a href="testimonials.php" class="item <?= ($currentPage == 'testimonials.php') ? 'active' : '' ?>"><?= $language["header_testimonials"]; ?> </a></li>
-          <li><a href="contact.php" class="item <?= ($currentPage == 'contact.php') ? 'active' : '' ?>"><?= $language["header_contact"]; ?> </a></li>
+          <li><a href="contact.php" class="item <?= ($currentPage == 'contact.php') ? 'active' : '' ?> btn btn-outline"><?= $language["header_contact"]; ?> </a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <div class="lang d-flex ">
+      <div class="lang d-none d-xxl-flex ">
         <div class="header-social-links">
           <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
           <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>

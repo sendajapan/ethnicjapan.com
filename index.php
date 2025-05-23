@@ -25,6 +25,60 @@ include(__DIR__ . "/assets/include/$lang.php");
 
   <main class="main">
 
+
+      <section id="hero-slider" class="hero-slider">
+
+
+              <div class="testimonials-slider swiper init-swiper">
+                  <script type="application/json" class="swiper-config">
+                      {
+                          "slidesPerView": 1,
+                          "loop": true,
+                          "speed": 1000,
+                          "autoplay": {
+                              "delay": 5000
+                          }
+                      }
+                  </script>
+
+                  <div class="swiper-wrapper">
+
+                      <div class="swiper-slide">
+                          <img src="assets/img/slider/62f25f200ccd6qrrbi6.webp" class="img-fluid w-100" alt="">
+                      </div><!-- End Slide Item -->
+                      <div class="swiper-slide">
+                          <img src="assets/img/slider/64be666e8d681t6kzgp.webp" class="img-fluid w-100" alt="">
+                      </div><!-- End Slide Item -->
+                      <div class="swiper-slide">
+                          <img src="assets/img/slider/64d12be1d03a5uaijpj.webp" class="img-fluid w-100" alt="">
+                      </div><!-- End Slide Item -->
+                      <div class="swiper-slide">
+                          <img src="assets/img/slider/64f760c567462cfcruq.webp" class="img-fluid w-100" alt="">
+                      </div><!-- End Slide Item -->
+                      <div class="swiper-slide">
+                          <img src="assets/img/slider/64f7611d6ad008t4t6d.webp" class="img-fluid w-100" alt="">
+                      </div><!-- End Slide Item -->
+                      <div class="swiper-slide">
+                          <img src="assets/img/slider/6310fbfdb4f56guzvzp.webp" class="img-fluid w-100" alt="">
+                      </div><!-- End Slide Item -->
+
+
+                  </div>
+              </div>
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
@@ -163,21 +217,21 @@ include(__DIR__ . "/assets/include/$lang.php");
         <h2 style="font-size: 35px"><?= $language["promoting_organic"]; ?></h2>
       </div><!-- End Section Title -->
 
-      <p class="lead mb-4"><?= $language["promoting_organic_paragraph"]; ?></p>
 
-      <div class="page-title"  id="products">
-        <div class="title-wrapper">
-          <h1><?= $language["featured_super_foods"]; ?></h1>
-        </div>
-      </div><!-- End Page Title -->
+
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-      
+
+          <p class="mb-4"><?= $language["promoting_organic_paragraph"]; ?></p>
+
+          <div class="page-title"  id="products">
+                  <h1><?= $language["featured_super_foods"]; ?></h1>
+          </div>
         <div class="row mt-3 skills-animation justify-content-md-center align-items-stretch">
       
-          <div class="col-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="assets/img/services/chia.webp" alt="">
+              <img src="assets/img/categories/chia.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4><?= $language["super_foods"][0]["title"] ?></h4>
                 <p><?= $language["super_foods"][0]["paragraph"] ?></p>
@@ -185,9 +239,9 @@ include(__DIR__ . "/assets/include/$lang.php");
             </div>
           </div>
       
-          <div class="col-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="skill-box d-flex h-100">
-              <img src="assets/img/services/hemp.png" alt="">
+              <img src="assets/img/categories/hemp.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4><?= $language["super_foods"][1]["title"] ?></h4>
                 <p><?= $language["super_foods"][1]["paragraph"] ?></p>
@@ -198,10 +252,10 @@ include(__DIR__ . "/assets/include/$lang.php");
         </div>
 
         <div class="row mt-3 skills-animation justify-content-md-center align-items-stretch">
-      
-          <div class="col-6" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="assets/img/services/cocoa.webp" alt="">
+              <img src="assets/img/categories/cocoa.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4><?= $language["super_foods"][2]["title"] ?></h4>
                 <p><?= $language["super_foods"][2]["paragraph"] ?></p>
@@ -209,9 +263,9 @@ include(__DIR__ . "/assets/include/$lang.php");
             </div>
           </div>
 
-          <div class="col-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="assets/img/services/quinoa.webp" alt="">
+              <img src="assets/img/categories/quinoa.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4><?= $language["super_foods"][3]["title"] ?></h4>
                 <p><?= $language["super_foods"][3]["paragraph"] ?></p>
@@ -222,20 +276,20 @@ include(__DIR__ . "/assets/include/$lang.php");
         </div>
       
         <div class="row skills-animation justify-content-md-center mt-3 align-items-stretch">
-      
-          <div class="col-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="assets/img/services/adzuki.webp" alt="">
+              <img src="assets/img/categories/adzuki.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4><?= $language["super_foods"][4]["title"] ?></h4>
                 <p><?= $language["super_foods"][4]["paragraph"] ?></p>
               </div>
             </div>
           </div>
-      
-          <div class="col-6" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="assets/img/services/amaranth2.png" alt="">
+              <img src="assets/img/categories/amaranth2.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4><?= $language["super_foods"][5]["title"] ?></h4>
                 <p> <?= $language["super_foods"][5]["paragraph"] ?></p>
@@ -246,10 +300,10 @@ include(__DIR__ . "/assets/include/$lang.php");
         </div>
 
         <div class="row mt-3 skills-animation justify-content-md-center align-items-stretch">
-      
-          <div class="col-6" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="assets/img/services/sesame.webp" alt="">
+              <img src="assets/img/categories/sesame.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4><?= $language["super_foods"][6]["title"] ?></h4> 
                 <p><?= $language["super_foods"][6]["paragraph"] ?></p>
@@ -257,9 +311,9 @@ include(__DIR__ . "/assets/include/$lang.php");
             </div>
           </div>
 
-          <div class="col-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="assets/img/services/sacha.png" alt="">
+              <img src="assets/img/categories/sacha.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4><?= $language["super_foods"][7]["title"] ?></h4> 
                 <p><?= $language["super_foods"][7]["paragraph"] ?></p>
@@ -276,43 +330,48 @@ include(__DIR__ . "/assets/include/$lang.php");
     <!-- Service Intro -->
     <section id="skills" class="skills section">
       
-      <!-- Page Title -->
-      <div class="page-title">
-        <div class="title-wrapper">
-          <h1><?= $language["promoted_oils"] ?></h1>
-          <p class="lead mb-4 mt-5"><?= $language["promoted_oils_paragraph"] ?></p>
-        </div>
-      </div><!-- End Page Title -->
+
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
+          <!-- Page Title -->
+          <div class="page-title">
+                  <h1><?= $language["promoted_oils"] ?></h1>
+                  <p class="mb-4 mt-5"><?= $language["promoted_oils_paragraph"] ?></p>
+          </div><!-- End Page Title -->
         <div class="row skills-animation justify-content-md-center align-items-stretch">
 
-          <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="skill-box d-flex h-100">
-              <img src="assets/img/services/chia-oil.webp" alt="">
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="skill-box-header">
+              <h4><?= $language["promoted_oils_list"][0]["title"] ?></h4>
+              </div>
+
+            <div class="skill-box d-flex h-90">
+              <img src="assets/img/categories/chia-oil.webp" alt="">
               <div class="info-right d-block text-start">
-                <h4><?= $language["promoted_oils_list"][0]["title"] ?></h4>
                 <p><?= $language["promoted_oils_list"][0]["paragraph"] ?></p>
               </div>
             </div>
           </div>
 
-          <div class="col-6 col-md-4 " data-aos="fade-up" data-aos-delay="200">
-            <div class="skill-box d-flex h-100">
-              <img src="assets/img/services/olive-oil.webp" alt="">
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-box-header">
+                    <h4><?= $language["promoted_oils_list"][1]["title"] ?></h4>
+                </div>
+            <div class="skill-box d-flex h-90">
+              <img src="assets/img/categories/olive-oil.webp" alt="">
               <div class="info-right d-block text-start">
-                <h4><?= $language["promoted_oils_list"][1]["title"] ?></h4>
                 <p><?= $language["promoted_oils_list"][1]["paragraph"] ?></p>
               </div>
             </div>
           </div>
 
-          <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="skill-box d-flex h-100">
-              <img src="assets/img/services/sacha-oil.jpg" alt="">
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-box-header">
+                    <h4><?= $language["promoted_oils_list"][2]["title"] ?></h4>
+                </div>
+            <div class="skill-box d-flex h-90">
+              <img src="assets/img/categories/sacha-oil.webp" alt="">
               <div class="info-right d-block text-start">
-                <h4><?= $language["promoted_oils_list"][2]["title"] ?></h4>
                 <p><?= $language["promoted_oils_list"][2]["paragraph"] ?></p>
               </div>
             </div>
@@ -463,6 +522,8 @@ include(__DIR__ . "/assets/include/$lang.php");
 
     </section><!-- /Portfolio Section -->
 
+      <?php /*
+
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section light-background">
 
@@ -567,12 +628,12 @@ include(__DIR__ . "/assets/include/$lang.php");
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-
         </div>
-
       </div>
-
     </section><!-- /Testimonials Section -->
+
+      */ ?>
+
 
   
     <!-- Contact Section -->

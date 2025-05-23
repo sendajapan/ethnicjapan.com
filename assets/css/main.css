@@ -12,9 +12,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Questrial",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Questrial",  sans-serif;
-  --nav-font: "Noto Sans",  sans-serif;
+  --nav-font: "Questrial",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -22,15 +22,16 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #0a0f14; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #0f2943; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #4682B4; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --accent-color: #B66A50; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #f0ece0;
+  /*--surface-color: #ffffff;*/ /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #0a0f14;  /* The default color of the main navmenu links */
-  --nav-hover-color: #4682B4; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #B66A50; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #0a0f14; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -40,8 +41,10 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #faf9fb;
+  /* --background-color: #faf9fb; */
+  --background-color: #f8f5ed;
   --surface-color: #ffffff;
+
 }
 
 .dark-background {
@@ -145,7 +148,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: var(--background-color);
+  /*background-color: var(--background-color);*/
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -318,10 +321,11 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-    padding: 18px 18px;
-    font-size: 16px;
+    padding: 8px 20px;
+    margin:10px;
+    font-size: 20px;
     font-family: var(--nav-font);
-    font-weight: 400;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -338,7 +342,7 @@ h6 {
   }
 
   .navmenu li:last-child a {
-    padding-right: 0;
+    /* padding-right: 0; */
   }
 
   .navmenu li:hover>a,
@@ -536,7 +540,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: var(--surface-color);
   font-size: 14px;
   padding: 40px 0;
   position: relative;
@@ -562,7 +566,7 @@ h6 {
   font-size: 16px;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   margin: 0 5px;
-  transition: 0.3s;
+  /*transition: 0.3s;*/
 }
 
 .footer .social-links a:hover {
@@ -727,7 +731,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   position: relative;
 }
 
@@ -859,6 +863,18 @@ section,
 
 .contact .cta-buttons .btn.btn-outline:hover,
 .hero .cta-buttons .btn.btn-outline:hover {
+  background-color: transparent;
+  color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.btn.btn-outline {
+  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+  color: var(--contrast-color);
+  background: var(--accent-color);
+}
+
+.btn.btn-outline:hover {
   background-color: transparent;
   color: var(--accent-color);
   transform: translateY(-2px);
@@ -1068,20 +1084,29 @@ section,
 # Skills Section
 --------------------------------------------------------------*/
 
+.skills .skill-box-header {
+  background-color: var(--surface-color);
+  padding: 0.8rem 1.8rem 0.8rem 0.8rem;
+  border-radius: 8px 8px 0px 0px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.079);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .skills .skill-box {
   background-color: var(--surface-color);
-  padding: 0.8rem;
-  border-radius: 8px;
+  padding: 0.8rem 1.8rem 0.8rem 0.8rem;
+  border-radius: 0px 0px 8px 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.079);
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.skills .skill-box h4{
+.skills .skill-box-header h4{
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 .skills .skill-box i{
@@ -1091,7 +1116,7 @@ section,
 }
 
 .skills .skill-box img{
-  width: 8rem;
+  width: 13rem;
   padding-right: 1rem;
 }
 
@@ -1109,6 +1134,7 @@ section,
   font-size: 0.9rem;
   margin-bottom: 0.4rem;
   opacity: 0.6;
+  text-align: justify;
 }
 
 .skills .skill-box .progress {
@@ -2107,6 +2133,13 @@ section,
   margin: 0;
   font-size: 14px;
 }
+
+.hero-slider{
+  padding: 0 !important;
+  margin-top:-130px;
+  margin-bottom: 60px;
+}
+
 
 @media (max-width: 991px) {
 
