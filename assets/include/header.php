@@ -1,5 +1,5 @@
 <?php
-$basePath = "/ethnicjapan.com/";
+$basePath = "/";
 ?>
 <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="header-container container-fluid position-relative d-flex align-items-center justify-content-between">
