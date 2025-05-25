@@ -227,54 +227,59 @@
 
 
 
-<!-- Service Intro -->
-<section id="skills" class="skills section">
+<!-- Oils Section -->
+    <section id="skills" class="skills section">
+      
 
-<!-- Page Title -->
-<div class="page-title">
-  <div class="title-wrapper">
-    <h1><?= $language["promoted_oils"] ?></h1>
-    <p class="lead mb-4 mt-5"><?= $language["promoted_oils_paragraph"] ?></p>
-  </div>
-</div><!-- End Page Title -->
 
-<div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <!-- Page Title -->
+          <div class="page-title">
+                  <h1><?= $language["promoted_oils"] ?></h1>
+                  <p class="mb-4 mt-5"><?= $language["promoted_oils_paragraph"] ?></p>
+          </div><!-- End Page Title -->
+        <div class="row skills-animation justify-content-md-center align-items-stretch">
 
-  <div class="row skills-animation justify-content-md-center align-items-stretch">
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="skill-box-header">
+              <h4><?= $language["promoted_oils_list"][0]["title"] ?></h4>
+              </div>
 
-    <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="100">
-      <div class="skill-box d-flex h-100">
-        <img src="assets/img/services/chia-oil.webp" alt="">
-        <div class="info-right d-block text-start">
-          <h4><?= $language["promoted_oils_list"][0]["title"] ?></h4>
-          <p><?= $language["promoted_oils_list"][0]["paragraph"] ?></p>
+            <div class="skill-box d-flex h-90">
+              <img src="assets/img/categories/chia-oil.webp" alt="">
+              <div class="info-right d-block text-start">
+                <p><?= $language["promoted_oils_list"][0]["paragraph"] ?></p>
+              </div>
+            </div>
+          </div>
+
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-box-header">
+                    <h4><?= $language["promoted_oils_list"][1]["title"] ?></h4>
+                </div>
+            <div class="skill-box d-flex h-90">
+              <img src="assets/img/categories/olive-oil.webp" alt="">
+              <div class="info-right d-block text-start">
+                <p><?= $language["promoted_oils_list"][1]["paragraph"] ?></p>
+              </div>
+            </div>
+          </div>
+
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-box-header">
+                    <h4><?= $language["promoted_oils_list"][2]["title"] ?></h4>
+                </div>
+            <div class="skill-box d-flex h-90">
+              <img src="assets/img/categories/sacha-oil.webp" alt="">
+              <div class="info-right d-block text-start">
+                <p><?= $language["promoted_oils_list"][2]["paragraph"] ?></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-6 col-md-4 " data-aos="fade-up" data-aos-delay="200">
-      <div class="skill-box d-flex h-100">
-        <img src="assets/img/services/olive-oil.webp" alt="">
-        <div class="info-right d-block text-start">
-          <h4><?= $language["promoted_oils_list"][1]["title"] ?></h4>
-          <p><?= $language["promoted_oils_list"][1]["paragraph"] ?></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="300">
-      <div class="skill-box d-flex h-100">
-        <img src="assets/img/services/sacha-oil.jpg" alt="">
-        <div class="info-right d-block text-start">
-          <h4><?= $language["promoted_oils_list"][2]["title"] ?></h4>
-          <p><?= $language["promoted_oils_list"][2]["paragraph"] ?></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-</section>
+    </section>
 
 
 <!-- Ethnic Section -->

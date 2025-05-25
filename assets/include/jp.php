@@ -5,7 +5,7 @@ $language["header_logo"] = "ETHNIC LTD";
 $language["header_home"] = "トップページ";
 $language["header_about"] = "当社について";
 $language["header_testimonials"] = "お客様の声";
-$language["header_services"] = "サービス ";
+$language["header_products"] = "製品 ";
 $language["header_blogs"] = "ブログ";
 $language["header_recipes"] = "レシピ";
 $language["header_contact"] = "お問い合わせ";
@@ -27,10 +27,10 @@ $language["about_mission_title"] = "ミッション";
 $language["about_mission_paragraph"] = "多様で持続可能なビジネスソリューションを通じて、倫理的な進歩を実現する";
 $language["about_vision_title"] = "ビジョン";
 $language["about_vision_paragraph"] = "インパクト、成長、そして共に分かち合う成功のために、世界規模のイノベーションを牽引する。";
-// services section
-$language["services_title"] = "サービス詳細";
-$language["service_paragraph"] = "世界のさまざまなビジネス分野において、産業に力を与えるインパクトのあるソリューションを提供する。";
-$language["services"] = [
+// products section
+$language["products_title"] = "当社の製品";
+$language["products_paragraph"] = "世界のさまざまなビジネス分野において、産業に力を与えるインパクトのあるソリューションを提供する。";
+$language["products"] = [
     [
         "id" => 1,
         "title" => "オーガニックプロダクツ",
@@ -39,15 +39,15 @@ $language["services"] = [
     ],
     [
         "id" => 2,
-        "title" => "不動産と投資",
-        "paragraph" => "信頼できる不動産投資を通じて、世界中の人々をつなぐ。",
-        "button" => "物件を探す"
+        "title" => "スーパーフード",
+        "paragraph" => "健康的な生活と幸福のためにオーガニック製品を宣伝します。",
+        "button" => "製品を閲覧する"
     ],
     [
         "id" => 3,
-        "title" => "ビジネスコンサルティング",
-        "paragraph" => "戦略的な洞察力と成長を活かし、ブランドを世界的な方向へと導く",
-        "button" => "ビジネス相談をする"
+        "title" => "プロモーションオイル",
+        "paragraph" => "文化の融合と健康とウェルネスの促進への取り組みを表します。",
+        "button" => "プロモーションオイルをチェック"
     ],
     [
         "id" => 4,
@@ -244,9 +244,9 @@ $language["faqs"] = [
         "answer" => "私たちの強みは、柔軟性、倫理的価値観、そして国内外の市場に対する深い理解、豊富な知識です。品質、透明性、そしてイノベーションを組み合わせることで、信頼できる結果を提供します。"
     ],
 ];
-// service page
-$language["service_page_title"] = "サービス内容";
-$language["service_page_details"] = [
+// products page
+$language["product_page_title"] = "サービス内容";
+$language["product_page_details"] = [
     [
         "title" => "経験と専門知識",
         "paragraph" => "業界で培った長年の知識と経験が、すべてのプロジェクトを成功に導きます。"
@@ -272,10 +272,10 @@ $language["service_page_details"] = [
         "paragraph" => "透明性、信頼、そして倫理的なビジネス価値に基づいて構築されています。"
     ]
 ];
-$language["service_page_why_choose_us"] = "なぜ私たちを選ぶべきか";
-$language["service_page_why_choose_us_paragraph"] = "多様なポートフォリオと卓越性への情熱を持つETHNIC LTDは、業界を越えて信頼されるパートナーとして確立されています。戦略的なビジネスコンサルティング、不動産ソリューション、高品質な製品調達において、私たちの専門知識、経験を活用し、全力で全てのステップをサポートします。お客様第一のアプローチ、グローバルな視野、そして倫理的な基盤に支えられ、私たちは長期的な成功を実現するための理想的な選択肢です。";
-$language["service_page_strengths"] = "当社の強み";
-$language["service_page_why_choose_us_list"] = [
+$language["product_page_why_choose_us"] = "なぜ私たちを選ぶべきか";
+$language["product_page_why_choose_us_paragraph"] = "多様なポートフォリオと卓越性への情熱を持つETHNIC LTDは、業界を越えて信頼されるパートナーとして確立されています。戦略的なビジネスコンサルティング、不動産ソリューション、高品質な製品調達において、私たちの専門知識、経験を活用し、全力で全てのステップをサポートします。お客様第一のアプローチ、グローバルな視野、そして倫理的な基盤に支えられ、私たちは長期的な成功を実現するための理想的な選択肢です。";
+$language["product_page_strengths"] = "当社の強み";
+$language["product_page_why_choose_us_list"] = [
     "多業界にわたる経験とグローバル市場に関する洞察",
     "お客様のビジネス目標に基づいたカスタマイズ戦略",
     "透明性、倫理的価値観、責任を持ったビジネス",
@@ -285,11 +285,11 @@ $language["service_page_why_choose_us_list"] = [
     "業界特化の専門家による専任チーム",
     "持続可能な成長を重視した未来志向のマインドセット"
 ];
-$language["service_page_explore_our_expertise"] = "私たちの専門性";
-$language["service_page_explore_our_expertise_title"] = "あなたの成長を支えるサービス";
-$language["service_page_explore_our_expertise_paragraph"] = "あなたの成長のためのサービス";
-$language["service_page_explore_our_expertise_paragraph"] = "私たちは、卓越した成長を実現するために最高のサービスを提供します。";
-$language["service_page_explore_our_expertise_list"] = [
+$language["product_page_explore_our_expertise"] = "私たちの専門性";
+$language["product_page_explore_our_expertise_title"] = "あなたの成長を支えるサービス";
+$language["product_page_explore_our_expertise_paragraph"] = "あなたの成長のためのサービス";
+$language["product_page_explore_our_expertise_paragraph"] = "私たちは、卓越した成長を実現するために最高のサービスを提供します。";
+$language["product_page_explore_our_expertise_list"] = [
     [
         "id" => 1,
         "title" => "オーガニック＆エコフレンドリー製品",
@@ -321,9 +321,9 @@ $language["service_page_explore_our_expertise_list"] = [
         "paragraph" => "デジタルツールと革新的な技術ソリューションでイノベーションを推進します。"
     ],
 ];
-$language["service_page_lets_collaborate"] = "一緒に協力しましょう！";
-$language["service_page_lets_collaborate_paragraph"] = "スタートアップの成長戦略から既存のビジネスの支援まで、私たちはすべて経験しています！その結果は実績が証明しています。私たちのサービスは確実に効果を発揮します。";
-$language["service_page_button"] = "一緒に開発しましょう";
+$language["product_page_lets_collaborate"] = "一緒に協力しましょう！";
+$language["product_page_lets_collaborate_paragraph"] = "スタートアップの成長戦略から既存のビジネスの支援まで、私たちはすべて経験しています！その結果は実績が証明しています。私たちのサービスは確実に効果を発揮します。";
+$language["product_page_button"] = "一緒に開発しましょう";
 
 //blog page
 $language["blogs_title"] = "私たちのブログ";

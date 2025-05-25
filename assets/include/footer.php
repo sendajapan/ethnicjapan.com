@@ -1,9 +1,12 @@
+<?php
+$basePath = "/ethnicjapan.com/";
+?>
 <footer id="footer" class="footer">
 
     <div class="container" style="display: flex; justify-content: center; align-items: center;">
 
         <div class="logo-foot" style="display: flex; justify-content: right;">
-            <img src="assets/img/logo.png" alt="" style="width: 12rem;">
+            <img src="<?php echo $basePath; ?>assets/img/logo.png" alt="" style="width: 12rem;">
         </div>
 
         <div class="links" style="padding-left:2rem;">

@@ -89,14 +89,14 @@ include(__DIR__ . "/assets/include/$lang.php");
             <h2><?= $language["hero_title"]; ?></h2>
             <p class="lead"><?= $language["hero_paragraph"]; ?></p>
             <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-              <a href="services.php" class="btn btn-outline"><?= $language["hero_button"]; ?></a>
+              <a href="products.php" class="btn btn-outline"><?= $language["hero_button"]; ?></a>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="hero-image">
               <img src="assets/img/portfolio/org.jpg" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300" style="position:absolute; bottom:30px; left:10px; z-index: 0; width: 20rem;">
-              <img src="assets/img/portfolio/houses.webp" alt="" style="position:absolute; bottom:0px; left:300px; z-index: 1; width: 12rem;">
-              <img src="assets/img/portfolio/business1.webp" alt="" style="position:absolute; top:0px; left:110px; z-index: 2; width: 18rem;">
+              <img src="assets/img/portfolio/olive-oil.webp" alt="" style="position:absolute; bottom:0px; left:300px; z-index: 1; width: 12rem;">
+              <img src="assets/img/portfolio/Chia_hero.jpg" alt="" style="position:absolute; top:0px; left:110px; z-index: 2; width: 18rem;">
             </div>
           </div>
         </div>
@@ -161,8 +161,8 @@ include(__DIR__ . "/assets/include/$lang.php");
     <section id="skills" class="skills section">
 
       <div class="container section-title" data-aos="fade-up">
-        <h2><?= $language["services_title"]; ?></h2>
-        <p><?= $language["service_paragraph"]; ?></p>
+        <h2><?= $language["products_title"]; ?></h2>
+        <p><?= $language["products_paragraph"]; ?></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -172,34 +172,34 @@ include(__DIR__ . "/assets/include/$lang.php");
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box h-100">
               <img src="assets/img/services/services1.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
-              <h3><?= $language["services"][0]["title"] ?></h3>
-              <p><?= $language["services"][0]["paragraph"] ?></p>
-              <a href="#products"><button class="buttons"><?= $language["services"][0]["button"] ?></button></a>
+              <h3><?= $language["products"][0]["title"] ?></h3>
+              <p><?= $language["products"][0]["paragraph"] ?></p>
+              <a href="#products"><button class="buttons"><?= $language["products"][0]["button"] ?></button></a>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
             <div class="skill-box h-100">
-              <img src="assets/img/services/seeds.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
-              <h3><?= $language["services"][1]["title"] ?></h3>
-              <p><?= $language["services"][1]["paragraph"] ?></p>
-              <a href="services.php"><button class="buttons"><?= $language["services"][1]["button"] ?></button></a>
+              <img src="assets/img/services/sacha-inchi.webp" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
+              <h3><?= $language["products"][1]["title"] ?></h3>
+              <p><?= $language["products"][1]["paragraph"] ?></p>
+              <a href="products.php"><button class="buttons"><?= $language["products"][1]["button"] ?></button></a>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
             <div class="skill-box h-100">
-              <img src="assets/img/services/meeting.webp" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
-              <h3><?= $language["services"][2]["title"] ?></h3>
-              <p><?= $language["services"][2]["paragraph"] ?></p>
-              <a href="services.php"><button class="buttons"><?= $language["services"][2]["button"] ?></button></a>
+              <img src="assets/img/services/12_Chia-Seed-Oil.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
+              <h3><?= $language["products"][2]["title"] ?></h3>
+              <p><?= $language["products"][2]["paragraph"] ?></p>
+              <a href="products.php"><button class="buttons"><?= $language["products"][2]["button"] ?></button></a>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <div class="skill-box h-100" style="background-image: url('assets/img/services/organic.jpg'); background-size: contain; background-color: rgba(255,255,255,0.6); background-blend-mode: lighten; align-items: center; border-radius: 8px; padding: 150px 0;">
-                <h3><?= $language["services"][3]["title"] ?></h3>
-                <a href="services.php"><button class="buttons"><?= $language["services"][3]["button"] ?></button></a>
+            <div class="skill-box h-100" style="background-image: url('assets/img/services/org.jpg'); background-size: cover; background-color: rgba(255, 255, 255, 0.71); background-blend-mode: lighten; align-items: center; border-radius: 8px; padding: 150px 0;">
+                <h3><?= $language["products"][3]["title"] ?></h3>
+                <a href="products.php"><button class="buttons"><?= $language["products"][3]["button"] ?></button></a>
             </div>
           </div>
 
@@ -211,7 +211,7 @@ include(__DIR__ . "/assets/include/$lang.php");
 
 
     <!-- Products Section -->
-    <section id="skills" class="skills section light-background">
+    <section id="products" class="skills section light-background">
 
       <div class="container section-title" data-aos="fade-up">
         <h2 style="font-size: 35px"><?= $language["promoting_organic"]; ?></h2>
@@ -327,7 +327,7 @@ include(__DIR__ . "/assets/include/$lang.php");
 
     
 
-    <!-- Service Intro -->
+    <!-- Oils Section -->
     <section id="skills" class="skills section">
       
 
@@ -415,7 +415,7 @@ include(__DIR__ . "/assets/include/$lang.php");
         <div class="row align-items-center">
           <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
             <div class="about-image">
-              <img src="assets/img//services/farmers.jpg" alt="Profile Image" class="img-fluid rounded-4">
+              <img src="assets/img/services/farmers.jpg" alt="Profile Image" class="img-fluid rounded-4">
             </div>
           </div>
         
@@ -493,7 +493,7 @@ include(__DIR__ . "/assets/include/$lang.php");
             <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
               <div class="portfolio-card h-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/portfolio/business.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="assets/img/portfolio/Quinoa-11.jpg" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category"><?= $language["insights_that_list"][2]["title"] ?></span>

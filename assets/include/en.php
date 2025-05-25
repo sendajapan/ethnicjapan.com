@@ -4,7 +4,7 @@ $language = [];
 $language["header_logo"] = "ETHNIC LTD";
 $language["header_home"] = "Home";
 $language["header_about"] = "About";
-$language["header_services"] = "Services";
+$language["header_products"] = "Products";
 $language["header_blogs"] = "Blogs";
 $language["header_recipes"] = "Recipes";
 $language["header_testimonials"] = "Testimonials";
@@ -29,26 +29,26 @@ $language["about_vision_title"] = "Vision";
 $language["about_vision_paragraph"] = "Leading global innovation for impact, growth, and shared success.";
 
 // services section
-$language["services_title"] = "Our Services";
-$language["service_paragraph"] = "Empowering industries with impactful solutions across global business sectors.";
-$language["services"] = [
+$language["products_paragraph"] = "Empowering industries with impactful solutions across global business sectors.";
+$language["products_title"] = "Our Products";
+$language["products"] = [
     [
         "id" => 1,
-        "title" => "Organic <br> Products",
+        "title" => "Organic Products",
         "paragraph" => "Supplying premium, sustainable goods for a conscious global market.",
         "button" => "View Product Range"
     ],
     [
         "id" => 2,
-        "title" => "Real Estate & <br> Investment",
-        "paragraph" => "Connecting people with trusted investments in real estate worldwide.",
-        "button" => "Browse Properties"
+        "title" => "Super Foods",
+        "paragraph" => "Promoting Organic Products for a Healthy Life and Wellbeing. <br>",
+        "button" => "Browse Products"
     ],
     [
         "id" => 3,
-        "title" => "Business <br> Consultancy",
-        "paragraph" => "Guiding brands with strategic insights, growth, and global direction.",
-        "button" => "Get Business Advice"
+        "title" => "Promoted Oils",
+        "paragraph" => "Represents a Fusion of Cultures and a Commitment to Promoting Health and Wellness.",
+        "button" => "Check Promoted Oils"
     ],
     [
         "id" => 4,
@@ -253,9 +253,9 @@ $language["faqs"] = [
     ],
 ];
 
-// service page
-$language["service_page_title"] = "Service Details";
-$language["service_page_details"] = [
+// product page
+$language["product_page_title"] = "Product Details";
+$language["product_page_details"] = [
     [
         "id" => 1,
         "title" => "Experience & Expertise",
@@ -287,10 +287,10 @@ $language["service_page_details"] = [
         "paragraph" => "Built on transparency, trust, and ethical business values."
     ]
 ];
-$language["service_page_why_choose_us"] = "Why Choose Us";
-$language["service_page_why_choose_us_paragraph"] = "With a diverse portfolio and a passion for excellence, ETHNIC LTD stands as a trusted partner across industries. Whether it’s strategic business consulting, real estate solutions, or high-quality product sourcing — we bring expertise, innovation, and dedication to every step. Our client-first approach, global outlook, and ethical foundation make us the ideal choice for long-term success.";
-$language["service_page_strengths"] = "Our Key Strengths:";
-$language["service_page_why_choose_us_list"] = [
+$language["product_page_why_choose_us"] = "Why Choose Us";
+$language["product_page_why_choose_us_paragraph"] = "With a diverse portfolio and a passion for excellence, ETHNIC LTD stands as a trusted partner across industries. Whether it’s strategic business consulting, real estate solutions, or high-quality product sourcing — we bring expertise, innovation, and dedication to every step. Our client-first approach, global outlook, and ethical foundation make us the ideal choice for long-term success.";
+$language["product_page_strengths"] = "Our Key Strengths:";
+$language["product_page_why_choose_us_list"] = [
     "Multi-industry experience with global market insights",
     "Customized strategies built around your business goals",
     "Transparent, ethical, and accountable business practices",
@@ -300,10 +300,10 @@ $language["service_page_why_choose_us_list"] = [
     "Dedicated team of industry-specific professionals",
     "Future-ready mindset with sustainable growth in focus"
 ];
-$language["service_page_explore_our_expertise"] = "Explore Our Expertise";
-$language["service_page_explore_our_expertise_title"] = "Service For your Development";
-$language["service_page_explore_our_expertise_paragraph"] = "We provide the best services, ensuring your outstanding growth";
-$language["service_page_explore_our_expertise_list"] = [
+$language["product_page_explore_our_expertise"] = "Explore Our Expertise";
+$language["product_page_explore_our_expertise_title"] = "Service For your Development";
+$language["product_page_explore_our_expertise_paragraph"] = "We provide the best services, ensuring your outstanding growth";
+$language["product_page_explore_our_expertise_list"] = [
     [
          "id" => 1,
         "title" => "Organic & Eco-Friendly Products",
@@ -335,9 +335,9 @@ $language["service_page_explore_our_expertise_list"] = [
         "paragraph" => "Driving innovation with digital tools and transformative tech solutions."
     ],
 ];
-$language["service_page_lets_collaborate"] = "Let's Collaborate With Us!";
-$language["service_page_lets_collaborate_paragraph"] = "From an early stage start-up's growth strategies to helping existing businesses, we have done it all! The results speak for themselves. Our services work.";
-$language["service_page_button"] = "Let's Develop Together";
+$language["product_page_lets_collaborate"] = "Let's Collaborate With Us!";
+$language["product_page_lets_collaborate_paragraph"] = "From an early stage start-up's growth strategies to helping existing businesses, we have done it all! The results speak for themselves. Our services work.";
+$language["product_page_button"] = "Let's Develop Together";
 
 //blog page
 $language["blogs_title"] = "Our Blogs";
@@ -357,68 +357,30 @@ $language["recipes_subtitle"] = "Explore seasonal, organic recipes made with rea
 $language["recipes"] = [
     [
         "id" => 1,
-        "title" => "Desserts",
-        "subtitle" => "Chia Seed Pudding",
-        "paragraph" => "Chia Seed Pudding with Berries topped with Agave Syrup, Ideal for Breakfast."
+        "title" => "",
+        "subtitle" => "",
+        "paragraph" => ""
     ],
     [
         "id" => 2,
-        "title" => "Desserts",
-        "subtitle" => "Cacao Nibs Brownie Bites",
-        "paragraph" => "Raw Cacao Bites, a Healthy Take on a Classic Sweet Treat: Brownies."
+        "title" => "",
+        "subtitle" => "",
+        "paragraph" => ""
     ],
     [
         "id" => 3,
-        "title" => "Healthy Snacks",
-        "subtitle" => "Quinoa and Chickpea Salad",
-        "paragraph" => "This Quinoa Chickpea Salad is All About Fresh Ingredients and Vibrant Flavors."
+        "title" => "",
+        "subtitle" => "",
+        "paragraph" => ""
     ],
     [
         "id" => 4,
-        "title" => "Healthy Snacks",
-        "subtitle" => "Peanut & Sesame Brittle",
-        "paragraph" => "Peanut & Sesame Brittle with Jaggery as Sweetener, a Crunchy and Nutty Snack."
+        "title" => "",
+        "subtitle" => "",
+        "paragraph" => ""
     ],
 ];
 
-//recipe detail page
-$language["recipe_detail_ingredient_title"] = "Ingredients";
-$language["recipe_detail_ingredients"] = [
-    "3 tbsp Chia Seeds",
-    "1 cup Almond Milk",
-    "1 tbsp Maple Syrup",
-    "½ tsp Vanilla Extract",
-    "Fresh Berries"
-];
-$language["recipe_detail_instruction_title"] = "Instructions";
-$language["recipe_detail_instructions"] = [
-    "In a bowl, mix chia seeds, almond milk, maple syrup, and vanilla extract.",
-    "Let sit for 10 minutes, stir, then refrigerate for at least 2 hours or overnight.",
-    "Top with berries and agave syrup before serving."
-];
-
-$language["recipe_detail_time"] = [
-    [
-        "id" => 1,
-        "title" => "Prep Time",
-        "info" => "10 mins"
-    ],
-    [
-        "id" => 1,
-        "title" => "Total Time",
-        "info" => "20 mins"
-    ],
-    [
-        "id" => 1,
-        "title" => "Servings",
-        "info" => "2 People"
-    ],
-    [
-        "id" => 1,
-        "title" => "Yield",
-        "info" => "1 Medium Bowl"
-    ]
-];
 
 //contact page
 $language["contact_us"] = "Contact Us";
