@@ -1,5 +1,5 @@
 <?php
-$basePath = "/ethnicjapan.com/";
+$basePath = "/";
 ?>
 <head>
   <meta charset="utf-8">
