@@ -25,7 +25,7 @@
         <div class="row row-cols-1 row-cols-md-4 g-4 align-items-stretch" data-aos="fade-up" data-aos-delay="300">
     
           <div class="col d-flex">
-            <a href="recipes_detail/chia_pudding_recipe.php">
+            <a href="recipes/chia-pudding-recipe.php">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="assets/img/recipes/chia_pudding.webp" class="img-fluid" alt="" loading="lazy">
@@ -40,7 +40,7 @@
           </div>
     
           <div class="col d-flex">
-            <a href="recipes_detail/cocoa_chia_cookies.php">
+            <a href="recipes/cocoa-chia-cookies.php">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="assets/img/recipes/cocoa_chia_cookies.webp" class="img-fluid" alt="" loading="lazy">
@@ -55,7 +55,7 @@
           </div>
     
           <div class="col d-flex">
-            <a href="recipes_detail/blueberry_chia_juice.php">
+            <a href="recipes/blueberry-chia-juice.php">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="assets/img/recipes/juice.webp" class="img-fluid" alt="" loading="lazy">
@@ -70,7 +70,7 @@
           </div>
     
           <div class="col d-flex">
-            <a href="recipes_detail/focaccia.php">
+            <a href="recipes/focaccia.php">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="assets/img/recipes/focaccia.jpg" class="img-fluid" alt="" loading="lazy">
@@ -85,7 +85,7 @@
           </div>
 
           <div class="col d-flex">
-            <a href="recipes_detail/soup.php">
+            <a href="recipes/soup.php">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="assets/img/recipes/soup.jpg" class="img-fluid" alt="" loading="lazy">
@@ -100,7 +100,7 @@
           </div>
 
           <div class="col d-flex">
-            <a href="recipes_detail/arugula_pesto.php">
+            <a href="recipes/arugula-pesto.php">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="assets/img/recipes/arugula_pesto.webp" class="img-fluid" alt="" loading="lazy">
@@ -115,7 +115,7 @@
           </div>
 
           <div class="col d-flex">
-            <a href="recipes_detail/breakfast_bowl.php">
+            <a href="recipes/breakfast-bowl.php">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="assets/img/recipes/bowl.webp" class="img-fluid" alt="" loading="lazy">
@@ -130,7 +130,7 @@
           </div>
 
           <div class="col d-flex">
-            <a href="recipes_detail/bruschetta.php">
+            <a href="recipes/bruschetta.php">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="assets/img/recipes/bruschetta.jpg" class="img-fluid" alt="" loading="lazy">
@@ -145,7 +145,7 @@
           </div>
 
           <div class="col d-flex">
-            <a href="recipes_detail/avocado_toast.php">
+            <a href="recipes/avocado-toast.php">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="assets/img/recipes/toast.webp" class="img-fluid" alt="" loading="lazy">
@@ -160,7 +160,7 @@
           </div>
 
           <div class="col d-flex">
-            <a href="recipes_detail/protein_smoothie.php">
+            <a href="recipes/protein-smoothie.php">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="assets/img/recipes/smoothie.webp" class="img-fluid" alt="" loading="lazy">
@@ -175,7 +175,7 @@
           </div>
 
           <div class="col d-flex">
-            <a href="recipes_detail/ratatouille.php">
+            <a href="recipes/ratatouille.php">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="assets/img/recipes/ratatouille.jpeg" class="img-fluid" alt="" loading="lazy">
@@ -190,7 +190,7 @@
           </div>
 
           <div class="col d-flex">
-            <a href="recipes_detail/yogurt_chia.php">
+            <a href="recipes/yogurt-chia.php">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="assets/img/recipes/yogurt.jpg" class="img-fluid" alt="" loading="lazy">
@@ -205,7 +205,7 @@
           </div>
 
           <div class="col d-flex">
-            <a href="recipes_detail/shake.php">
+            <a href="recipes/shake.php">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="assets/img/recipes/shake.webp" class="img-fluid" alt="" loading="lazy">

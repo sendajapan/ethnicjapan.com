@@ -27,7 +27,7 @@
 
       <div class="col-lg-6 col-md-6">
         <div class="portfolio-card h-100">
-          <a href="blog_detail/chia_recipe.php" class="portfolio-link d-block h-100 text-decoration-none text-reset">
+          <a href="blogs/chia-recipe.php" class="portfolio-link d-block h-100 text-decoration-none text-reset">
             <div class="portfolio-image">
               <img src="assets/img/blog/blog1.webp" class="img-fluid" alt="" loading="lazy">
             </div>
@@ -42,7 +42,7 @@
       
       <div class="col-lg-6 col-md-6">
         <div class="portfolio-card h-100">
-          <a href="blog_detail/how_to_chia.php" class="portfolio-link d-block h-100 text-decoration-none text-reset">
+          <a href="blogs/how-to-chia.php" class="portfolio-link d-block h-100 text-decoration-none text-reset">
             <div class="portfolio-image">
               <img src="assets/img/blog/blog2.webp" class="img-fluid" alt="" loading="lazy">
             </div>
@@ -57,7 +57,7 @@
       
       <div class="col-lg-6 col-md-6">
         <div class="portfolio-card h-100">
-          <a href="blog_detail/benefits_omega.php" class="portfolio-link d-block h-100 text-decoration-none text-reset">
+          <a href="blogs/benefits-omega.php" class="portfolio-link d-block h-100 text-decoration-none text-reset">
             <div class="portfolio-image">
               <img src="assets/img/blog/blog3.webp" class="img-fluid" alt="" loading="lazy">
             </div>

@@ -464,7 +464,7 @@ include(__DIR__ . "/assets/include/$lang.php");
       
       <div class="col-lg-6 col-md-6">
         <div class="portfolio-card h-100">
-          <a href="blog_detail/how_to_chia.php" class="portfolio-link d-block h-100 text-decoration-none text-reset">
+          <a href="blogs/how-to-chia.php" class="portfolio-link d-block h-100 text-decoration-none text-reset">
             <div class="portfolio-image">
               <img src="assets/img/blog/blog2.webp" class="img-fluid" alt="" loading="lazy">
             </div>
@@ -479,7 +479,7 @@ include(__DIR__ . "/assets/include/$lang.php");
       
       <div class="col-lg-6 col-md-6">
         <div class="portfolio-card h-100">
-          <a href="blog_detail/benefits_omega.php" class="portfolio-link d-block h-100 text-decoration-none text-reset">
+          <a href="blogs/benefits-omega.php" class="portfolio-link d-block h-100 text-decoration-none text-reset">
             <div class="portfolio-image">
               <img src="assets/img/blog/blog3.webp" class="img-fluid" alt="" loading="lazy">
             </div>
@@ -512,7 +512,7 @@ include(__DIR__ . "/assets/include/$lang.php");
         <div class="row row-cols-1 row-cols-md-4 g-4 align-items-stretch" data-aos="fade-up" data-aos-delay="300">
     
           <div class="col d-flex">
-            <a href="recipes_detail/chia_pudding_recipe.php">
+            <a href="recipes/chia-pudding-recipe.php">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="assets/img/recipes/chia_pudding.webp" class="img-fluid" alt="" loading="lazy">
@@ -527,7 +527,7 @@ include(__DIR__ . "/assets/include/$lang.php");
           </div>
 
           <div class="col d-flex">
-            <a href="recipes_detail/soup.php">
+            <a href="recipes/soup.php">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="assets/img/recipes/soup.jpg" class="img-fluid" alt="" loading="lazy">
@@ -542,7 +542,7 @@ include(__DIR__ . "/assets/include/$lang.php");
           </div>
 
           <div class="col d-flex">
-            <a href="recipes_detail/breakfast_bowl.php">
+            <a href="recipes/breakfast-bowl.php">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="assets/img/recipes/bowl.webp" class="img-fluid" alt="" loading="lazy">
@@ -557,7 +557,7 @@ include(__DIR__ . "/assets/include/$lang.php");
           </div>
 
           <div class="col d-flex">
-            <a href="recipes_detail/bruschetta.php">
+            <a href="recipes/bruschetta.php">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="assets/img/recipes/bruschetta.jpg" class="img-fluid" alt="" loading="lazy">
