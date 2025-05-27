@@ -5,8 +5,8 @@ if($_SERVER['HTTP_HOST']=='localhost'){
 	$base_url = 'http://'.$_SERVER['HTTP_HOST'].'/sendajapan/ethnicjapan.com/';
 }
 else{
-	$base_path = $_SERVER['DOCUMENT_ROOT'];
-	 $base_url = 'https://'.$_SERVER['HTTP_HOST'].'/';
+	echo $base_path = $_SERVER['DOCUMENT_ROOT'].'/www.ethnicjapan.com/';
+	$base_url = 'https://'.$_SERVER['HTTP_HOST'].'/';
 }
 
 session_start();
