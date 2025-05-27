@@ -13,7 +13,7 @@
   <main class="main">
 
 
-      <section id="hero-slider" class="hero-slider">
+      <section id="hero-slider" class="hero-slider d-none d-lg-block">
 
 
               <div class="testimonials-slider swiper init-swiper">
