@@ -12,7 +12,7 @@
 
   <main class="main">
 
-    <!-- Blog Section -->
+    <!-- Recipe Section -->
     <section id="portfolio" class="portfolio section">
     
       <!-- Section Title -->
@@ -221,7 +221,7 @@
     
         </div>
       </div>
-    </section><!-- /Blog Section -->
+    </section><!-- /Recipe Section -->
 
   </main>
 

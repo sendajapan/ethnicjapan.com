@@ -1,12 +1,12 @@
 <?php
-$basePath = "/";
+$basePath = "/ethnicjapan.com/";
 ?>
 <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="header-container container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.php" class="logo d-flex align-items-center me-auto me-xl-0">
         <img src="<?php echo $basePath; ?>assets/img/icon.png" alt="">
-        <h1><?= $language["header_logo"] ?> </h1>
+        <h1>ETHNIC LTD</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">

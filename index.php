@@ -340,12 +340,12 @@ include(__DIR__ . "/assets/include/$lang.php");
           </div><!-- End Page Title -->
         <div class="row skills-animation justify-content-md-center align-items-stretch">
 
-          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-12 col-md-12 col-sm-12 col-lg-4 " data-aos="fade-up" data-aos-delay="100">
               <div class="skill-box-header">
               <h4><?= $language["promoted_oils_list"][0]["title"] ?></h4>
               </div>
 
-            <div class="skill-box d-flex h-90">
+            <div class="skill-box h-100">
               <img src="assets/img/categories/chia-oil.webp" alt="">
               <div class="info-right d-block text-start">
                 <p><?= $language["promoted_oils_list"][0]["paragraph"] ?></p>
@@ -353,11 +353,11 @@ include(__DIR__ . "/assets/include/$lang.php");
             </div>
           </div>
 
-            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-12 col-md-12 col-sm-12 col-lg-4 " data-aos="fade-up" data-aos-delay="100">
                 <div class="skill-box-header">
                     <h4><?= $language["promoted_oils_list"][1]["title"] ?></h4>
                 </div>
-            <div class="skill-box d-flex h-90">
+            <div class="skill-box h-100">
               <img src="assets/img/categories/olive-oil.webp" alt="">
               <div class="info-right d-block text-start">
                 <p><?= $language["promoted_oils_list"][1]["paragraph"] ?></p>
@@ -365,11 +365,11 @@ include(__DIR__ . "/assets/include/$lang.php");
             </div>
           </div>
 
-            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-12 col-md-12 col-sm-12 col-lg-4 " data-aos="fade-up" data-aos-delay="100">
                 <div class="skill-box-header">
                     <h4><?= $language["promoted_oils_list"][2]["title"] ?></h4>
                 </div>
-            <div class="skill-box d-flex h-90">
+            <div class="skill-box h-100">
               <img src="assets/img/categories/sacha-oil.webp" alt="">
               <div class="info-right d-block text-start">
                 <p><?= $language["promoted_oils_list"][2]["paragraph"] ?></p>
@@ -449,78 +449,133 @@ include(__DIR__ . "/assets/include/$lang.php");
     </section><!-- /Why Choose Us Section -->
 
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <!-- Blog Section -->
+  <section id="portfolio" class="portfolio section">
 
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2><?= $language["blogs_title"] ?></h2>
+    <p><?= $language["insights_that_paragraph"] ?></p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row g-4 align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+      
+      <div class="col-lg-6 col-md-6">
+        <div class="portfolio-card h-100">
+          <a href="blog_detail/how_to_chia.php" class="portfolio-link d-block h-100 text-decoration-none text-reset">
+            <div class="portfolio-image">
+              <img src="assets/img/blog/blog2.webp" class="img-fluid" alt="" loading="lazy">
+            </div>
+            <div class="portfolio-content">
+              <span class="category">Benefits</span>
+              <h3>Do You Know How to Consume Chia Correctly?</h3>
+              <p>10/13/2022</p>
+            </div>
+          </a>
+        </div>
+      </div><!-- End Blog Item -->
+      
+      <div class="col-lg-6 col-md-6">
+        <div class="portfolio-card h-100">
+          <a href="blog_detail/benefits_omega.php" class="portfolio-link d-block h-100 text-decoration-none text-reset">
+            <div class="portfolio-image">
+              <img src="assets/img/blog/blog3.webp" class="img-fluid" alt="" loading="lazy">
+            </div>
+            <div class="portfolio-content">
+              <span class="category">Benefits</span>
+              <h3>Benefits of Omega 3</h3>
+              <p>10/13/2022</p>
+            </div>
+          </a>
+        </div>
+      </div><!-- End Blog Item -->
+
+    </div>
+
+  </div>
+
+  </section><!-- /Blog Section -->
+
+
+      <!-- Recipe Section -->
+    <section id="portfolio" class="portfolio section">
+    
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2><?= $language["insights_that"] ?></h2>
-        <p><?= $language["insights_that_paragraph"] ?></p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <div class="row g-4 isotope-container align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card h-100">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/organic.jpg" class="img-fluid" alt="" loading="lazy">
-                </div>
-                <div class="portfolio-content">
-                  <span class="category"><?= $language["insights_that_list"][0]["title"] ?></span>
-                  <h3><?= $language["insights_that_list"][0]["subtitle"] ?></h3>
-                  <p><?= $language["insights_that_list"][0]["paragraph"] ?></p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
-              <div class="portfolio-card h-100">
-                <div class="portfolio-image">
-                  <img src="assets/img/services/chia+cover.jpeg" class="img-fluid" alt="" loading="lazy">
-                </div>
-                <div class="portfolio-content">
-                  <span class="category"><?= $language["insights_that_list"][1]["title"] ?></span>
-                  <h3><?= $language["insights_that_list"][1]["subtitle"] ?></h3>
-                  <p><?= $language["insights_that_list"][1]["paragraph"] ?></p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
-              <div class="portfolio-card h-100">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/Quinoa-11.jpg" class="img-fluid" alt="" loading="lazy">
-                </div>
-                <div class="portfolio-content">
-                  <span class="category"><?= $language["insights_that_list"][2]["title"] ?></span>
-                  <h3><?= $language["insights_that_list"][2]["subtitle"] ?></h3>
-                  <p><?= $language["insights_that_list"][2]["paragraph"] ?></p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-brand">
-              <div class="portfolio-card h-100">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/wholesale.jpg" class="img-fluid" alt="" loading="lazy">
-                </div>
-                <div class="portfolio-content">
-                  <span class="category"><?= $language["insights_that_list"][3]["title"] ?></span>
-                  <h3><?= $language["insights_that_list"][3]["subtitle"] ?></h3>
-                  <p><?= $language["insights_that_list"][3]["paragraph"] ?></p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-        </div>
-
+        <h2>Recipes</h2>
+        <p>Explore seasonal, organic recipes made with real ingredients.</p>
       </div>
+    
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row row-cols-1 row-cols-md-4 g-4 align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+    
+          <div class="col d-flex">
+            <a href="recipes_detail/chia_pudding_recipe.php">
+              <div class="portfolio-card d-flex flex-column h-100 w-100">
+                <div class="portfolio-image">
+                  <img src="assets/img/recipes/chia_pudding.webp" class="img-fluid" alt="" loading="lazy">
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Breakfast</span>
+                  <h3>Chia Seed Pudding</h3>
+                  <p>A nutritious porridge to start the day with energy!</p>
+                </div>
+              </div>
+            </a>
+          </div>
 
-    </section><!-- /Portfolio Section -->
+          <div class="col d-flex">
+            <a href="recipes_detail/soup.php">
+              <div class="portfolio-card d-flex flex-column h-100 w-100">
+                <div class="portfolio-image">
+                  <img src="assets/img/recipes/soup.jpg" class="img-fluid" alt="" loading="lazy">
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Savory</span>
+                  <h3>Creamy Soup of Sprouted Lentils, Tomato and Olive Oil</h3>
+                  <p>That recipe for those who love flavors and creamy soups!</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col d-flex">
+            <a href="recipes_detail/breakfast_bowl.php">
+              <div class="portfolio-card d-flex flex-column h-100 w-100">
+                <div class="portfolio-image">
+                  <img src="assets/img/recipes/bowl.webp" class="img-fluid" alt="" loading="lazy">
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Breakfast</span>
+                  <h3>Breakfast Bowl</h3>
+                  <p>A delicious and healthy breakfast option, the Breakfast Bowl will become a regular part of your routine!</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col d-flex">
+            <a href="recipes_detail/bruschetta.php">
+              <div class="portfolio-card d-flex flex-column h-100 w-100">
+                <div class="portfolio-image">
+                  <img src="assets/img/recipes/bruschetta.jpg" class="img-fluid" alt="" loading="lazy">
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Snacks</span>
+                  <h3>Bruschetta with Garlic Olichia</h3>
+                  <p>Bruschetta is an Italian appetizer made with a slice of rustic bread, made with dark, thick flour.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+    
+        </div>
+      </div>
+    </section><!-- /Blog Section -->
+
+
 
       <?php /*
 

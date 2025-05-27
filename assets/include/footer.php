@@ -1,5 +1,5 @@
 <?php
-$basePath = "/";
+$basePath = "/ethnicjapan.com/";
 ?>
 <footer id="footer" class="footer">
 
