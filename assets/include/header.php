@@ -8,7 +8,7 @@
 		
 		<nav id="navmenu" class="navmenu">
 			<ul>
-				<li><a href="<?php echo $base_url; ?>index" class="item <?= ($currentPage == $base_url.'index') ? 'active' : '' ?>"><?= $language["header_home"]; ?> </a></li>
+				<li><a href="<?php echo $base_url; ?>" class="item <?= ($currentPage == $base_url.'') ? 'active' : '' ?>"><?= $language["header_home"]; ?> </a></li>
 				<li><a href="<?php echo $base_url; ?>about" class="item <?= ($currentPage == $base_url.'about') ? 'active' : '' ?>"><?= $language["header_about"]; ?> </a></li>
 				<li><a href="<?php echo $base_url; ?>products" class="item <?= ($currentPage == $base_url.'products') ? 'active' : '' ?>"><?= $language["header_products"]; ?> </a></li>
 				<li><a href="<?php echo $base_url; ?>blog" class="item <?= ($currentPage == $base_url.'blog') ? 'active' : '' ?>"><?= $language["header_blogs"]; ?> </a></li>
