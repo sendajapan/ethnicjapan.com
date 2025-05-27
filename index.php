@@ -1,27 +1,14 @@
-<?php $currentPage = basename($_SERVER['PHP_SELF']); ?>
-<?php
-session_start();
-
-$default_lang = 'en';
-$lang = $_SESSION['ethnic']['selected_lang'] ?? $default_lang;
-
-$allowed_langs = ['en', 'jp'];
-if (!in_array($lang, $allowed_langs)) {
-    $lang = $default_lang;
-}
-
-include(__DIR__ . "/assets/include/$lang.php");
-?>
+<?php include "assets/include/config.php"; ?>
 
 
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include "assets/include/head.php"; ?>
+<?php include ($base_path . "assets/include/head.php"); ?>
 
 <body class="index-page">
 
-  <?php include "assets/include/header.php"; ?>
+  <?php include $base_path . "assets/include/header.php"; ?>
 
   <main class="main">
 
@@ -44,22 +31,22 @@ include(__DIR__ . "/assets/include/$lang.php");
                   <div class="swiper-wrapper">
 
                       <div class="swiper-slide">
-                          <img src="assets/img/slider/62f25f200ccd6qrrbi6.webp" class="img-fluid w-100" alt="">
+                          <img src="<?=$base_url?>assets/img/slider/62f25f200ccd6qrrbi6.webp" class="img-fluid w-100" alt="">
                       </div><!-- End Slide Item -->
                       <div class="swiper-slide">
-                          <img src="assets/img/slider/64be666e8d681t6kzgp.webp" class="img-fluid w-100" alt="">
+                          <img src="<?=$base_url?>assets/img/slider/64be666e8d681t6kzgp.webp" class="img-fluid w-100" alt="">
                       </div><!-- End Slide Item -->
                       <div class="swiper-slide">
-                          <img src="assets/img/slider/64d12be1d03a5uaijpj.webp" class="img-fluid w-100" alt="">
+                          <img src="<?=$base_url?>assets/img/slider/64d12be1d03a5uaijpj.webp" class="img-fluid w-100" alt="">
                       </div><!-- End Slide Item -->
                       <div class="swiper-slide">
-                          <img src="assets/img/slider/64f760c567462cfcruq.webp" class="img-fluid w-100" alt="">
+                          <img src="<?=$base_url?>assets/img/slider/64f760c567462cfcruq.webp" class="img-fluid w-100" alt="">
                       </div><!-- End Slide Item -->
                       <div class="swiper-slide">
-                          <img src="assets/img/slider/64f7611d6ad008t4t6d.webp" class="img-fluid w-100" alt="">
+                          <img src="<?=$base_url?>assets/img/slider/64f7611d6ad008t4t6d.webp" class="img-fluid w-100" alt="">
                       </div><!-- End Slide Item -->
                       <div class="swiper-slide">
-                          <img src="assets/img/slider/6310fbfdb4f56guzvzp.webp" class="img-fluid w-100" alt="">
+                          <img src="<?=$base_url?>assets/img/slider/6310fbfdb4f56guzvzp.webp" class="img-fluid w-100" alt="">
                       </div><!-- End Slide Item -->
 
 
@@ -89,14 +76,14 @@ include(__DIR__ . "/assets/include/$lang.php");
             <h2><?= $language["hero_title"]; ?></h2>
             <p class="lead"><?= $language["hero_paragraph"]; ?></p>
             <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-              <a href="products.php" class="btn btn-outline"><?= $language["hero_button"]; ?></a>
+              <a href="<?=$base_url?>products" class="btn btn-outline"><?= $language["hero_button"]; ?></a>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="hero-image">
-              <img src="assets/img/portfolio/org.jpg" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300" style="position:absolute; bottom:30px; left:10px; z-index: 0; width: 20rem;">
-              <img src="assets/img/portfolio/olive-oil.webp" alt="" style="position:absolute; bottom:0px; left:300px; z-index: 1; width: 12rem;">
-              <img src="assets/img/portfolio/Chia_hero.jpg" alt="" style="position:absolute; top:0px; left:110px; z-index: 2; width: 18rem;">
+              <img src="<?=$base_url?>assets/img/portfolio/org.jpg" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300" style="position:absolute; bottom:30px; left:10px; z-index: 0; width: 20rem;">
+              <img src="<?=$base_url?>assets/img/portfolio/olive-oil.webp" alt="" style="position:absolute; bottom:0px; left:300px; z-index: 1; width: 12rem;">
+              <img src="<?=$base_url?>assets/img/portfolio/chia-hero.jpg" alt="" style="position:absolute; top:0px; left:110px; z-index: 2; width: 18rem;">
             </div>
           </div>
         </div>
@@ -119,7 +106,7 @@ include(__DIR__ . "/assets/include/$lang.php");
         <div class="row align-items-center">
           <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
             <div class="about-image">
-              <img src="assets/img/services/seeds.webp" alt="Profile Image" class="img-fluid rounded-4">
+              <img src="<?=$base_url?>assets/img/services/seeds.webp" alt="Profile Image" class="img-fluid rounded-4">
             </div>
           </div>
 
@@ -137,14 +124,14 @@ include(__DIR__ . "/assets/include/$lang.php");
                 <div class="row g-4">
                   <div class="col-6">
                     <div class="info-item">
-                      <span class="label"><img src="assets/img/svg/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;"><?= $language["about_mission_title"]; ?></span>
+                      <span class="label"><img src="<?=$base_url?>assets/img/svg/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;"><?= $language["about_mission_title"]; ?></span>
                       <span class="value"><?= $language["about_mission_paragraph"]; ?></span>
                     </div>
                   </div>
 
                   <div class="col-6">
                     <div class="info-item">
-                      <span class="label"><img src="assets/img/svg/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;"><?= $language["about_vision_title"]; ?></span>
+                      <span class="label"><img src="<?=$base_url?>assets/img/svg/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;"><?= $language["about_vision_title"]; ?></span>
                       <span class="value"><?= $language["about_vision_paragraph"]; ?></span>
                     </div>
                   </div>
@@ -171,7 +158,7 @@ include(__DIR__ . "/assets/include/$lang.php");
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box h-100">
-              <img src="assets/img/services/services1.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
+              <img src="<?=$base_url?>assets/img/services/services1.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
               <h3><?= $language["products"][0]["title"] ?></h3>
               <p><?= $language["products"][0]["paragraph"] ?></p>
               <a href="#products"><button class="buttons"><?= $language["products"][0]["button"] ?></button></a>
@@ -180,26 +167,26 @@ include(__DIR__ . "/assets/include/$lang.php");
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
             <div class="skill-box h-100">
-              <img src="assets/img/services/sacha-inchi.webp" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
+              <img src="<?=$base_url?>assets/img/services/sacha-inchi.webp" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
               <h3><?= $language["products"][1]["title"] ?></h3>
               <p><?= $language["products"][1]["paragraph"] ?></p>
-              <a href="products.php"><button class="buttons"><?= $language["products"][1]["button"] ?></button></a>
+              <a href="<?=$base_url?>products"><button class="buttons"><?= $language["products"][1]["button"] ?></button></a>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
             <div class="skill-box h-100">
-              <img src="assets/img/services/12_Chia-Seed-Oil.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
+              <img src="<?=$base_url?>assets/img/services/12_Chia-Seed-Oil.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
               <h3><?= $language["products"][2]["title"] ?></h3>
               <p><?= $language["products"][2]["paragraph"] ?></p>
-              <a href="products.php"><button class="buttons"><?= $language["products"][2]["button"] ?></button></a>
+              <a href="<?=$base_url?>products"><button class="buttons"><?= $language["products"][2]["button"] ?></button></a>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <div class="skill-box h-100" style="background-image: url('assets/img/services/org.jpg'); background-size: cover; background-color: rgba(255, 255, 255, 0.71); background-blend-mode: lighten; align-items: center; border-radius: 8px; padding: 150px 0;">
+            <div class="skill-box h-100" style="background-image: url('<?=$base_url?>assets/img/services/org.jpg'); background-size: cover; background-color: rgba(255, 255, 255, 0.71); background-blend-mode: lighten; align-items: center; border-radius: 8px; padding: 150px 0;">
                 <h3><?= $language["products"][3]["title"] ?></h3>
-                <a href="products.php"><button class="buttons"><?= $language["products"][3]["button"] ?></button></a>
+                <a href="<?=$base_url?>products"><button class="buttons"><?= $language["products"][3]["button"] ?></button></a>
             </div>
           </div>
 
@@ -231,7 +218,7 @@ include(__DIR__ . "/assets/include/$lang.php");
       
           <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="assets/img/categories/chia.webp" alt="">
+              <img src="<?=$base_url?>assets/img/categories/chia.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4><?= $language["super_foods"][0]["title"] ?></h4>
                 <p><?= $language["super_foods"][0]["paragraph"] ?></p>
@@ -241,7 +228,7 @@ include(__DIR__ . "/assets/include/$lang.php");
       
           <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="skill-box d-flex h-100">
-              <img src="assets/img/categories/hemp.webp" alt="">
+              <img src="<?=$base_url?>assets/img/categories/hemp.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4><?= $language["super_foods"][1]["title"] ?></h4>
                 <p><?= $language["super_foods"][1]["paragraph"] ?></p>
@@ -255,7 +242,7 @@ include(__DIR__ . "/assets/include/$lang.php");
 
             <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="assets/img/categories/cocoa.webp" alt="">
+              <img src="<?=$base_url?>assets/img/categories/cocoa.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4><?= $language["super_foods"][2]["title"] ?></h4>
                 <p><?= $language["super_foods"][2]["paragraph"] ?></p>
@@ -265,7 +252,7 @@ include(__DIR__ . "/assets/include/$lang.php");
 
             <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="assets/img/categories/quinoa.webp" alt="">
+              <img src="<?=$base_url?>assets/img/categories/quinoa.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4><?= $language["super_foods"][3]["title"] ?></h4>
                 <p><?= $language["super_foods"][3]["paragraph"] ?></p>
@@ -279,7 +266,7 @@ include(__DIR__ . "/assets/include/$lang.php");
 
             <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="assets/img/categories/adzuki.webp" alt="">
+              <img src="<?=$base_url?>assets/img/categories/adzuki.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4><?= $language["super_foods"][4]["title"] ?></h4>
                 <p><?= $language["super_foods"][4]["paragraph"] ?></p>
@@ -289,7 +276,7 @@ include(__DIR__ . "/assets/include/$lang.php");
 
             <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="assets/img/categories/amaranth2.webp" alt="">
+              <img src="<?=$base_url?>assets/img/categories/amaranth2.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4><?= $language["super_foods"][5]["title"] ?></h4>
                 <p> <?= $language["super_foods"][5]["paragraph"] ?></p>
@@ -303,7 +290,7 @@ include(__DIR__ . "/assets/include/$lang.php");
 
             <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="assets/img/categories/sesame.webp" alt="">
+              <img src="<?=$base_url?>assets/img/categories/sesame.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4><?= $language["super_foods"][6]["title"] ?></h4> 
                 <p><?= $language["super_foods"][6]["paragraph"] ?></p>
@@ -313,7 +300,7 @@ include(__DIR__ . "/assets/include/$lang.php");
 
             <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="assets/img/categories/sacha.webp" alt="">
+              <img src="<?=$base_url?>assets/img/categories/sacha.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4><?= $language["super_foods"][7]["title"] ?></h4> 
                 <p><?= $language["super_foods"][7]["paragraph"] ?></p>
@@ -346,7 +333,7 @@ include(__DIR__ . "/assets/include/$lang.php");
               </div>
 
             <div class="skill-box h-100">
-              <img src="assets/img/categories/chia-oil.webp" alt="">
+              <img src="<?=$base_url?>assets/img/categories/chia-oil.webp" alt="">
               <div class="info-right d-block text-start">
                 <p><?= $language["promoted_oils_list"][0]["paragraph"] ?></p>
               </div>
@@ -358,7 +345,7 @@ include(__DIR__ . "/assets/include/$lang.php");
                     <h4><?= $language["promoted_oils_list"][1]["title"] ?></h4>
                 </div>
             <div class="skill-box h-100">
-              <img src="assets/img/categories/olive-oil.webp" alt="">
+              <img src="<?=$base_url?>assets/img/categories/olive-oil.webp" alt="">
               <div class="info-right d-block text-start">
                 <p><?= $language["promoted_oils_list"][1]["paragraph"] ?></p>
               </div>
@@ -370,7 +357,7 @@ include(__DIR__ . "/assets/include/$lang.php");
                     <h4><?= $language["promoted_oils_list"][2]["title"] ?></h4>
                 </div>
             <div class="skill-box h-100">
-              <img src="assets/img/categories/sacha-oil.webp" alt="">
+              <img src="<?=$base_url?>assets/img/categories/sacha-oil.webp" alt="">
               <div class="info-right d-block text-start">
                 <p><?= $language["promoted_oils_list"][2]["paragraph"] ?></p>
               </div>
@@ -398,7 +385,7 @@ include(__DIR__ . "/assets/include/$lang.php");
 
           <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
             <div class="about-image">
-              <img src="assets/img/services/grain.jpg" alt="Profile Image" class="img-fluid rounded-4">
+              <img src="<?=$base_url?>assets/img/services/grain.jpg" alt="Profile Image" class="img-fluid rounded-4">
             </div>
           </div>
         </div>
@@ -415,7 +402,7 @@ include(__DIR__ . "/assets/include/$lang.php");
         <div class="row align-items-center">
           <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
             <div class="about-image">
-              <img src="assets/img/services/farmers.jpg" alt="Profile Image" class="img-fluid rounded-4">
+              <img src="<?=$base_url?>assets/img/services/farmers.jpg" alt="Profile Image" class="img-fluid rounded-4">
             </div>
           </div>
         
@@ -432,7 +419,7 @@ include(__DIR__ . "/assets/include/$lang.php");
                     <div class="info-item" style="width: 100%;">
 
                       <?php foreach ($language["why_choose_us_list"] as $item): ?>
-                        <p><img src="assets/img/svg/check-mark.svg" alt="">
+                        <p><img src="<?=$base_url?>assets/img/svg/check-mark.svg" alt="">
                           <?= $item ?>
                         </p>
                       <?php endforeach; ?>
@@ -464,9 +451,9 @@ include(__DIR__ . "/assets/include/$lang.php");
       
       <div class="col-lg-6 col-md-6">
         <div class="portfolio-card h-100">
-          <a href="blogs/how-to-chia.php" class="portfolio-link d-block h-100 text-decoration-none text-reset">
+          <a href="<?=$base_url?>blogs/how-to-chia" class="portfolio-link d-block h-100 text-decoration-none text-reset">
             <div class="portfolio-image">
-              <img src="assets/img/blog/blog2.webp" class="img-fluid" alt="" loading="lazy">
+              <img src="<?=$base_url?>assets/img/blog/blog2.webp" class="img-fluid" alt="" loading="lazy">
             </div>
             <div class="portfolio-content">
               <span class="category">Benefits</span>
@@ -479,9 +466,9 @@ include(__DIR__ . "/assets/include/$lang.php");
       
       <div class="col-lg-6 col-md-6">
         <div class="portfolio-card h-100">
-          <a href="blogs/benefits-omega.php" class="portfolio-link d-block h-100 text-decoration-none text-reset">
+          <a href="<?=$base_url?>blogs/benefits-omega" class="portfolio-link d-block h-100 text-decoration-none text-reset">
             <div class="portfolio-image">
-              <img src="assets/img/blog/blog3.webp" class="img-fluid" alt="" loading="lazy">
+              <img src="<?=$base_url?>assets/img/blog/blog3.webp" class="img-fluid" alt="" loading="lazy">
             </div>
             <div class="portfolio-content">
               <span class="category">Benefits</span>
@@ -512,10 +499,10 @@ include(__DIR__ . "/assets/include/$lang.php");
         <div class="row row-cols-1 row-cols-md-4 g-4 align-items-stretch" data-aos="fade-up" data-aos-delay="300">
     
           <div class="col d-flex">
-            <a href="recipes/chia-pudding-recipe.php">
+            <a href="<?=$base_url?>recipes/chia-pudding-recipe">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/recipes/chia_pudding.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="<?=$base_url?>assets/img/recipes/chia_pudding.webp" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Breakfast</span>
@@ -527,10 +514,10 @@ include(__DIR__ . "/assets/include/$lang.php");
           </div>
 
           <div class="col d-flex">
-            <a href="recipes/soup.php">
+            <a href="<?=$base_url?>recipes/soup">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/recipes/soup.jpg" class="img-fluid" alt="" loading="lazy">
+                  <img src="<?=$base_url?>assets/img/recipes/soup.jpg" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Savory</span>
@@ -542,10 +529,10 @@ include(__DIR__ . "/assets/include/$lang.php");
           </div>
 
           <div class="col d-flex">
-            <a href="recipes/breakfast-bowl.php">
+            <a href="<?=$base_url?>recipes/breakfast-bowl">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/recipes/bowl.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="<?=$base_url?>assets/img/recipes/bowl.webp" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Breakfast</span>
@@ -557,10 +544,10 @@ include(__DIR__ . "/assets/include/$lang.php");
           </div>
 
           <div class="col d-flex">
-            <a href="recipes/bruschetta.php">
+            <a href="<?=$base_url?>recipes/bruschetta">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/recipes/bruschetta.jpg" class="img-fluid" alt="" loading="lazy">
+                  <img src="<?=$base_url?>assets/img/recipes/bruschetta.jpg" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Snacks</span>
@@ -726,7 +713,7 @@ include(__DIR__ . "/assets/include/$lang.php");
             <div class="contact-form card" ><!--data-aos="fade-up" data-aos-delay="300"-->
               <div class="card-body p-4 p-lg-5">
 
-                <form action="forms/contact.php" method="post" class="php-email-form">
+                <form action="<?=$base_url?>forms/contact" method="post" class="php-email-form">
                   <div class="row gy-4">
 
                     <div class="col-12">
@@ -768,23 +755,23 @@ include(__DIR__ . "/assets/include/$lang.php");
 
   </main>
 
-  <?php include "assets/include/footer.php"; ?>
+  <?php include $base_path . "assets/include/footer.php"; ?>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="<?=$base_url?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?=$base_url?>assets/vendor/php-email-form/validate.js"></script>
+  <script src="<?=$base_url?>assets/vendor/aos/aos.js"></script>
+  <script src="<?=$base_url?>assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="<?=$base_url?>assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="<?=$base_url?>assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="<?=$base_url?>assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="<?=$base_url?>assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="<?=$base_url?>assets/js/main.js"></script>
 
 </body>
 

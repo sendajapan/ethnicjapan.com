@@ -1,18 +1,17 @@
-<?php $currentPage = basename($_SERVER['PHP_SELF']); ?>
-<?php include "assets/include/init.php"; ?>
+<?php include "assets/include/config.php"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include "assets/include/head.php"; ?>
+<?php include $base_path . "assets/include/head.php"; ?>
 
 <body class="starter-page-page">
 
-  <?php include "assets/include/header.php"; ?>
+  <?php include $base_path . "assets/include/header.php"; ?>
 
   <main class="main">
 
-  <!-- Blog Section -->
+<!-- Blog Section -->
   <section id="portfolio" class="portfolio section">
 
   <!-- Section Title -->
@@ -27,9 +26,9 @@
 
       <div class="col-lg-6 col-md-6">
         <div class="portfolio-card h-100">
-          <a href="blogs/chia-recipe.php" class="portfolio-link d-block h-100 text-decoration-none text-reset">
+          <a href="<?=$base_url?>blogs/chia-recipe" class="portfolio-link d-block h-100 text-decoration-none text-reset">
             <div class="portfolio-image">
-              <img src="assets/img/blog/blog1.webp" class="img-fluid" alt="" loading="lazy">
+              <img src="<?=$base_url?>assets/img/blog/blog1.webp" class="img-fluid" alt="" loading="lazy">
             </div>
             <div class="portfolio-content">
               <span class="category">Recipes</span>
@@ -42,9 +41,9 @@
       
       <div class="col-lg-6 col-md-6">
         <div class="portfolio-card h-100">
-          <a href="blogs/how-to-chia.php" class="portfolio-link d-block h-100 text-decoration-none text-reset">
+          <a href="<?=$base_url?>blogs/how-to-chia" class="portfolio-link d-block h-100 text-decoration-none text-reset">
             <div class="portfolio-image">
-              <img src="assets/img/blog/blog2.webp" class="img-fluid" alt="" loading="lazy">
+              <img src="<?=$base_url?>assets/img/blog/blog2.webp" class="img-fluid" alt="" loading="lazy">
             </div>
             <div class="portfolio-content">
               <span class="category">Benefits</span>
@@ -57,9 +56,9 @@
       
       <div class="col-lg-6 col-md-6">
         <div class="portfolio-card h-100">
-          <a href="blogs/benefits-omega.php" class="portfolio-link d-block h-100 text-decoration-none text-reset">
+          <a href="<?=$base_url?>blogs/benefits-omega" class="portfolio-link d-block h-100 text-decoration-none text-reset">
             <div class="portfolio-image">
-              <img src="assets/img/blog/blog3.webp" class="img-fluid" alt="" loading="lazy">
+              <img src="<?=$base_url?>assets/img/blog/blog3.webp" class="img-fluid" alt="" loading="lazy">
             </div>
             <div class="portfolio-content">
               <span class="category">Benefits</span>
@@ -74,7 +73,7 @@
         <div class="portfolio-card h-100">
           <a href="#" class="portfolio-link d-block h-100 text-decoration-none text-reset">
             <div class="portfolio-image">
-              <img src="assets/img/portfolio/wholesale.jpg" class="img-fluid" alt="" loading="lazy">
+              <img src="<?=$base_url?>assets/img/portfolio/wholesale.jpg" class="img-fluid" alt="" loading="lazy">
             </div>
             <div class="portfolio-content">
               <span class="category"></span>
@@ -96,23 +95,23 @@
 
   </main>
 
-  <?php include "assets/include/footer.php"; ?>
+  <?php include $base_path . "assets/include/footer.php"; ?>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="<?=$base_url?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?=$base_url?>assets/vendor/php-email-form/validate.js"></script>
+  <script src="<?=$base_url?>assets/vendor/aos/aos.js"></script>
+  <script src="<?=$base_url?>assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="<?=$base_url?>assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="<?=$base_url?>assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="<?=$base_url?>assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="<?=$base_url?>assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="<?=$base_url?>assets/js/main.js"></script>
 
 </body>
 

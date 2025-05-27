@@ -1,14 +1,13 @@
-<?php $currentPage = basename($_SERVER['PHP_SELF']); ?>
-<?php include "assets/include/init.php"; ?>
+<?php include "assets/include/config.php"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include "assets/include/head.php"; ?>
+<?php include $base_path . "assets/include/head.php"; ?>
 
 <body class="starter-page-page">
 
-  <?php include "assets/include/header.php"; ?>
+  <?php include $base_path . "assets/include/header.php"; ?>
 
   <main class="main">
 
@@ -25,10 +24,10 @@
         <div class="row row-cols-1 row-cols-md-4 g-4 align-items-stretch" data-aos="fade-up" data-aos-delay="300">
     
           <div class="col d-flex">
-            <a href="recipes/chia-pudding-recipe.php">
+            <a href="<?=$base_url?>recipes/chia-pudding-recipe">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/recipes/chia_pudding.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="<?=$base_url?>assets/img/recipes/chia_pudding.webp" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Breakfast</span>
@@ -40,10 +39,10 @@
           </div>
     
           <div class="col d-flex">
-            <a href="recipes/cocoa-chia-cookies.php">
+            <a href="<?=$base_url?>recipes/cocoa-chia-cookies">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/recipes/cocoa_chia_cookies.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="<?=$base_url?>assets/img/recipes/cocoa_chia_cookies.webp" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Snacks</span>
@@ -55,10 +54,10 @@
           </div>
     
           <div class="col d-flex">
-            <a href="recipes/blueberry-chia-juice.php">
+            <a href="<?=$base_url?>recipes/blueberry-chia-juice">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/recipes/juice.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="<?=$base_url?>assets/img/recipes/juice.webp" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Drinks</span>
@@ -70,10 +69,10 @@
           </div>
     
           <div class="col d-flex">
-            <a href="recipes/focaccia.php">
+            <a href="<?=$base_url?>recipes/focaccia">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/recipes/focaccia.jpg" class="img-fluid" alt="" loading="lazy">
+                  <img src="<?=$base_url?>assets/img/recipes/focaccia.jpg" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Savory</span>
@@ -85,10 +84,10 @@
           </div>
 
           <div class="col d-flex">
-            <a href="recipes/soup.php">
+            <a href="<?=$base_url?>recipes/soup">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/recipes/soup.jpg" class="img-fluid" alt="" loading="lazy">
+                  <img src="<?=$base_url?>assets/img/recipes/soup.jpg" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Savory</span>
@@ -100,10 +99,10 @@
           </div>
 
           <div class="col d-flex">
-            <a href="recipes/arugula-pesto.php">
+            <a href="<?=$base_url?>recipes/arugula-pesto">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/recipes/arugula_pesto.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="<?=$base_url?>assets/img/recipes/arugula_pesto.webp" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Savory</span>
@@ -115,10 +114,10 @@
           </div>
 
           <div class="col d-flex">
-            <a href="recipes/breakfast-bowl.php">
+            <a href="<?=$base_url?>recipes/breakfast-bowl">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/recipes/bowl.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="<?=$base_url?>assets/img/recipes/bowl.webp" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Breakfast</span>
@@ -130,10 +129,10 @@
           </div>
 
           <div class="col d-flex">
-            <a href="recipes/bruschetta.php">
+            <a href="<?=$base_url?>recipes/bruschetta">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/recipes/bruschetta.jpg" class="img-fluid" alt="" loading="lazy">
+                  <img src="<?=$base_url?>assets/img/recipes/bruschetta.jpg" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Snacks</span>
@@ -145,10 +144,10 @@
           </div>
 
           <div class="col d-flex">
-            <a href="recipes/avocado-toast.php">
+            <a href="<?=$base_url?>recipes/avocado-toast">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/recipes/toast.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="<?=$base_url?>assets/img/recipes/toast.webp" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Snacks</span>
@@ -160,10 +159,10 @@
           </div>
 
           <div class="col d-flex">
-            <a href="recipes/protein-smoothie.php">
+            <a href="<?=$base_url?>recipes/protein-smoothie">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/recipes/smoothie.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="<?=$base_url?>assets/img/recipes/smoothie.webp" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Drinks</span>
@@ -175,10 +174,10 @@
           </div>
 
           <div class="col d-flex">
-            <a href="recipes/ratatouille.php">
+            <a href="<?=$base_url?>recipes/ratatouille">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/recipes/ratatouille.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <img src="<?=$base_url?>assets/img/recipes/ratatouille.jpeg" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Savory</span>
@@ -190,10 +189,10 @@
           </div>
 
           <div class="col d-flex">
-            <a href="recipes/yogurt-chia.php">
+            <a href="<?=$base_url?>recipes/yogurt-chia">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/recipes/yogurt.jpg" class="img-fluid" alt="" loading="lazy">
+                  <img src="<?=$base_url?>assets/img/recipes/yogurt.jpg" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Breakfast</span>
@@ -205,10 +204,10 @@
           </div>
 
           <div class="col d-flex">
-            <a href="recipes/shake.php">
+            <a href="<?=$base_url?>recipes/shake">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
-                  <img src="assets/img/recipes/shake.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="<?=$base_url?>assets/img/recipes/shake.webp" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
                   <span class="category">Drinks</span>
@@ -225,23 +224,23 @@
 
   </main>
 
-  <?php include "assets/include/footer.php"; ?>
+  <?php include $base_path . "assets/include/footer.php"; ?>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="<?=$base_url?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?=$base_url?>assets/vendor/php-email-form/validate.js"></script>
+  <script src="<?=$base_url?>assets/vendor/aos/aos.js"></script>
+  <script src="<?=$base_url?>assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="<?=$base_url?>assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="<?=$base_url?>assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="<?=$base_url?>assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="<?=$base_url?>assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="<?=$base_url?>assets/js/main.js"></script>
 
 </body>
 
