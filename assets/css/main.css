@@ -793,6 +793,14 @@ section,
   margin-bottom: 1.5rem;
 }
 
+@media (max-width: 993px) {
+  .hero.section img[style*="position:absolute"] {
+    position: static !important;
+    width: 100% !important;
+    margin-top: 1rem;
+  }
+}
+
 @media (max-width: 991px) {
   .hero .content h2 {
     font-size: 2.5rem;
@@ -1118,6 +1126,12 @@ section,
 .skills .skill-box img{
   width: 13rem;
   padding-right: 1rem;
+}
+
+@media (max-width: 400px) {
+  .skills .skill-box img{
+    width: 6rem;
+  }
 }
 
 .skills .skill-box h3 {

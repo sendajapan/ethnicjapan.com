@@ -56,41 +56,35 @@
       </section>
 
 
-
-
-
-
-
-
-
-
-
-
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center content">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h2><?= $language["hero_title"]; ?></h2>
-            <p class="lead"><?= $language["hero_paragraph"]; ?></p>
-            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-              <a href="<?=$base_url?>products" class="btn btn-outline"><?= $language["hero_button"]; ?></a>
+      <section id="hero" class="hero section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center content">
+            <!-- Text Column -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h2 class="hero_title"><?= $language["hero_title"]; ?></h2>
+              <p class="lead"><?= $language["hero_paragraph"]; ?></p>
+              <div class="cta-button" data-aos="fade-up" data-aos-delay="300">
+                <a href="<?= $base_url; ?>products" class="btn btn-outline"><?= $language["hero_button"]; ?></a>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="hero-image">
-              <img src="<?=$base_url?>assets/img/portfolio/org.jpg" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300" style="position:absolute; bottom:30px; left:10px; z-index: 0; width: 20rem;">
-              <img src="<?=$base_url?>assets/img/portfolio/olive-oil.webp" alt="" style="position:absolute; bottom:0px; left:300px; z-index: 1; width: 12rem;">
-              <img src="<?=$base_url?>assets/img/portfolio/chia-hero.jpg" alt="" style="position:absolute; top:0px; left:110px; z-index: 2; width: 18rem;">
+      
+            <!-- Image Column -->
+            <div class="col-lg-6 position-relative d-flex justify-content-center mt-4 mt-lg-0">
+              <img src="<?= $base_url; ?>assets/img/portfolio/org.jpg"
+                   alt="Main Hero Image"
+                   class="img-fluid"
+                   style="width: 100%; max-width: 400px; z-index: 0;" />
+      
+              <img src="<?= $base_url; ?>assets/img/portfolio/olive-oil.webp"
+                   alt="Olive Oil"
+                   class="position-absolute d-none d-md-block"
+                   style="top: 150px; right: 10px; width: 220px; z-index: 1;" />
             </div>
           </div>
         </div>
-
-      </div>
-
-    </section><!-- /Hero Section -->
+      </section>
+    <!-- /Hero Section -->
 
     <!-- About Section -->
     <section id="about" class="about section light-background">
