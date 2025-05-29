@@ -1,4 +1,5 @@
-<?php include "../assets/include/config.php"; ?>
+<?php include "../assets/include/config.php"; 
+include $base_path . "assets/include/recipe_data.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,14 +17,17 @@
   <div class="container">
     <div class="row align-items-center mb-5">
       <!-- Text Column -->
+
+      <?php $recipe = $data['bruschetta']; ?>
+
       <div class="col-md-6 text-center">
         <p class="text-muted mb-2" style="font-size: 1.5rem;">Recipe</p>
-        <h2 class="fw-bold mb-3" style="font-size: 3rem;">Bruschetta with Garlic Olichia</h2>
-        <p class="lead">Bruschetta is an Italian appetizer made with a slice of rustic bread, made with dark, thick flour, with a hard crust, toasted on the grill, rubbed with garlic, brushed with plenty of olive oil and sprinkled with salt and occasionally black pepper. This is a typical Italian recipe, which has a familiar and welcoming flavor.</p>
+        <h2 class="fw-bold mb-3" style="font-size: 3rem;"><?= $recipe['title']; ?></h2>
+        <p class="lead"><?= $recipe['content']; ?></p>
       </div>
       <!-- Image Column -->
       <div class="col-md-6 text-end">
-        <img src="<?=$base_url?>assets/img/recipes/bruschetta.jpg" alt="Bruschetta" style="width: 400px; height: auto;" class="img-fluid rounded-4 shadow-sm">
+        <img src="<?= $recipe['feature_img']; ?>" alt="Bruschetta" style="width: 400px; height: auto;" class="img-fluid rounded-4 shadow-sm">
       </div>
     </div>
 
@@ -33,25 +37,25 @@
   <div class="col-6 col-md-3">
     <div class="rounded-3 p-3 pt-2 text-center h-100 bg-white shadow-sm" style="border-top: 4px solid #B66A50">
       <h6 class="text-muted mb-1">Prep Time</h6>
-      <p class="mb-0 fw-semibold">10 mins</p>
+      <p class="mb-0 fw-semibold"><?= $recipe['prep_time']; ?></p>
     </div>
   </div>
   <div class="col-6 col-md-3">
     <div class="rounded-3 p-3 pt-2 text-center h-100 bg-white shadow-sm" style="border-top: 4px solid #B66A50">
       <h6 class="text-muted mb-1">Total Time</h6>
-      <p class="mb-0 fw-semibold">10 mins</p>
+      <p class="mb-0 fw-semibold"><?= $recipe['total_time']; ?></p>
     </div>
   </div>
   <div class="col-6 col-md-3">
     <div class="rounded-3 p-3 pt-2 text-center h-100 bg-white shadow-sm" style="border-top: 4px solid #B66A50">
       <h6 class="text-muted mb-1">Serving</h6>
-      <p class="mb-0 fw-semibold">2 Persons</p>
+      <p class="mb-0 fw-semibold"><?= $recipe['serving']; ?></p>
     </div>
   </div>
   <div class="col-6 col-md-3">
     <div class="rounded-3 p-3 pt-2 text-center h-100 bg-white shadow-sm" style="border-top: 4px solid #B66A50">
       <h6 class="text-muted mb-1">Yield</h6>
-      <p class="mb-0 fw-semibold">12 Bread Slices</p>
+      <p class="mb-0 fw-semibold"><?= $recipe['yield']; ?></p>
     </div>
   </div>
 </div>
@@ -64,19 +68,20 @@
         <div class="bg-white p-4 rounded-4 shadow-sm" style="font-size: 1.1rem;">
           <h4 class="fw-semibold mb-3">Ingredients</h4>
           <ul class="mb-5 colored">
-              <li class="mb-1" style="list-style-type: circle;">12 Slices of Italian Bread or Baguette</li>
-              <li class="mb-1" style="list-style-type: circle;">10 Cherry Tomatoes</li>
-              <li class="mb-1" style="list-style-type: circle;">Garlic Oil</li>
-              <li class="mb-1" style="list-style-type: circle;">Salt to Taste</li>
-              <li class="mb-1" style="list-style-type: circle;">Basil Leaves (optional)</li>
-              <li class="mb-1" style="list-style-type: circle;">Buffalo mozzarella slices (optional)</li>
+
+            <?php foreach ($recipe['ingredients'] as $ingredient) { ?>
+              <li class="mb-1" style="list-style-type: circle;"><?= $ingredient ?></li>
+            <?php  } ?>
+
           </ul>
 
           <h4 class="fw-semibold mt-4 mb-3">Instructions</h4>
           <ol class="mb-3 colored">
-              <li class="mb-1">In a bowl, add the tomatoes cut in half, the oregano and the salt, mix well and bake until golden.</li>
-              <li class="mb-1">Place slices of buffalo mozzarella on the breads (optional).</li>
-              <li class="mb-1">On top of each bread, place a little of the mixture, basil leaves and finish with Garlic Oil.</li>
+
+            <?php foreach ($recipe['instructions'] as $instructions) { ?>
+              <li class="mb-1"><?= $instructions ?></li>
+            <?php  } ?>
+
           </ol>
         </div>
       </div>

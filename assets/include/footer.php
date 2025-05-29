@@ -3,7 +3,7 @@
     <div class="container" style="display: flex; justify-content: center; align-items: center;">
 
         <div class="logo-foot" style="display: flex; justify-content: right;">
-            <img src="<?php echo $base_url; ?>assets/img/logo.png" alt="" style="width: 12rem;">
+            <img class="img-fluid" src="<?php echo $base_url; ?>assets/img/logo_footer.png" alt="" style="width: 12rem;">
         </div>
 
         <div class="links" style="padding-left:2rem;">

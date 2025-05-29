@@ -1,4 +1,5 @@
-<?php include "../assets/include/config.php"; ?>
+<?php include "../assets/include/config.php"; 
+include $base_path . "assets/include/recipe_data.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,14 +17,17 @@
   <div class="container">
     <div class="row align-items-center mb-5">
       <!-- Text Column -->
+
+      <?php $recipe = $data['soup']; ?>
+
       <div class="col-md-6 text-center">
         <p class="text-muted mb-2" style="font-size: 1.5rem;">Recipe</p>
-        <h2 class="fw-bold mb-3" style="font-size: 3rem;">Creamy Soup of Sprouted Lentils, Tomato and Olive Oil</h2>
-        <p class="lead">That recipe for those who love flavors and creamy soups!</p>
+        <h2 class="fw-bold mb-3" style="font-size: 3rem;"><?= $recipe['title']; ?></h2>
+        <p class="lead"><?= $recipe['content']; ?></p>
       </div>
       <!-- Image Column -->
       <div class="col-md-6 text-end">
-        <img src="<?=$base_url?>assets/img/recipes/soup.jpg" alt="Soup" style="width: 400px; height: auto;" class="img-fluid rounded-4 shadow-sm">
+        <img src="<?= $recipe['feature_img']; ?>" alt="Soup" style="width: 400px; height: auto;" class="img-fluid rounded-4 shadow-sm">
       </div>
     </div>
 
@@ -33,25 +37,25 @@
   <div class="col-6 col-md-3">
     <div class="rounded-3 p-3 pt-2 text-center h-100 bg-white shadow-sm" style="border-top: 4px solid #B66A50">
       <h6 class="text-muted mb-1">Prep Time</h6>
-      <p class="mb-0 fw-semibold">10 mins</p>
+      <p class="mb-0 fw-semibold"><?= $recipe['prep_time']; ?></p>
     </div>
   </div>
   <div class="col-6 col-md-3">
     <div class="rounded-3 p-3 pt-2 text-center h-100 bg-white shadow-sm" style="border-top: 4px solid #B66A50">
       <h6 class="text-muted mb-1">Total Time</h6>
-      <p class="mb-0 fw-semibold">30 mins</p>
+      <p class="mb-0 fw-semibold"><?= $recipe['total_time']; ?></p>
     </div>
   </div>
   <div class="col-6 col-md-3">
     <div class="rounded-3 p-3 pt-2 text-center h-100 bg-white shadow-sm" style="border-top: 4px solid #B66A50">
       <h6 class="text-muted mb-1">Serving</h6>
-      <p class="mb-0 fw-semibold">3 People</p>
+      <p class="mb-0 fw-semibold"><?= $recipe['serving']; ?></p>
     </div>
   </div>
   <div class="col-6 col-md-3">
     <div class="rounded-3 p-3 pt-2 text-center h-100 bg-white shadow-sm" style="border-top: 4px solid #B66A50">
       <h6 class="text-muted mb-1">Yield</h6>
-      <p class="mb-0 fw-semibold">4 cups</p>
+      <p class="mb-0 fw-semibold"><?= $recipe['yield']; ?></p>
     </div>
   </div>
 </div>
@@ -64,19 +68,20 @@
         <div class="bg-white p-4 rounded-4 shadow-sm" style="font-size: 1.1rem;">
           <h4 class="fw-semibold mb-3">Ingredients</h4>
           <ul class="mb-5 colored">
-              <li class="mb-1" style="list-style-type: circle;">1 cup of Sprouted Lentils</li>
-              <li class="mb-1" style="list-style-type: circle;">2 tbsp Chia Seeds</li>
-              <li class="mb-1" style="list-style-type: circle;">2 cups of Tomato Juice (without sugar)</li>
-              <li class="mb-1" style="list-style-type: circle;">1 tbsp of Olichia</li>
-              <li class="mb-1" style="list-style-type: circle;">Salt and turmeric to taste</li>
+
+            <?php foreach ($recipe['ingredients'] as $ingredient) { ?>
+              <li class="mb-1" style="list-style-type: circle;"><?= $ingredient ?></li>
+            <?php  } ?>
+
           </ul>
 
           <h4 class="fw-semibold mt-4 mb-3">Instructions</h4>
           <ol class="mb-3 colored">
-              <li class="mb-1">Blend all the ingredients in the blender, except the Olichia. </li>
-              <li class="mb-1">Place the blended mixture in a pot and simmer for about 10 mins.</li>
-              <li class="mb-1">Serve the cream warm (without boiling).</li>
-              <li class="mb-1">Finish with a drizzle of the Olichia.</li>
+
+            <?php foreach ($recipe['instructions'] as $instructions) { ?>
+              <li class="mb-1"><?= $instructions ?></li>
+            <?php  } ?>
+
           </ol>
         </div>
       </div>

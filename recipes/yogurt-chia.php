@@ -1,4 +1,5 @@
-<?php include "../assets/include/config.php"; ?>
+<?php include "../assets/include/config.php"; 
+include $base_path . "assets/include/recipe_data.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,14 +17,17 @@
   <div class="container">
     <div class="row align-items-center mb-5">
       <!-- Text Column -->
+
+      <?php $recipe = $data['yogurt-chia']; ?>
+
       <div class="col-md-6 text-center">
         <p class="text-muted mb-2" style="font-size: 1.5rem;">Recipe</p>
-        <h2 class="fw-bold mb-3" style="font-size: 3rem;">Perfect Combination of Yogurt and Chia Seeds</h2>
-        <p class="lead">This combination became known as Chia Pudding. It is easy to prepare and perfect for breakfast, snacks and even dessert. After preparing it, you can add fruits, granola, honey, whey and even a pinch of Olichia for an even more complete meal!</p>
+        <h2 class="fw-bold mb-3" style="font-size: 3rem;"><?= $recipe['title']; ?></h2>
+        <p class="lead"><?= $recipe['content']; ?></p>
       </div>
       <!-- Image Column -->
       <div class="col-md-6 text-end">
-        <img src="<?=$base_url?>assets/img/recipes/yogurt.jpg" alt="Chia Yogurt" style="width: 400px; height: auto;" class="img-fluid rounded-4 shadow-sm">
+        <img src="<?= $recipe['feature_img']; ?>" alt="Chia Yogurt" style="width: 400px; height: auto;" class="img-fluid rounded-4 shadow-sm">
       </div>
     </div>
 
@@ -33,25 +37,25 @@
   <div class="col-6 col-md-3">
     <div class="rounded-3 p-3 pt-2 text-center h-100 bg-white shadow-sm" style="border-top: 4px solid #B66A50">
       <h6 class="text-muted mb-1">Prep Time</h6>
-      <p class="mb-0 fw-semibold">10 mins</p>
+      <p class="mb-0 fw-semibold"><?= $recipe['prep_time']; ?></p>
     </div>
   </div>
   <div class="col-6 col-md-3">
     <div class="rounded-3 p-3 pt-2 text-center h-100 bg-white shadow-sm" style="border-top: 4px solid #B66A50">
       <h6 class="text-muted mb-1">Total Time</h6>
-      <p class="mb-0 fw-semibold">8 hrs</p>
+      <p class="mb-0 fw-semibold"><?= $recipe['total_time']; ?></p>
     </div>
   </div>
   <div class="col-6 col-md-3">
     <div class="rounded-3 p-3 pt-2 text-center h-100 bg-white shadow-sm" style="border-top: 4px solid #B66A50">
       <h6 class="text-muted mb-1">Serving</h6>
-      <p class="mb-0 fw-semibold">1 Person</p>
+      <p class="mb-0 fw-semibold"><?= $recipe['serving']; ?></p>
     </div>
   </div>
   <div class="col-6 col-md-3">
     <div class="rounded-3 p-3 pt-2 text-center h-100 bg-white shadow-sm" style="border-top: 4px solid #B66A50">
       <h6 class="text-muted mb-1">Yield</h6>
-      <p class="mb-0 fw-semibold">1 Medium Bowl</p>
+      <p class="mb-0 fw-semibold"><?= $recipe['yield']; ?></p>
     </div>
   </div>
 </div>
@@ -64,14 +68,20 @@
         <div class="bg-white p-4 rounded-4 shadow-sm" style="font-size: 1.1rem;">
           <h4 class="fw-semibold mb-3">Ingredients</h4>
           <ul class="mb-5 colored">
-              <li class="mb-1" style="list-style-type: circle;">Liquid Ingredient (can be yogurt, vegetable drink or coconut milk)</li>
-              <li class="mb-1" style="list-style-type: circle;">Chia Seeds</li>
+
+            <?php foreach ($recipe['ingredients'] as $ingredient) { ?>
+              <li class="mb-1" style="list-style-type: circle;"><?= $ingredient ?></li>
+            <?php  } ?>
+
           </ul>
 
           <h4 class="fw-semibold mt-4 mb-3">Instructions</h4>
           <ol class="mb-3 colored">
-              <li class="mb-1">To prepare, simply mix 4 parts liquid to 1 part seeds and refrigerate overnight.</li>
-              <li class="mb-1">Serve with Berries or Dried Coconut</li>
+
+            <?php foreach ($recipe['instructions'] as $instructions) { ?>
+              <li class="mb-1"><?= $instructions ?></li>
+            <?php  } ?>
+
           </ol>
         </div>
       </div>

@@ -11,7 +11,7 @@ else{
 
 session_start();
 
-$default_lang = 'en';
+$default_lang = 'jp';
 $lang = $_SESSION['ethnic']['selected_lang'] ?? $default_lang;
 
 $allowed_langs = ['en', 'jp'];

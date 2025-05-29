@@ -1,4 +1,5 @@
-<?php include "../assets/include/config.php"; ?>
+<?php include "../assets/include/config.php"; 
+include $base_path . "assets/include/recipe_data.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,14 +17,17 @@
   <div class="container">
     <div class="row align-items-center mb-5">
       <!-- Text Column -->
+
+      <?php $recipe = $data['arugula-pesto']; ?>
+
       <div class="col-md-6 text-center">
         <p class="text-muted mb-2" style="font-size: 1.5rem;">Recipe</p>
-        <h2 class="fw-bold mb-3" style="font-size: 3rem;">Arugula Pesto with Gorgonzola</h2>
-        <p class="lead">Arugula pesto is a tasty, slightly spicy sauce. There are different ways to prepare it, the traditional version is made with arugula leaves, toasted nuts, cheese, olive oil and lemon juice, a nutritious and easy-to-make mixture.</p>
+        <h2 class="fw-bold mb-3" style="font-size: 3rem;"><?= $recipe['title']; ?></h2>
+        <p class="lead"><?= $recipe['content']; ?></p>
       </div>
       <!-- Image Column -->
       <div class="col-md-6 text-end">
-        <img src="<?=$base_url?>assets/img/recipes/arugula_pesto.webp" alt="Arugula Pesto" style="width: 400px; height: auto;" class="img-fluid rounded-4 shadow-sm">
+        <img src="<?= $recipe['feature_img']; ?>" alt="Arugula Pesto" style="width: 400px; height: auto;" class="img-fluid rounded-4 shadow-sm">
       </div>
     </div>
 
@@ -33,25 +37,25 @@
   <div class="col-6 col-md-3">
     <div class="rounded-3 p-3 pt-2 text-center h-100 bg-white shadow-sm" style="border-top: 4px solid #B66A50">
       <h6 class="text-muted mb-1">Prep Time</h6>
-      <p class="mb-0 fw-semibold">10 mins</p>
+      <p class="mb-0 fw-semibold"><?= $recipe['prep_time']; ?></p>
     </div>
   </div>
   <div class="col-6 col-md-3">
     <div class="rounded-3 p-3 pt-2 text-center h-100 bg-white shadow-sm" style="border-top: 4px solid #B66A50">
       <h6 class="text-muted mb-1">Total Time</h6>
-      <p class="mb-0 fw-semibold">10 mins</p>
+      <p class="mb-0 fw-semibold"><?= $recipe['total_time']; ?></p>
     </div>
   </div>
   <div class="col-6 col-md-3">
     <div class="rounded-3 p-3 pt-2 text-center h-100 bg-white shadow-sm" style="border-top: 4px solid #B66A50">
       <h6 class="text-muted mb-1">Serving</h6>
-      <p class="mb-0 fw-semibold">5 People</p>
+      <p class="mb-0 fw-semibold"><?= $recipe['serving']; ?></p>
     </div>
   </div>
   <div class="col-6 col-md-3">
     <div class="rounded-3 p-3 pt-2 text-center h-100 bg-white shadow-sm" style="border-top: 4px solid #B66A50">
       <h6 class="text-muted mb-1">Yield</h6>
-      <p class="mb-0 fw-semibold">1 Medium Bowl</p>
+      <p class="mb-0 fw-semibold"><?= $recipe['yield']; ?></p>
     </div>
   </div>
 </div>
@@ -64,25 +68,20 @@
         <div class="bg-white p-4 rounded-4 shadow-sm" style="font-size: 1.1rem;">
           <h4 class="fw-semibold mb-3">Ingredients</h4>
           <ul class="mb-5 colored">
-              <li class="mb-1" style="list-style-type: circle;">1 Bunch of Washed Arugula</li>
-              <li class="mb-1" style="list-style-type: circle;">2 tbsp Chia Seeds</li>
-              <li class="mb-1" style="list-style-type: circle;">1 ½ cups of Crumbled Gorgonzola Cheese</li>
-              <li class="mb-1" style="list-style-type: circle;">½ cup of Toasted, Peeled Almonds</li>
-              <li class="mb-1" style="list-style-type: circle;">½ clove of Garlic</li>
-              <li class="mb-1" style="list-style-type: circle;">2 cups of Olichia</li>
-              <li class="mb-1" style="list-style-type: circle;">Salt and Pepper to Taste</li>
-              <li class="mb-1" style="list-style-type: circle;">Water</li>
-              <li class="mb-1" style="list-style-type: circle;">Ice cubes</li>
+
+            <?php foreach ($recipe['ingredients'] as $ingredient) { ?>
+              <li class="mb-1" style="list-style-type: circle;"><?= $ingredient ?></li>
+            <?php  } ?>
+
           </ul>
 
           <h4 class="fw-semibold mt-4 mb-3">Instructions</h4>
           <ol class="mb-3 colored">
-              <li class="mb-1">Bring a medium pot of water to a boil and fill a bowl with ice and water. Then place the arugula leaves in the boiling water, count to 15 seconds and remove them with a slotted spoon and place them in the ice water (this process is called blanching and guarantees a milder flavor and a very green pesto)</li>
-              <li class="mb-1">Drain the leaves, squeeze out the excess water and place them in the food processor.</li>
-              <li class="mb-1">In the food processor, along with the leaves, place the half clove of garlic and half of the Olichia. Pulse for 45 seconds or until the leaves are in small pieces, but not processed like a puree.</li>
-              <li class="mb-1">Add the almonds and pulse three or four more times so that they are in small pieces.</li>
-              <li class="mb-1">Transfer to a bowl, add the crumbled cheese and the remaining Olichia, a pinch of salt and pepper. Mix to combine everything.</li>
-              <li class="mb-1" style="list-style: none;">Note: the pesto will last up to a month if stored in a jar with an airtight lid and always covered with Olichia. Serve with pasta, gnocchi or even with a slice of toasted bread and a glass of wine.</li>
+
+            <?php foreach ($recipe['instructions'] as $instructions) { ?>
+              <li class="mb-1"><?= $instructions ?></li>
+            <?php  } ?>
+
           </ol>
         </div>
       </div>
@@ -105,8 +104,6 @@
               <p class="mb-1 fw-semibold">Ratatouille with Olichia with natural Basil aroma</p>
             </div>
           </a>
-
-
 
         </div>
       </div>
