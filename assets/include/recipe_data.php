@@ -1,6 +1,6 @@
 <?php
 
-$data = [
+$recipe_data = [
     'chia-pudding-recipe' => [
         'url' => 'chia-pudding-recipe',
         'title' => 'Chia Pudding',
@@ -75,7 +75,7 @@ $data = [
             'Cover the slices of bread with the slices and decorate with halved cherry tomatoes. Finish with oregano oil.'
         ]
     ],
-    'chia-pudding-recipe' => [
+    'blueberry-chia-juice' => [
         'url' => 'blueberry-chia-juice',
         'title' => 'Blueberry and Chia Juice',
         'content' => 'A nutritious yet refreshing drink to get your energy for the day',
