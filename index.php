@@ -493,7 +493,7 @@
         <div class="row row-cols-1 row-cols-md-4 g-4 align-items-stretch" data-aos="fade-up" data-aos-delay="300">
     
           <div class="col d-flex">
-            <a href="<?=$base_url?>recipes/chia-pudding-recipe">
+            <a href="<?=$base_url?>recipe?chia-pudding-recipe">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="<?=$base_url?>assets/img/recipes/chia_pudding.webp" class="img-fluid" alt="" loading="lazy">
@@ -508,7 +508,7 @@
           </div>
 
           <div class="col d-flex">
-            <a href="<?=$base_url?>recipes/soup">
+            <a href="<?=$base_url?>recipe?soup">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="<?=$base_url?>assets/img/recipes/soup.jpg" class="img-fluid" alt="" loading="lazy">
@@ -523,7 +523,7 @@
           </div>
 
           <div class="col d-flex">
-            <a href="<?=$base_url?>recipes/breakfast-bowl">
+            <a href="<?=$base_url?>recipe?breakfast-bowl">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="<?=$base_url?>assets/img/recipes/bowl.webp" class="img-fluid" alt="" loading="lazy">
@@ -538,7 +538,7 @@
           </div>
 
           <div class="col d-flex">
-            <a href="<?=$base_url?>recipes/bruschetta">
+            <a href="<?=$base_url?>recipe?bruschetta">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
                   <img src="<?=$base_url?>assets/img/recipes/bruschetta.jpg" class="img-fluid" alt="" loading="lazy">
