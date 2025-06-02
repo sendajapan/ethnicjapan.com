@@ -2,18 +2,20 @@
 
 $blog_data = [
     'benefits-omega' => [
-        'url' => 'benefits-omega',
+        'url' => $base_url . 'blog?benefits-omega',
         'title' => 'オメガ3の効果',
         'date' => '2022/10/13',
         'feature_img' => $base_url . 'assets/img/blog/blog3.webp',
+        'category' => '利点',
         'content' => 'オメガ3は身体にとって非常に重要な栄養素です。加齢による脳の損傷を防ぎ、記憶力を助け、心血管の健康をサポートし、抗炎症作用があり、目にも良い影響を与えます。オメガ3は魚油やチアシード、そして Produza Foods のオリーチャにも含まれており、大さじ1杯で1日に必要な摂取量を補うことができます。'
     ],
 
     'chia-recipe' => [
-        'url' => 'chia-recipe',
+        'url' => $base_url . 'blog?chia-recipe',
         'title' => 'フルーツ入りの美味しいヴィーガンチアプディングの作り方！',
         'date' => '2022/10/13',
         'feature_img' => $base_url . 'assets/img/blog/blog1.webp',
+        'category' => 'レシピ',
         'content' => '【材料】：
             <br>
             無糖植物性ミルク 120g（120ml｜1/2カップ）
@@ -41,10 +43,11 @@ $blog_data = [
             バニラやシナモンなど、お好みの香りづけも加えることができます。'
     ],
     'how-to-chia' => [
-        'url' => 'how-to-chia',
+        'url' => $base_url . 'blog?how-to-chia',
         'title' => 'チアシードを正しく摂取する方法をご存じですか？',
         'date' => '2022/10/13',
-        'feature_img' => $base_url . 'assets/img/blog/blog2.webp',
+        'feature_img' => $base_url . 'assets/img/blog/blog2.jpg',
+        'category' => '方法',
         'content' => 'チアシードの効果を得るには、1日に大さじ2杯の摂取が推奨されています。そして、最も良い摂取方法は「水分を含ませた状態」で摂ることです。水で戻さずに食べると、便秘の原因になる可能性があります。摂取前に水に約15分ほど浸けておくだけでOKです。
             <br><br>
             私たちは、あなたの健康を考えて高品質なチアシードを生産しています。正しい摂取方法がわかった今、ぜひ当社のチアシードをご購入いただき、健康管理にお役立てください！'

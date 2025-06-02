@@ -2,8 +2,10 @@
 
 $recipe_data = [
     'chia-pudding-recipe' => [
-        'url' => 'chia-pudding-recipe',
+        'url' => $base_url . 'recipe?chia-pudding-recipe',
+        'category' => 'Breakfast',
         'title' => 'Chia Pudding',
+        'sub' => 'A nutritious porridge to start the day with energy!',
         'content' => 'A nutritious porridge to start the day with energy!',
         'feature_img' => $base_url . 'assets/img/recipes/chia_pudding.webp',
         'prep_time' => '10 mins',
@@ -24,8 +26,10 @@ $recipe_data = [
         ]
     ],
     'arugula-pesto' => [
-        'url' => 'arugula-pesto',
+        'url' => $base_url . 'recipe?arugula-pesto',
+        'category' => 'Savory',
         'title' => 'Arugula Pesto with Gorgonzola',
+        'sub' => 'Arugula pesto is a tasty, slightly spicy sauce. ',
         'content' => 'Arugula pesto is a tasty, slightly spicy sauce. There are different ways to prepare it, the traditional version is made with arugula leaves, toasted nuts, cheese, olive oil and lemon juice, a nutritious and easy-to-make mixture.',
         'feature_img' => $base_url . 'assets/img/recipes/arugula_pesto.webp',
         'prep_time' => '10 mins',
@@ -53,8 +57,10 @@ $recipe_data = [
         ]
     ],
     'avocado-toast' => [
-        'url' => 'avocado-toast',
+        'url' => $base_url . 'recipe?avocado-toast',
+        'category' => 'Snacks',
         'title' => 'Avocado Toast with Oregano Oil',
+        'sub' => 'Avocado is one of the most consumed foods in Brazil. But usually, its recipes are sweet.',
         'content' => 'Avocado is one of the most consumed foods in Brazil. But usually, its recipes are sweet. How about this trend full of nutrients with a taste of oregano?',
         'feature_img' => $base_url . 'assets/img/recipes/toast.webp',
         'prep_time' => '10 mins',
@@ -76,8 +82,10 @@ $recipe_data = [
         ]
     ],
     'blueberry-chia-juice' => [
-        'url' => 'blueberry-chia-juice',
+        'url' => $base_url . 'recipe?blueberry-chia-juice',
+        'category' => 'Drinks',
         'title' => 'Blueberry and Chia Juice',
+        'sub' => 'A nutritious yet refreshing drink to get your energy for the day',
         'content' => 'A nutritious yet refreshing drink to get your energy for the day',
         'feature_img' => $base_url . 'assets/img/recipes/juice.webp',
         'prep_time' => '5 mins',
@@ -95,8 +103,10 @@ $recipe_data = [
         ]
     ],
     'breakfast-bowl' => [
-        'url' => 'breakfast-bowl',
+        'url' => $base_url . 'recipe?breakfast-bowl',
+        'category' => 'Breakfast',
         'title' => 'Breakfast Bowl',
+        'sub' => 'A delicious and healthy breakfast option, the Breakfast Bowl will become a regular part of your routine!',
         'content' => 'A delicious and healthy breakfast option, the Breakfast Bowl will become a regular part of your routine!',
         'feature_img' => $base_url . 'assets/img/recipes/bowl.webp',
         'prep_time' => '10 mins',
@@ -119,8 +129,10 @@ $recipe_data = [
         ]
     ],
     'bruschetta' => [
-        'url' => 'bruschetta',
+        'url' => $base_url . 'recipe?bruschetta',
+        'category' => 'Snacks',
         'title' => 'Bruschetta with Garlic Olichia',
+        'sub' => 'Bruschetta is an Italian appetizer made with a slice of rustic bread, with a hard crust and toasted on the grill.',
         'content' => 'Bruschetta is an Italian appetizer made with a slice of rustic bread, made with dark, thick flour, with a hard crust, toasted on the grill, rubbed with garlic, brushed with plenty of olive oil and sprinkled with salt and occasionally black pepper. This is a typical Italian recipe, which has a familiar and welcoming flavor.',
         'feature_img' => $base_url . 'assets/img/recipes/bruschetta.jpg',
         'prep_time' => '10 mins',
@@ -142,8 +154,10 @@ $recipe_data = [
         ]
     ],
     'cocoa-chia-cookies' => [
-        'url' => 'cocoa-chia-cookies',
+        'url' => $base_url . 'recipe?cocoa-chia-cookies',
+        'category' => 'Snacks',
         'title' => 'Cocoa and Chia Cookies',
+        'sub' => 'A recipe to sweeten your day and make everything even tastier',
         'content' => 'A recipe to sweeten your day and make everything even tastier',
         'feature_img' => $base_url . 'assets/img/recipes/cocoa_chia_cookies.webp',
         'prep_time' => '15 mins',
@@ -166,8 +180,10 @@ $recipe_data = [
         ]
     ],
     'focaccia' => [
-        'url' => 'focaccia',
+        'url' => $base_url . 'recipe?focaccia',
+        'category' => 'Savory',
         'title' => 'Focaccia with Garlic Oil',
+        'sub' => 'For those who like the delicious aroma and flavor of garlic, how about a recipe?',
         'content' => 'For those who like the delicious aroma and flavor of garlic, how about a recipe?',
         'feature_img' => $base_url . 'assets/img/recipes/focaccia.jpg',
         'prep_time' => '1 hr 30 mins',
@@ -196,8 +212,10 @@ $recipe_data = [
         ]
     ],
     'protein-smoothie' => [
-        'url' => 'protein-smoothie',
+        'url' => $base_url . 'recipe?protein-smoothie',
+        'category' => 'Drinks',
         'title' => 'Refreshing Protein Smoothie',
+        'sub' => 'Smoothies are complete juices and ideal for those seeking a healthy diet, rich in fiber and vitamins.',
         'content' => 'Smoothies are complete juices and ideal for those seeking a healthy diet, rich in fiber and vitamins. Recipes based on fresh fruits provide greater nutrition and well-being. Havent you tried smoothies yet? Then imagine a refreshing drink made with fruits and natural ingredients, in addition to having a delicious flavor.',
         'feature_img' => $base_url . 'assets/img/recipes/smoothie.webp',
         'prep_time' => '10 mins',
@@ -217,8 +235,10 @@ $recipe_data = [
         ]
     ],
     'ratatouille' => [
-        'url' => 'ratatouille',
+        'url' => $base_url . 'recipe?ratatouille',
+        'category' => 'Savory',
         'title' => 'Ratatouille with Olichia with natural Basil aroma',
+        'sub' => 'Ratatouille is a classic French dish that became very famous thanks to the film of the same name.',
         'content' => 'Ratatouille is a classic French dish that became very famous thanks to the film of the same name, which tells the story of a little mouse who is a great cook. And thats not all; this dish deserves its fame, because in addition to being healthy, its delicious. But as everything good can be improved, a touch of Basil Olichia will bring much more flavor and health to your dish. Check out the recipe here!',
         'feature_img' => $base_url . 'assets/img/recipes/ratatouille.jpeg',
         'prep_time' => '10 mins',
@@ -242,8 +262,10 @@ $recipe_data = [
         ]
     ],
     'shake' => [
-        'url' => 'shake',
+        'url' => $base_url . 'recipe?shake',
+        'category' => 'Drinks',
         'title' => 'Pre-workout Shake',
+        'sub' => 'Healthy, quick and easy shake to make for you to consume before training or at any time of the day.',
         'content' => 'Healthy, quick and easy shake to make for you to consume before training or at any time of the day.',
         'feature_img' => $base_url . 'assets/img/recipes/shake.webp',
         'prep_time' => '10 mins',
@@ -263,8 +285,10 @@ $recipe_data = [
         ]
     ],
     'soup' => [
-        'url' => 'soup',
+        'url' => $base_url . 'recipe?soup',
+        'category' => 'Savory',
         'title' => 'Creamy Soup of Sprouted Lentils, Tomato and Olive Oil',
+        'sub' => 'That recipe for those who love flavors and creamy soups!',
         'content' => 'That recipe for those who love flavors and creamy soups!',
         'feature_img' => $base_url . 'assets/img/recipes/soup.jpg',
         'prep_time' => '10 mins',
@@ -286,8 +310,10 @@ $recipe_data = [
         ]
     ],
     'yogurt-chia' => [
-        'url' => 'yogurt-chia',
+        'url' => $base_url . 'recipe?yogurt-chia',
+        'category' => 'Breakfast',
         'title' => 'Perfect Combination of Yogurt and Chia Seeds',
+        'sub' => 'This combination became known as Chia Pudding. It is easy to prepare and perfect for breakfast.',
         'content' => 'This combination became known as Chia Pudding. It is easy to prepare and perfect for breakfast, snacks and even dessert. After preparing it, you can add fruits, granola, honey, whey and even a pinch of Olichia for an even more complete meal!',
         'feature_img' => $base_url . 'assets/img/recipes/yogurt.jpg',
         'prep_time' => '10 mins',

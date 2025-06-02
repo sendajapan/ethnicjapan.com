@@ -354,32 +354,6 @@ $language["blogs_you_may_like_date2"] = "April 28, 2025";
 //recipe page
 $language["recipes_title"] = "Recipes";
 $language["recipes_subtitle"] = "Explore seasonal, organic recipes made with real ingredients.";
-$language["recipes"] = [
-    [
-        "id" => 1,
-        "title" => "",
-        "subtitle" => "",
-        "paragraph" => ""
-    ],
-    [
-        "id" => 2,
-        "title" => "",
-        "subtitle" => "",
-        "paragraph" => ""
-    ],
-    [
-        "id" => 3,
-        "title" => "",
-        "subtitle" => "",
-        "paragraph" => ""
-    ],
-    [
-        "id" => 4,
-        "title" => "",
-        "subtitle" => "",
-        "paragraph" => ""
-    ],
-];
 
 
 //contact page

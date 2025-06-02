@@ -2,7 +2,8 @@
 
 $recipe_data = [
     'chia-pudding-recipe' => [
-        'url' => 'chia-pudding-recipe',
+        'url' => $base_url . 'recipe?chia-pudding-recipe',
+        'category' => '朝食',
         'title' => 'チアプリン',
         'content' => '朝のエネルギーチャージにぴったりの栄養たっぷりおかゆ！',
         'feature_img' => $base_url . 'assets/img/recipes/chia_pudding.webp',
@@ -24,7 +25,8 @@ $recipe_data = [
         ]
     ],
     'arugula-pesto' => [
-        'url' => 'arugula-pesto',
+        'url' => $base_url . 'recipe?arugula-pesto',
+        'category' => '夕食',
         'title' => 'ルッコラとゴルゴンゾーラのペスト',
         'content' => 'ルッコラのペストは、美味しくて少しスパイシーなソースです。伝統的なバージョンは、ルッコラの葉、トーストしたナッツ、チーズ、オリーブオイル、レモンジュースで作られ、栄養価が高く、簡単に作れる混合物です。',
         'feature_img' => $base_url . 'assets/img/recipes/arugula_pesto.webp',
@@ -53,7 +55,8 @@ $recipe_data = [
         ]
     ],
     'avocado-toast' => [
-        'url' => 'avocado-toast',
+        'url' => $base_url . 'recipe?avocado-toast',
+        'category' => 'スナック',
         'title' => 'アボカドトースト オレガノオイル添え',
         'content' => 'アボカドはブラジルで最も消費されている食品の一つですが、通常は甘いレシピで使われます。オレガノの風味が効いた栄養満点のトレンドはいかがですか？',
         'feature_img' => $base_url . 'assets/img/recipes/toast.webp',
@@ -76,7 +79,8 @@ $recipe_data = [
         ]
     ],
     'blueberry-chia-juice' => [
-        'url' => 'blueberry-chia-juice',
+        'url' => $base_url . 'recipe?blueberry-chia-juice',
+        'category' => '飲む',
         'title' => 'ブルーベリーとチアシードのジュース',
         'content' => '栄養豊富で爽やかなドリンクで、一日のエネルギーをチャージしましょう。',
         'feature_img' => $base_url . 'assets/img/recipes/juice.webp',
@@ -95,7 +99,8 @@ $recipe_data = [
         ]
     ],
     'breakfast-bowl' => [
-        'url' => 'breakfast-bowl',
+        'url' => $base_url . 'recipe?breakfast-bowl',
+        'category' => '朝食',
         'title' => 'ブレックファストボウル',
         'content' => '美味しくて健康的な朝食の選択肢、ブレックファストボウルはあなたのルーティンの定番になるでしょう！',
         'feature_img' => $base_url . 'assets/img/recipes/bowl.webp',
@@ -119,7 +124,8 @@ $recipe_data = [
         ]
     ],
     'bruschetta' => [
-        'url' => 'bruschetta',
+        'url' => $base_url . 'recipe?bruschetta',
+        'category' => '夕食',
         'title' => 'ガーリックオリチアのブルスケッタ',
         'content' => 'ブルスケッタは、イタリアの前菜で、濃厚な小麦粉で作られた硬いクラストの田舎風パンのスライスをグリルでトーストし、にんにくを擦り付け、たっぷりのオリーブオイルを塗り、塩と時には黒胡椒を振りかけたものです。これは典型的なイタリアのレシピで、親しみやすく心温まる味わいがあります。',
         'feature_img' => $base_url . 'assets/img/recipes/bruschetta.jpg',
@@ -142,7 +148,8 @@ $recipe_data = [
         ]
     ],
     'cocoa-chia-cookies' => [
-        'url' => 'cocoa-chia-cookies',
+        'url' => $base_url . 'recipe?cocoa-chia-cookies',
+        'category' => 'スナック',
         'title' => 'ココアとチアシードのクッキー',
         'content' => '一日を甘く、美味しくしてくれるレシピです',
         'feature_img' => $base_url . 'assets/img/recipes/cocoa_chia_cookies.webp',
@@ -166,7 +173,8 @@ $recipe_data = [
         ]
     ],
     'focaccia' => [
-        'url' => 'focaccia',
+        'url' => $base_url . 'recipe?focaccia',
+        'category' => 'スナック',
         'title' => 'ガーリックオイルのフォカッチャ',
         'content' => 'ガーリックの香りと風味が好きな方に、こんなレシピはいかがですか？',
         'feature_img' => $base_url . 'assets/img/recipes/focaccia.jpg',
@@ -196,7 +204,8 @@ $recipe_data = [
         ]
     ],
     'protein-smoothie' => [
-        'url' => 'protein-smoothie',
+        'url' => $base_url . 'recipe?protein-smoothie',
+        'category' => '飲む',
         'title' => 'さわやかなプロテインスムージー',
         'content' => 'スムージーは完全なジュースで、食物繊維やビタミンが豊富な健康的な食事を求める方に最適です。新鮮な果物を使ったレシピは、より栄養価が高く、健康維持に役立ちます。まだスムージーを試したことがありませんか？では、フルーツと自然の材料で作られた、しかも美味しい味わいのさわやかなドリンクを想像してみてください。',
         'feature_img' => $base_url . 'assets/img/recipes/smoothie.webp',
@@ -217,7 +226,8 @@ $recipe_data = [
         ]
     ],
     'ratatouille' => [
-        'url' => 'ratatouille',
+        'url' => $base_url . 'recipe?ratatouille',
+        'category' => '夕食',
         'title' => '自然なバジルの香りのオリキア入りラタトゥイユ',
         'content' => 'ラタトゥイユは、同名の映画で有名になったクラシックなフランス料理です。この映画は優れた料理人である小さなネズミの物語を描いています。しかし、それだけではありません。この料理は健康的であるだけでなく、とても美味しいため、その名声に値します。さらに良くするために、バジルのオリキアを少し加えることで、料理により豊かな風味と健康効果をもたらします。レシピはこちらをご覧ください！',
         'feature_img' => $base_url . 'assets/img/recipes/ratatouille.jpeg',
@@ -242,7 +252,8 @@ $recipe_data = [
         ]
     ],
     'shake' => [
-        'url' => 'shake',
+        'url' => $base_url . 'recipe?shake',
+        'category' => '飲む',
         'title' => 'トレーニング前シェイク',
         'content' => 'トレーニング前や一日のいつでも手軽に飲める、健康的で簡単なシェイクです。',
         'feature_img' => $base_url . 'assets/img/recipes/shake.webp',
@@ -263,7 +274,8 @@ $recipe_data = [
         ]
     ],
     'soup' => [
-        'url' => 'soup',
+        'url' => $base_url . 'recipe?soup',
+        'category' => '夕食',
         'title' => '発芽レンズ豆とトマト、オリーチャオイルのクリーミースープ',
         'content' => '風味豊かでクリーミーなスープが好きな方におすすめのレシピです！',
         'feature_img' => $base_url . 'assets/img/recipes/soup.jpg',
@@ -286,7 +298,8 @@ $recipe_data = [
         ]
     ],
     'yogurt-chia' => [
-        'url' => 'yogurt-chia',
+        'url' => $base_url . 'recipe?yogurt-chia',
+        'category' => '朝食',
         'title' => 'ヨーグルトとチアシードの完璧な組み合わせ',
         'content' => 'この組み合わせは「チアプディング」として知られるようになりました。準備が簡単で、朝食やおやつ、デザートにもぴったりです。作った後は、フルーツやグラノーラ、はちみつ、ホエイ、そしてひとつまみのオリーチャを加えて、さらに栄養満点の一品にすることもできます！',
         'feature_img' => $base_url . 'assets/img/recipes/yogurt.jpg',

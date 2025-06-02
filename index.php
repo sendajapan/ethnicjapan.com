@@ -1,4 +1,6 @@
-<?php include "assets/include/config.php"; ?>
+<?php include "assets/include/config.php"; 
+include $base_path . "assets/include/blog_data.php";
+include $base_path . "assets/include/recipe_data.php"; ?>
 
 
 <!DOCTYPE html>
@@ -111,8 +113,6 @@
               <h2><?= $language["about_main_title"]; ?></h2>
 
               <p class="lead mb-4"><?= $language["about_paragraph"]; ?></p>
-
-              <!--<p class="mb-4">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>-->
 
               <div class="personal-info">
                 <div class="row g-4">
@@ -441,35 +441,28 @@
 
     <div class="row g-4 align-items-stretch" data-aos="fade-up" data-aos-delay="300">
       
-      <div class="col-lg-6 col-md-6">
-        <div class="portfolio-card h-100">
-          <a href="<?=$base_url?>blogs/how-to-chia" class="portfolio-link d-block h-100 text-decoration-none text-reset">
-            <div class="portfolio-image">
-              <img src="<?=$base_url?>assets/img/blog/blog2.webp" class="img-fluid" alt="" loading="lazy">
-            </div>
-            <div class="portfolio-content">
-              <span class="category">Benefits</span>
-              <h3>Do You Know How to Consume Chia Correctly?</h3>
-              <p>10/13/2022</p>
-            </div>
-          </a>
-        </div>
-      </div><!-- End Blog Item -->
+      <?php
+          $count = 0;
+          foreach ($blog_data as $key => $blog):
+            if ($count >= 2) break;
+            $count++; ?>
       
       <div class="col-lg-6 col-md-6">
         <div class="portfolio-card h-100">
-          <a href="<?=$base_url?>blogs/benefits-omega" class="portfolio-link d-block h-100 text-decoration-none text-reset">
+          <a href="<?= $blog['url']; ?>" class="portfolio-link d-block h-100 text-decoration-none text-reset">
             <div class="portfolio-image">
-              <img src="<?=$base_url?>assets/img/blog/blog3.webp" class="img-fluid" alt="" loading="lazy">
+              <img src="<?= $blog['feature_img']; ?>" class="img-fluid" alt="" loading="lazy">
             </div>
             <div class="portfolio-content">
-              <span class="category">Benefits</span>
-              <h3>Benefits of Omega 3</h3>
-              <p>10/13/2022</p>
+              <span class="category"><?= $blog['category']; ?></span>
+              <h3><?= $blog['title']; ?></h3>
+              <p><?= $blog['date']; ?></p>
             </div>
           </a>
         </div>
       </div><!-- End Blog Item -->
+      <?php endforeach; ?>
+
 
     </div>
 
@@ -483,73 +476,34 @@
     
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Recipes</h2>
-        <p>Explore seasonal, organic recipes made with real ingredients.</p>
+        <h2><?= $language["recipes_title"] ?></h2>
+        <p><?= $language["recipes_subtitle"] ?></p>
       </div>
     
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row row-cols-1 row-cols-md-4 g-4 align-items-stretch" data-aos="fade-up" data-aos-delay="300">
     
+        <?php
+          $count = 0;
+          foreach ($recipe_data as $key => $recipe):
+            if ($count >= 4) break;
+            $count++; ?>
           <div class="col d-flex">
-            <a href="<?=$base_url?>recipe?chia-pudding-recipe">
+            <a href="<?= $recipe['url']; ?>">
               <div class="portfolio-card d-flex flex-column h-100 w-100">
                 <div class="portfolio-image">
-                  <img src="<?=$base_url?>assets/img/recipes/chia_pudding.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="<?= $recipe['feature_img']; ?>" class="img-fluid" alt="" loading="lazy">
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Breakfast</span>
-                  <h3>Chia Seed Pudding</h3>
-                  <p>A nutritious porridge to start the day with energy!</p>
+                  <span class="category"><?= $recipe['category']; ?></span>
+                  <h3><?= $recipe['title']; ?></h3>
+                  <p><?= $recipe['sub']; ?></p>
                 </div>
               </div>
             </a>
           </div>
+        <?php endforeach; ?>
 
-          <div class="col d-flex">
-            <a href="<?=$base_url?>recipe?soup">
-              <div class="portfolio-card d-flex flex-column h-100 w-100">
-                <div class="portfolio-image">
-                  <img src="<?=$base_url?>assets/img/recipes/soup.jpg" class="img-fluid" alt="" loading="lazy">
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Savory</span>
-                  <h3>Creamy Soup of Sprouted Lentils, Tomato and Olive Oil</h3>
-                  <p>That recipe for those who love flavors and creamy soups!</p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col d-flex">
-            <a href="<?=$base_url?>recipe?breakfast-bowl">
-              <div class="portfolio-card d-flex flex-column h-100 w-100">
-                <div class="portfolio-image">
-                  <img src="<?=$base_url?>assets/img/recipes/bowl.webp" class="img-fluid" alt="" loading="lazy">
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Breakfast</span>
-                  <h3>Breakfast Bowl</h3>
-                  <p>A delicious and healthy breakfast option, the Breakfast Bowl will become a regular part of your routine!</p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col d-flex">
-            <a href="<?=$base_url?>recipe?bruschetta">
-              <div class="portfolio-card d-flex flex-column h-100 w-100">
-                <div class="portfolio-image">
-                  <img src="<?=$base_url?>assets/img/recipes/bruschetta.jpg" class="img-fluid" alt="" loading="lazy">
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Snacks</span>
-                  <h3>Bruschetta with Garlic Olichia</h3>
-                  <p>Bruschetta is an Italian appetizer made with a slice of rustic bread, made with dark, thick flour.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-    
         </div>
       </div>
     </section><!-- /Blog Section -->
