@@ -29,7 +29,7 @@
 
           <div class="col-md-6 col-lg-3">
             <div class="skill-box h-100">
-              <img src="<?=$base_url?>assets/img/svg/mail.svg" alt="" style="width: 5rem; padding-bottom: 25px; ">
+              <img src="<?=$base_url?>assets/img/svg/mail1.svg" alt="" style="width: 5rem; padding-bottom: 25px; padding-right: 0;">
               <p class="text-center"><?= $language["contact_cards"][0]["title"] ?></p>
               <h3><?= $language["contact_cards"][0]["paragraph"] ?></h3>
             </div>
@@ -37,7 +37,7 @@
 
           <div class="col-md-6 col-lg-3">
             <div class="skill-box h-100">
-              <img src="<?=$base_url?>assets/img/svg/phone.svg" alt="" style="width: 5rem; padding-bottom: 25px; ">
+              <img src="<?=$base_url?>assets/img/svg/phone1.svg" alt="" style="width: 5rem; padding-bottom: 25px; padding-right: 0;">
               <p class="text-center"><?= $language["contact_cards"][1]["title"] ?></p>
               <h3><?= $language["contact_cards"][1]["paragraph"] ?></h3>
             </div>
@@ -45,7 +45,7 @@
 
           <div class="col-md-6 col-lg-3">
             <div class="skill-box h-100">
-              <img src="<?=$base_url?>assets/img/svg/location.svg" alt="" style="width: 5rem; padding-bottom: 25px; ">
+              <img src="<?=$base_url?>assets/img/svg/location1.svg" alt="" style="width: 5rem; padding-bottom: 25px; padding-right: 0;">
               <p class="text-center"><?= $language["contact_cards"][2]["title"] ?></p>
               <h3><?= $language["contact_cards"][2]["paragraph"] ?></h3>
           </div>

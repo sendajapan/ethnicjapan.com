@@ -225,11 +225,9 @@
         </section> <!--/ End Service Intro -->
 
 
-
-<!-- Oils Section -->
+        
+    <!-- Oils Section -->
     <section id="skills" class="skills section">
-      
-
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
           <!-- Page Title -->
@@ -239,39 +237,39 @@
           </div><!-- End Page Title -->
         <div class="row skills-animation justify-content-md-center align-items-stretch">
 
-          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-12 col-md-12 col-sm-12 col-lg-4 " data-aos="fade-up" data-aos-delay="100">
               <div class="skill-box-header">
               <h4><?= $language["promoted_oils_list"][0]["title"] ?></h4>
               </div>
 
-            <div class="skill-box d-flex h-90">
+            <div class="skill-box h-100">
               <img src="<?=$base_url?>assets/img/categories/chia-oil.webp" alt="">
               <div class="info-right d-block text-start">
-                <p><?= $language["promoted_oils_list"][0]["paragraph"] ?></p>
+                <p class="mt-5"><?= $language["promoted_oils_list"][0]["paragraph"] ?></p>
               </div>
             </div>
           </div>
 
-            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-12 col-md-12 col-sm-12 col-lg-4 " data-aos="fade-up" data-aos-delay="100">
                 <div class="skill-box-header">
                     <h4><?= $language["promoted_oils_list"][1]["title"] ?></h4>
                 </div>
-            <div class="skill-box d-flex h-90">
+            <div class="skill-box h-100">
               <img src="<?=$base_url?>assets/img/categories/olive-oil.webp" alt="">
               <div class="info-right d-block text-start">
-                <p><?= $language["promoted_oils_list"][1]["paragraph"] ?></p>
+                <p class="mt-5"><?= $language["promoted_oils_list"][1]["paragraph"] ?></p>
               </div>
             </div>
           </div>
 
-            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-12 col-md-12 col-sm-12 col-lg-4 " data-aos="fade-up" data-aos-delay="100">
                 <div class="skill-box-header">
                     <h4><?= $language["promoted_oils_list"][2]["title"] ?></h4>
                 </div>
-            <div class="skill-box d-flex h-90">
+            <div class="skill-box h-100">
               <img src="<?=$base_url?>assets/img/categories/sacha-oil.webp" alt="">
               <div class="info-right d-block text-start">
-                <p><?= $language["promoted_oils_list"][2]["paragraph"] ?></p>
+                <p class="mt-5"><?= $language["promoted_oils_list"][2]["paragraph"] ?></p>
               </div>
             </div>
           </div>

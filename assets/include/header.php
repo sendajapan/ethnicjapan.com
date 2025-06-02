@@ -8,13 +8,13 @@
 		<!-- NAV MENU -->
         <nav id="navmenu" class="navmenu">
 			<ul>
-	            <li><a href="<?php echo $base_url; ?>" class="item <?= ($currentPage == $base_url.'') ? 'active' : '' ?>"><?= $language["header_home"]; ?> </a></li>
-	            <li><a href="<?php echo $base_url; ?>about" class="item <?= ($currentPage == $base_url.'about') ? 'active' : '' ?>"><?= $language["header_about"]; ?> </a></li>
-	            <li><a href="<?php echo $base_url; ?>products" class="item <?= ($currentPage == $base_url.'products') ? 'active' : '' ?>"><?= $language["header_products"]; ?> </a></li>
-	            <li><a href="<?php echo $base_url; ?>blog" class="item <?= ($currentPage == $base_url.'blog') ? 'active' : '' ?>"><?= $language["header_blogs"]; ?> </a></li>
-	            <li><a href="<?php echo $base_url; ?>recipes" class="item <?= ($currentPage == $base_url.'recipes') ? 'active' : '' ?>"><?= $language["header_recipes"]; ?> </a></li>
-	            <li><a href="<?php echo $base_url; ?>testimonials" class="item <?= ($currentPage == $base_url.'testimonials') ? 'active' : '' ?>"><?= $language["header_testimonials"]; ?> </a></li>
-	            <li><a href="<?php echo $base_url; ?>contact" class="item <?= ($currentPage == $base_url.'contact') ? 'active' : '' ?> btn btn-outline"><?= $language["header_contact"]; ?> </a></li>
+	            <li><a href="<?= $base_url; ?>" class="item <?= ($currentPage == $base_url.'') ? 'active' : '' ?>"><?= $language["header_home"]; ?> </a></li>
+	            <li><a href="<?= $base_url; ?>about" class="item <?= ($currentPage == $base_url.'about') ? 'active' : '' ?>"><?= $language["header_about"]; ?> </a></li>
+	            <li><a href="<?= $base_url; ?>products" class="item <?= ($currentPage == $base_url.'products') ? 'active' : '' ?>"><?= $language["header_products"]; ?> </a></li>
+	            <li><a href="<?= $base_url; ?>blogs" class="item <?= ($currentPage == $base_url.'blogs') ? 'active' : '' ?>"><?= $language["header_blogs"]; ?> </a></li>
+	            <li><a href="<?= $base_url; ?>recipes" class="item <?= ($currentPage == $base_url.'recipes') ? 'active' : '' ?>"><?= $language["header_recipes"]; ?> </a></li>
+	            <li><a href="<?= $base_url; ?>testimonials" class="item <?= ($currentPage == $base_url.'testimonials') ? 'active' : '' ?>"><?= $language["header_testimonials"]; ?> </a></li>
+	            <li><a href="<?= $base_url; ?>contact" class="item <?= ($currentPage == $base_url.'contact') ? 'active' : '' ?> btn btn-outline"><?= $language["header_contact"]; ?> </a></li>
             
             
 				<li class="d-block d-lg-none" style="border-bottom: 1px solid rgba(190, 190, 190, 0.5);">

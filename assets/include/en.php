@@ -41,7 +41,7 @@ $language["products"] = [
     [
         "id" => 2,
         "title" => "Super Foods",
-        "paragraph" => "Promoting Organic Products for a Healthy Life and Wellbeing. <br>",
+        "paragraph" => "Promoting Organic Products for a Healthy Life and Wellbeing. <br><br>",
         "button" => "Browse Products"
     ],
     [

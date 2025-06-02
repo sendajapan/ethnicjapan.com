@@ -71,15 +71,15 @@
       
             <!-- Image Column -->
             <div class="col-lg-6 position-relative d-flex justify-content-center mt-4 mt-lg-0">
-              <img src="<?= $base_url; ?>assets/img/portfolio/org.jpg"
+              <img src="<?= $base_url; ?>assets/img/portfolio/hero-img.jpg"
                    alt="Main Hero Image"
                    class="img-fluid"
-                   style="width: 100%; max-width: 400px; z-index: 0;" />
+                   style="width: 100%; max-width: 450px; z-index: 0;" />
       
               <img src="<?= $base_url; ?>assets/img/portfolio/olive-oil.webp"
                    alt="Olive Oil"
                    class="position-absolute d-none d-md-block"
-                   style="top: 150px; right: 10px; width: 220px; z-index: 1;" />
+                   style="top: 200px; right: 0; width: 210px; z-index: 1;" />
             </div>
           </div>
         </div>
@@ -152,7 +152,7 @@
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box h-100">
-              <img src="<?=$base_url?>assets/img/services/services1.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
+              <img src="<?=$base_url?>assets/img/services/organic-products.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
               <h3><?= $language["products"][0]["title"] ?></h3>
               <p><?= $language["products"][0]["paragraph"] ?></p>
               <a href="#products"><button class="buttons"><?= $language["products"][0]["button"] ?></button></a>
@@ -161,7 +161,7 @@
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
             <div class="skill-box h-100">
-              <img src="<?=$base_url?>assets/img/services/sacha-inchi.webp" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
+              <img src="<?=$base_url?>assets/img/services/super-foods.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
               <h3><?= $language["products"][1]["title"] ?></h3>
               <p><?= $language["products"][1]["paragraph"] ?></p>
               <a href="<?=$base_url?>products"><button class="buttons"><?= $language["products"][1]["button"] ?></button></a>
@@ -170,7 +170,7 @@
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
             <div class="skill-box h-100">
-              <img src="<?=$base_url?>assets/img/services/12_Chia-Seed-Oil.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
+              <img src="<?=$base_url?>assets/img/services/promoted-oils.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
               <h3><?= $language["products"][2]["title"] ?></h3>
               <p><?= $language["products"][2]["paragraph"] ?></p>
               <a href="<?=$base_url?>products"><button class="buttons"><?= $language["products"][2]["button"] ?></button></a>
@@ -310,8 +310,6 @@
 
     <!-- Oils Section -->
     <section id="skills" class="skills section">
-      
-
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
           <!-- Page Title -->
@@ -329,7 +327,7 @@
             <div class="skill-box h-100">
               <img src="<?=$base_url?>assets/img/categories/chia-oil.webp" alt="">
               <div class="info-right d-block text-start">
-                <p><?= $language["promoted_oils_list"][0]["paragraph"] ?></p>
+                <p class="mt-5"><?= $language["promoted_oils_list"][0]["paragraph"] ?></p>
               </div>
             </div>
           </div>
@@ -341,7 +339,7 @@
             <div class="skill-box h-100">
               <img src="<?=$base_url?>assets/img/categories/olive-oil.webp" alt="">
               <div class="info-right d-block text-start">
-                <p><?= $language["promoted_oils_list"][1]["paragraph"] ?></p>
+                <p class="mt-5"><?= $language["promoted_oils_list"][1]["paragraph"] ?></p>
               </div>
             </div>
           </div>
@@ -353,7 +351,7 @@
             <div class="skill-box h-100">
               <img src="<?=$base_url?>assets/img/categories/sacha-oil.webp" alt="">
               <div class="info-right d-block text-start">
-                <p><?= $language["promoted_oils_list"][2]["paragraph"] ?></p>
+                <p class="mt-5"><?= $language["promoted_oils_list"][2]["paragraph"] ?></p>
               </div>
             </div>
           </div>
@@ -396,7 +394,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
             <div class="about-image">
-              <img src="<?=$base_url?>assets/img/services/farmers.jpg" alt="Profile Image" class="img-fluid rounded-4">
+              <img src="<?=$base_url?>assets/img/services/why-choose-us.jpg" alt="Profile Image" class="img-fluid rounded-4">
             </div>
           </div>
         
