@@ -61,7 +61,7 @@ include $base_path . "assets/include/blog_data.php" ?>
 							shuffle($blog_data);
 							$list_show = 2;
 							foreach($blog_data as $b){ $list_show--; ?>
-									<a href="<?=$base_url?>blog?<?=$b['url']?>">
+									<a href="<?=$b['url']?>">
 										<div class="mb-3">
 											<img src="<?=$b['feature_img']?>" class="img-fluid rounded-3 mb-2" alt="<?=$b['title']?>">
 											<p class="mb-1 fw-semibold"><?=$b['title']?></p>
@@ -95,7 +95,7 @@ include $base_path . "assets/include/blog_data.php" ?>
 								
 
 								
-								<a class="col-12 col-sm-12 col-md-6 col-lg-3" href="<?=$base_url?>blog?<?=$b['url']?>">
+								<a class="col-12 col-sm-12 col-md-6 col-lg-3" href="<?=$b['url']?>">
 									<div class="mb-3">
 										<img src="<?=$b['feature_img']?>" class="img-fluid rounded-3 mb-2" alt="<?=$b['title']?>">
 										<p class="mb-1 fw-semibold"><?=$b['title']?></p>

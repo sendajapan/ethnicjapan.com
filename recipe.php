@@ -104,7 +104,7 @@ include $base_path . "assets/include/recipe_data.php" ?>
 							shuffle($recipe_data);
 							$list_show = 3;
 							foreach($recipe_data as $r){ $list_show--; ?>
-									<a href="<?=$base_url?>recipe?<?=$r['url']?>">
+									<a href="<?=$r['url']?>">
 										<div class="mb-3">
 											<img src="<?=$r['feature_img']?>" class="img-fluid rounded-3 mb-2" alt="<?=$r['title']?>">
 											<p class="mb-1 fw-semibold"><?=$r['title']?></p>
@@ -137,7 +137,7 @@ include $base_path . "assets/include/recipe_data.php" ?>
 								
 
 								
-								<a class="col-12 col-sm-12 col-md-6 col-lg-3" href="<?=$base_url?>recipe?<?=$r['url']?>">
+								<a class="col-12 col-sm-12 col-md-6 col-lg-3" href="<?=$r['url']?>">
 									<div class="mb-3">
 										<img src="<?=$r['feature_img']?>" class="img-fluid rounded-3 mb-2" alt="Cocoa and Chia Cookies">
 										<p class="mb-1 fw-semibold"><?=$r['title']?></p>
