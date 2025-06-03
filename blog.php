@@ -1,5 +1,12 @@
-<?php include "assets/include/config.php"; 
-include $base_path . "assets/include/blog_data.php" ?>
+<?php 
+	include "assets/include/config.php"; 
+	if($lang=='jp'){
+		include $base_path . "assets/include/blog_data_jp.php" ;
+	}
+	else{
+		include $base_path . "assets/include/blog_data.php" ;
+	}
+?>
 
 <!DOCTYPE html>
 <html lang="en">

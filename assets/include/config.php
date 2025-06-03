@@ -1,8 +1,8 @@
 <?php 
 $currentPage = basename($_SERVER['PHP_SELF']);
 if($_SERVER['HTTP_HOST']=='localhost'){
-	$base_path = $_SERVER['DOCUMENT_ROOT'].'/ethnicjapan.com/';
-	$base_url = 'http://'.$_SERVER['HTTP_HOST'].'/ethnicjapan.com/';
+	$base_path = $_SERVER['DOCUMENT_ROOT'].'/sendajapan/ethnicjapan.com/';
+	$base_url = 'http://'.$_SERVER['HTTP_HOST'].'/sendajapan/ethnicjapan.com/';
 }
 else{
 	$base_path = $_SERVER['DOCUMENT_ROOT'].'/';
