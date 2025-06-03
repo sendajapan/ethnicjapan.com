@@ -1,6 +1,14 @@
 <?php
-//header
+//titles
 $language = [];
+$language["title_about"] = "当社について | ETHNIC LTD";
+$language["title_products"] = "製品 | ETHNIC LTD";
+$language["title_blogs"] = "ブログ | ETHNIC LTD";
+$language["title_blog"] = " | ETHNIC LTD";
+$language["title_recipes"] = "レシピ | ETHNIC LTD";
+$language["title_testimonials"] = "お客様の声 | ETHNIC LTD";
+$language["title_contact"] = "お問い合わせ | ETHNIC LTD";
+//header
 $language["header_logo"] = "ETHNIC LTD";
 $language["header_home"] = "トップページ";
 $language["header_about"] = "当社について";

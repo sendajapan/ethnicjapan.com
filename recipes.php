@@ -11,7 +11,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	
-	<?php include $base_path . "assets/include/head.php"; ?>
+	<?php  $title = $language['title_recipes'];
+	include $base_path . "assets/include/head.php"; ?>
 	
 	<body class="starter-page-page">
 		

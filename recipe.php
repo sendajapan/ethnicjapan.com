@@ -10,8 +10,17 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
+            <?php 
+				
+				$query_string =  $_SERVER['QUERY_STRING'];
+				$recipe = $recipe_data[$query_string];
+				if($recipe['title']!=''){
+					
+				?>
 	
-	<?php include $base_path . "assets/include/head.php"; ?>
+	<?php $title = $recipe['title'] . $language["title_blog"];
+	include $base_path . "assets/include/head.php"; ?>
 	
 	<body class="starter-page-page">
 		
@@ -19,13 +28,6 @@
 		
 		<main class="main">
 			
-			<?php 
-				
-				$query_string =  $_SERVER['QUERY_STRING'];
-				$recipe = $recipe_data[$query_string];
-				if($recipe['title']!=''){
-					
-				?>
 				<!-- Recipe Page -->
 				<section class="section light-background py-5">
 					<div class="container">
@@ -34,7 +36,7 @@
 							
 							
 							<div class="col-md-6 text-center">
-								<p class="text-muted mb-2" style="font-size: 1.5rem;">Recipe</p>
+								<p class="text-muted mb-2" style="font-size: 1.5rem;"><?= $language["recipes_title"] ?></p>
 								<h2 class="fw-bold mb-3" style="font-size: 3rem;"><?= $recipe['title']; ?></h2>
 								<p class="lead"><?= $recipe['content']; ?></p>
 							</div>

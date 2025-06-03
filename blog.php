@@ -11,21 +11,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include $base_path . "assets/include/head.php"; ?>
-
-<body class="starter-page-page">
-
-  <?php include $base_path . "assets/include/header.php"; ?>
-
-  <main class="main">
-
-    <?php 
+<?php 
 				
 		$query_string =  $_SERVER['QUERY_STRING'];
 		$blog = $blog_data[$query_string];
 		if($blog['title']!=''){
 			
 		?>
+
+<?php $title = $blog['title'] . $language["title_blog"];
+include $base_path . "assets/include/head.php"; ?>
+
+<body class="starter-page-page">
+
+  <?php include $base_path . "assets/include/header.php"; ?>
+
+  <main class="main">
 
         <!-- Blog Section -->
           <section id="about" class="about section light-background py-5">

@@ -14,7 +14,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include ($base_path . "assets/include/head.php"); ?>
+<?php $title = $language['header_logo'];
+include ($base_path . "assets/include/head.php"); ?>
 
 <body class="index-page">
 
