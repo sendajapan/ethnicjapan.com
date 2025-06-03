@@ -64,43 +64,43 @@ $language["featured_super_foods"] = "Featured Super Foods";
 $language["super_foods"] = [
     [
         "id" => 1,
-        "title" => "Chia Seeds from Paraguay",
+        "title" => "Chia Seeds",
         "paragraph" => "Chia seeds are tiny powerhouses of nutrition, packed with omega-3 fatty acids, fiber, protein, and antioxidants. Originating from Paraguay, these seeds are known to promote heart health, improve digestion, and provide sustained energy.",
         "img" => "quinoa.jpg"
     ],
     [
         "id" => 2,
-        "title" => "Hemp Protein and Hemp Hearts from Paraguay",
+        "title" => "Hemp Protein and Hemp Hearts",
         "paragraph" => "Hemp protein is a complete plant-based protein source, containing all essential amino acids. Hemp hearts, the soft inner part of the hemp seed, are rich in healthy fats and minerals. Both products from Paraguay contribute to muscle growth, energy levels, and overall health.",
     ],
     [
         "id" => 3,
-        "title" => "Cacao from Peru and/or Dominican Republic",
+        "title" => "Cacao",
         "paragraph" => "Cacao is renowned for its high antioxidant content and mood-enhancing properties. It offers profound health benefits, including improved cardiovascular health and cognitive function.",
     ],
     [
         "id" => 4,
-        "title" => "Quinoa from Peru and/or Bolivia",
+        "title" => "Quinoa",
         "paragraph" => "Quinoa is a versatile grain high in protein, fiber, and essential nutrients. Originating from Peru and Bolivia, it is a staple in healthy diets for its ability to aid digestion, manage blood sugar levels, and provide a complete protein source."
     ],
     [
         "id" => 5,
-        "title" => "Adzuki Beans from Argentina",
+        "title" => "Adzuki Beans",
         "paragraph" => "Adzuki beans are small red beans popular in East Asian cuisine. They are high in protein, fiber, and essential minerals, and are known for their role in supporting kidney health, weight management, and improving digestion.",
     ],
     [
         "id" => 6,
-        "title" => "Amaranth from Peru",
+        "title" => "Amaranth",
         "paragraph" => "Amaranth is a gluten-free grain rich in protein, iron, and magnesium. Sourced from Peru, it supports bone health, reduces inflammation, and provides a robust nutritional profile that complements a healthy diet.",
     ],
     [
         "id" => 7,
-        "title" => "Sesame Seeds from Paraguay",
+        "title" => "Sesame Seeds",
         "paragraph" => "Sesame seeds are packed with healthy fats, protein, and a range of vitamins and minerals. From Paraguay, they contribute to heart health, improved digestion, and are an excellent source of energy.",
     ],
     [
         "id" => 8,
-        "title" => "Maca and Sacha Inchi from Peru",
+        "title" => "Maca and Sacha Inchi",
         "paragraph" => "Maca root is known for its energy-boosting and hormone-balancing properties, while Sacha Inchi is rich in omega-3 fatty acids, protein, and fiber. Both support overall wellness, enhance physical performance, and improve mental clarity.",
     ]
 ];
