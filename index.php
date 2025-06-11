@@ -166,7 +166,7 @@ include ($base_path . "assets/include/head.php"); ?>
               <p><?= $language["products"][0]["paragraph"] ?></p>
               <a href="#products"><button class="buttons"><?= $language["products"][0]["button"] ?></button></a>
             </div>
-          </div>
+          </div> 
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
             <div class="skill-box h-100">

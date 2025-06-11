@@ -91,7 +91,7 @@
 									</ul>
 									
 									<h4 class="fw-semibold mt-4 mb-3">Instructions</h4>
-									<ol class="mb-3 colored">
+									<ol class="mb-3 colored text-wrap">
 										
 										<?php foreach ($recipe['instructions'] as $instructions) { ?>
 											<li class="mb-1"><?= $instructions ?></li>

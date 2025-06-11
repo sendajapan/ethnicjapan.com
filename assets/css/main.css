@@ -391,10 +391,6 @@ h6 {
     transition: 0.3s;
   }
 
-  .navmenu li:last-child a {
-    /* padding-right: 0; */
-  }
-
   .navmenu li:hover>a,
   .navmenu .item.active,
   .navmenu .item.active:focus {
@@ -2186,6 +2182,17 @@ ol.colored ::marker {
   color: var(--nav-hover-color);
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2rem;
+}
+
+ol.colored li {
+  white-space: normal;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+ol.colored li {
+  word-break: break-word;
+  white-space: normal;
 }
 
 
