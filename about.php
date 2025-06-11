@@ -129,7 +129,7 @@ include ($base_path . "assets/include/head.php"); ?>
       
         <div class="row mt-3 skills-animation justify-content-md-center align-items-stretch">
       
-          <div class="col-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
               <img src="<?=$base_url?>assets/img/categories/chia.webp" alt="">
               <div class="info-right d-block text-start">
@@ -139,7 +139,7 @@ include ($base_path . "assets/include/head.php"); ?>
             </div>
           </div>
       
-          <div class="col-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
               <img src="<?=$base_url?>assets/img/categories/hemp.webp" alt="">
               <div class="info-right d-block text-start">
@@ -153,7 +153,7 @@ include ($base_path . "assets/include/head.php"); ?>
 
         <div class="row mt-3 skills-animation justify-content-md-center align-items-stretch">
       
-          <div class="col-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
               <img src="<?=$base_url?>assets/img/categories/cocoa.webp" alt="">
               <div class="info-right d-block text-start">
@@ -163,8 +163,8 @@ include ($base_path . "assets/include/head.php"); ?>
             </div>
           </div>
 
-          <div class="col-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="skill-box d-flex h-100">
+          <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+				<div class="skill-box d-flex h-100">
               <img src="<?=$base_url?>assets/img/categories/quinoa.webp" alt="">
               <div class="info-right d-block text-start">
                 <h4><?= $language["super_foods"][3]["title"] ?></h4>
@@ -177,7 +177,7 @@ include ($base_path . "assets/include/head.php"); ?>
       
         <div class="row skills-animation justify-content-md-center mt-3 align-items-stretch">
       
-          <div class="col-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
               <img src="<?=$base_url?>assets/img/categories/adzuki.webp" alt="">
               <div class="info-right d-block text-start">
@@ -187,7 +187,7 @@ include ($base_path . "assets/include/head.php"); ?>
             </div>
           </div>
       
-          <div class="col-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
               <img src="<?=$base_url?>assets/img/categories/amaranth2.webp" alt="">
               <div class="info-right d-block text-start">
@@ -201,7 +201,7 @@ include ($base_path . "assets/include/head.php"); ?>
 
         <div class="row mt-3 skills-animation justify-content-md-center align-items-stretch">
       
-          <div class="col-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
               <img src="<?=$base_url?>assets/img/categories/sesame.webp" alt="">
               <div class="info-right d-block text-start">
@@ -211,7 +211,7 @@ include ($base_path . "assets/include/head.php"); ?>
             </div>
           </div>
 
-          <div class="col-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
               <img src="<?=$base_url?>assets/img/categories/sacha.webp" alt="">
               <div class="info-right d-block text-start">
