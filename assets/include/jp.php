@@ -420,7 +420,7 @@ $language["contact_cards"] = [
     [
         "id" => 1,
         "title" => "メールアドレス",
-        "paragraph" => "sales@ethnicltd.com"
+        "paragraph" => "sales@ethnicjapan.com"
     ],
     [
         "id" => 2,
