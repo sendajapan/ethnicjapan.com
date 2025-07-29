@@ -373,13 +373,19 @@ include ($base_path . "assets/include/head.php"); ?>
 
     <section id="about" class="about section light-background">
 
-      <div class="ratio ratio-16x9">
-        <iframe src="https://www.youtube.com/embed/sF-Dd2sUGvA?si=2_-p3Ee82CmRWMid" 
-            title="YouTube video" 
-            allowfullscreen>
-        </iframe>
+      <div class="container my-4">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/sF-Dd2sUGvA?si=2_-p3Ee82CmRWMid"
+                      title="YouTube video"
+                      allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
       </div>
-      
+
     </section>
 
 
