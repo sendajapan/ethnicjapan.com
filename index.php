@@ -369,25 +369,6 @@ include ($base_path . "assets/include/head.php"); ?>
 
     </section>
 
-    <!-- Video Section -->
-
-    <section id="about" class="about section light-background">
-
-      <div class="container my-4">
-        <div class="row justify-content-center">
-          <div class="col-12 col-sm-10 col-md-8 col-lg-6">
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/sF-Dd2sUGvA?si=2_-p3Ee82CmRWMid"
-                      title="YouTube video"
-                      allowfullscreen>
-              </iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
 
     <!-- Ethnic Section -->
     <section id="about" class="about section light-background">
@@ -454,6 +435,18 @@ include ($base_path . "assets/include/head.php"); ?>
       </div>
 
     </section><!-- /Why Choose Us Section -->
+
+
+    <!-- Video Section -->
+
+    <section id="about" class="about section light-background">
+
+      <div class="ratio ratio-16x9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sF-Dd2sUGvA?si=0rD4PYNz7uEWyUie" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+    </section>
+
 
 
     <!-- Blog Section -->
