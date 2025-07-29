@@ -369,6 +369,19 @@ include ($base_path . "assets/include/head.php"); ?>
 
     </section>
 
+    <!-- Video Section -->
+
+    <section id="about" class="about section light-background">
+
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/sF-Dd2sUGvA?si=2_-p3Ee82CmRWMid" 
+            title="YouTube video" 
+            allowfullscreen>
+        </iframe>
+      </div>
+      
+    </section>
+
 
     <!-- Ethnic Section -->
     <section id="about" class="about section light-background">
