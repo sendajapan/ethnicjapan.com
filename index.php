@@ -67,6 +67,24 @@ include ($base_path . "assets/include/head.php"); ?>
       </section>
 
 
+    <!-- Video Section -->
+
+    <section id="about" class="about section light-background my-5">
+
+      <div class="container">
+      
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/sF-Dd2sUGvA?si=3OyxCd3qcJtW1Lf9" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+
+    </section>
+
+
     <!-- Hero Section -->
       <section id="hero" class="hero section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -435,24 +453,6 @@ include ($base_path . "assets/include/head.php"); ?>
       </div>
 
     </section><!-- /Why Choose Us Section -->
-
-
-    <!-- Video Section -->
-
-    <section id="about" class="about section light-background my-5">
-
-      <div class="container">
-      
-        <div class="ratio ratio-16x9">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/sF-Dd2sUGvA?si=3OyxCd3qcJtW1Lf9" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-          </iframe>
-        </div>
-
-      </div>
-
-    </section>
 
 
 
