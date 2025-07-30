@@ -24,7 +24,7 @@ include ($base_path . "assets/include/head.php"); ?>
   <main class="main">
 
 
-      <section id="hero-slider" class="hero-slider d-none d-lg-block">
+      <section id="hero-slider" class="hero-slider d-none d-lg-block" style="margin-bottom:0px !important;">
 
 
               <div class="testimonials-slider swiper init-swiper">
@@ -69,7 +69,7 @@ include ($base_path . "assets/include/head.php"); ?>
 
     <!-- Video Section -->
 
-    <section id="about" class="about section light-background my-5">
+    <section id="about" class="about section light-background my-0">
 
       <div class="container">
       
