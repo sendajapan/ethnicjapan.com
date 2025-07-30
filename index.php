@@ -439,10 +439,17 @@ include ($base_path . "assets/include/head.php"); ?>
 
     <!-- Video Section -->
 
-    <section id="about" class="about section light-background">
+    <section id="about" class="about section light-background my-5">
 
-      <div class="ratio ratio-16x9">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/sF-Dd2sUGvA?si=0rD4PYNz7uEWyUie" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="container">
+      
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/sF-Dd2sUGvA?si=3OyxCd3qcJtW1Lf9" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+          </iframe>
+        </div>
+
       </div>
 
     </section>
