@@ -3,6 +3,7 @@
 $blog_data = [
     'benefits-omega' => [
         'url' => $base_url . 'blog?benefits-omega',
+        'kicker' => 'How to',
         'title' => 'Benefits of Omega 3',
         'date' => '10/13/2022',
         'feature_img' => $base_url . 'assets/img/blog/blog3.webp',

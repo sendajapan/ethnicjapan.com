@@ -36,7 +36,7 @@ include $base_path . "assets/include/head.php"; ?>
               <div class="row align-items-center mb-5">
                 <div class="col-md-5" data-aos="fade-left" data-aos-delay="300">
                   <div class="about-content">
-                    <p class="lead mb-3">How To</p>
+                    <p class="lead mb-3"><?= $blog['kicker']; ?></p>
                     <h2 class="mb-4"><?= $blog['title']; ?></h2>
                     <div class="info-item">
                       <p><?= $blog['date']; ?></p>

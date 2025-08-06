@@ -3,6 +3,7 @@
 $blog_data = [
     'benefits-omega' => [
         'url' => $base_url . 'blog?benefits-omega',
+        'kicker' => '方法',
         'title' => 'オメガ3の効果',
         'date' => '2022/10/13',
         'feature_img' => $base_url . 'assets/img/blog/blog3.webp',

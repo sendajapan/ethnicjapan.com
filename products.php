@@ -1,4 +1,11 @@
-<?php include "assets/include/config.php"; ?>
+<?php include "assets/include/config.php"; 
+if($lang=='jp'){
+		include $base_path . "assets/include/product_data_jp.php" ;
+	}
+	else{
+		include $base_path . "assets/include/product_data.php" ;
+	}
+?>
 
 
 <!DOCTYPE html>
@@ -35,24 +42,58 @@ include ($base_path . "assets/include/head.php"); ?>
           <div class="page-title"  id="products">
             <h1><?= $language["featured_super_foods"]; ?></h1>
           </div>
-        <div class="row mt-3 skills-animation justify-content-md-center align-items-stretch">
+
+          <div class="row mt-3 skills-animation justify-content-md-center align-items-stretch">
+            <?php 
+            if (!empty($product_data)):
+              $counter = 0;
+              foreach ($product_data as $product): 
+                $img = htmlspecialchars($product['feature_img'] ?? '', ENT_QUOTES, 'UTF-8');
+                $title = htmlspecialchars($product['title'] ?? '', ENT_QUOTES, 'UTF-8');
+                $paragraph = htmlspecialchars($product['content'] ?? '', ENT_QUOTES, 'UTF-8');
+                $url = htmlspecialchars($product['url'] ?? '#', ENT_QUOTES, 'UTF-8');
+                $delay = ($counter % 2 === 0) ? 100 : 200;
+            ?>
+              <div class="col-12 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="<?= $delay ?>">
+                <a href="<?= $url ?>" class="d-block h-100 text-decoration-none text-reset">
+                  <div class="skill-box d-flex h-100">
+                    <img src="<?= $img ?>" alt="<?= $title ?>">
+                    <div class="info-right d-block text-start">
+                      <h4><?= $title ?></h4>
+                      <p><?= $paragraph ?></p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            <?php 
+                $counter++;
+              endforeach; 
+            else: ?>
+              <div class="col-12">
+                <p>No products found.</p>
+              </div>
+            <?php endif; ?>
+          </div>
+
+
+        <!--<div class="row mt-3 skills-animation justify-content-md-center align-items-stretch">
       
           <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="<?=$base_url?>assets/img/categories/chia.webp" alt="">
+              <img src="<?//= $base_url ?>assets/img/categories/chia.webp" alt="">
               <div class="info-right d-block text-start">
-                <h4><?= $language["super_foods"][0]["title"] ?></h4>
-                <p><?= $language["super_foods"][0]["paragraph"] ?></p>
+                <h4><?//= $language["super_foods"][0]["title"] ?></h4>
+                <p><?//= $language["super_foods"][0]["paragraph"] ?></p>
               </div>
             </div>
           </div>
       
           <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="skill-box d-flex h-100">
-              <img src="<?=$base_url?>assets/img/categories/hemp.webp" alt="">
+              <img src="<?//=$base_url?>assets/img/categories/hemp.webp" alt="">
               <div class="info-right d-block text-start">
-                <h4><?= $language["super_foods"][1]["title"] ?></h4>
-                <p><?= $language["super_foods"][1]["paragraph"] ?></p>
+                <h4><?//= $language["super_foods"][1]["title"] ?></h4>
+                <p><?//= $language["super_foods"][1]["paragraph"] ?></p>
               </div>
             </div>
           </div>
@@ -63,20 +104,20 @@ include ($base_path . "assets/include/head.php"); ?>
 
             <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="<?=$base_url?>assets/img/categories/cocoa.webp" alt="">
+              <img src="<?//=$base_url?>assets/img/categories/cocoa.webp" alt="">
               <div class="info-right d-block text-start">
-                <h4><?= $language["super_foods"][2]["title"] ?></h4>
-                <p><?= $language["super_foods"][2]["paragraph"] ?></p>
+                <h4><?//= $language["super_foods"][2]["title"] ?></h4>
+                <p><?//= $language["super_foods"][2]["paragraph"] ?></p>
               </div>
             </div>
           </div>
 
             <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="<?=$base_url?>assets/img/categories/quinoa.webp" alt="">
+              <img src="<?//=$base_url?>assets/img/categories/quinoa.webp" alt="">
               <div class="info-right d-block text-start">
-                <h4><?= $language["super_foods"][3]["title"] ?></h4>
-                <p><?= $language["super_foods"][3]["paragraph"] ?></p>
+                <h4><?//= $language["super_foods"][3]["title"] ?></h4>
+                <p><?//= $language["super_foods"][3]["paragraph"] ?></p>
               </div>
             </div>
           </div>
@@ -87,20 +128,20 @@ include ($base_path . "assets/include/head.php"); ?>
 
             <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="<?=$base_url?>assets/img/categories/adzuki.webp" alt="">
+              <img src="<?//=$base_url?>assets/img/categories/adzuki.webp" alt="">
               <div class="info-right d-block text-start">
-                <h4><?= $language["super_foods"][4]["title"] ?></h4>
-                <p><?= $language["super_foods"][4]["paragraph"] ?></p>
+                <h4><?//= $language["super_foods"][4]["title"] ?></h4>
+                <p><?//= $language["super_foods"][4]["paragraph"] ?></p>
               </div>
             </div>
           </div>
 
             <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="<?=$base_url?>assets/img/categories/amaranth2.webp" alt="">
+              <img src="<?//=$base_url?>assets/img/categories/amaranth2.webp" alt="">
               <div class="info-right d-block text-start">
-                <h4><?= $language["super_foods"][5]["title"] ?></h4>
-                <p> <?= $language["super_foods"][5]["paragraph"] ?></p>
+                <h4><?//= $language["super_foods"][5]["title"] ?></h4>
+                <p> <?//= $language["super_foods"][5]["paragraph"] ?></p>
               </div>
             </div>
           </div>
@@ -111,27 +152,27 @@ include ($base_path . "assets/include/head.php"); ?>
 
             <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="<?=$base_url?>assets/img/categories/sesame.webp" alt="">
+              <img src="<?//=$base_url?>assets/img/categories/sesame.webp" alt="">
               <div class="info-right d-block text-start">
-                <h4><?= $language["super_foods"][6]["title"] ?></h4> 
-                <p><?= $language["super_foods"][6]["paragraph"] ?></p>
+                <h4><?//= $language["super_foods"][6]["title"] ?></h4> 
+                <p><?//= $language["super_foods"][6]["paragraph"] ?></p>
               </div>
             </div>
           </div>
 
             <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box d-flex h-100">
-              <img src="<?=$base_url?>assets/img/categories/sacha.webp" alt="">
+              <img src="<?//=$base_url?>assets/img/categories/sacha.webp" alt="">
               <div class="info-right d-block text-start">
-                <h4><?= $language["super_foods"][7]["title"] ?></h4> 
-                <p><?= $language["super_foods"][7]["paragraph"] ?></p>
+                <h4><?//= $language["super_foods"][7]["title"] ?></h4> 
+                <p><?//= $language["super_foods"][7]["paragraph"] ?></p>
               </div>
             </div>
           </div>
 
-        </div>
+        </div>/ End Product Section -->
       </div>
-    </section> <!--/ End Product Section -->
+    </section> 
 
     
 
