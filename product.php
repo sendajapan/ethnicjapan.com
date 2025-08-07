@@ -31,47 +31,59 @@ include $base_path . "assets/include/head.php"; ?>
         <!-- Product Section -->
           <section id="about" class="about section light-background py-5">
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-              <div class="row align-items-start">
-                
-                <!-- Column 1: Kicker, Title, Content -->
-                <div class="col-lg-6 mb-4" data-aos="fade-left" data-aos-delay="300">
-				  <div class="title-kicker text-center">
+          
+              <!-- ROW 1: Product Content + Image -->
+              <div class="row align-items-center mb-5">
+                <!-- Content Column -->
+                <div class="col-lg-8 mb-4">
+                  <div class="card border-0 p-4 rounded-2 shadow-sm">
                     <p class="lead mb-3"><?= $product['kicker']; ?></p>
-                    <h2 class="mb-4 fw-bold"><?= $product['title']; ?></h2>
-				  </div>
-                  <div class="card border-0 p-4 rounded-2 h-100">
-                    <p class="fs-5"><?= $product['content']; ?></p>
+                    <h2 class="fw-bold mb-4"><?= $product['title']; ?></h2>
+                    <p><?= $product['content']; ?></p>
                   </div>
                 </div>
+              
+                <!-- Image Column -->
+                <div class="col-lg-4 text-center">
+                  <img src="<?= $product['feature_img']; ?>" alt="<?= $product['title']; ?>" class="img-fluid rounded-4 shadow-sm">
+                </div>
+              </div>
+
           
-                <!-- Column 2: Image -->
-                <div class="col-lg-4 mb-4" data-aos="fade-right" data-aos-delay="200">
-                  <div class="about-image text-center">
-                    <img src="<?= $product['feature_img']; ?>" alt="<?= $product['title']; ?>" class="img-fluid">
+              <!-- Row 2: Other Products Section -->
+                <div class="row justify-content-center mt-5">
+                  <div class="col-12 col-md-10 col-lg-9">
+                    <div class="mb-4 text-center">
+                      <h5 class="fw-bold" style="font-size: 1.5rem;">
+                        Our Products
+                      </h5>
+                    </div>
+                
+                    <div class="row gx-5 gy-5">
+                      <?php 
+                        shuffle($product_data);
+                        $list_show = 3;
+                        foreach($product_data as $p){ 
+                          $list_show--; 
+                      ?>
+                        <div class="col-md-4 text-center">
+                          <a href="<?= $p['url'] ?>" class="text-decoration-none text-dark" style="max-width: 500px;">
+                            <div class="card border-0 shadow-sm p-3 h-100">
+                              <img src="<?= $p['feature_img'] ?>" class="img-fluid rounded-3 mb-2" alt="<?= $p['title'] ?>">
+                              <p class="mb-1 fw-semibold"><?= $p['title'] ?></p>
+                            </div>
+                          </a>
+                        </div>
+                      <?php 
+                        if($list_show <= 0){ break; } 
+                      } 
+                      ?>
+                    </div>
                   </div>
                 </div>
-          
-                <!-- Column 3: Sidebar -->
-                <div class="col-lg-2 mb-4">
-                  <div class="card p-3 rounded-4 shadow-sm border">
-                    <h6 class="fw-bold text-center mb-4 bg-white px-3 py-2 d-inline-block rounded-2 shadow-sm small">Other Products</h6>
-                    <?php 
-                      shuffle($product_data);
-                      $list_show = 2;
-                      foreach($product_data as $p){ $list_show--; ?>
-                        <a href="<?= $p['url'] ?>">
-                          <div class="mb-1">
-                            <img src="<?= $p['feature_img'] ?>" class="img-fluid rounded-3" alt="<?= $p['title'] ?>">
-                            <p class="fw-semibold text-center"><?= $p['title'] ?></p>
-                          </div>
-                        </a>
-                    <?php if($list_show <= 0){ break; } } ?>
-                  </div>
-                </div>
-          
-              </div> <!-- .row -->
-            </div> <!-- .container -->
-        </section>
+            </div>
+          </section>
+
 		<?php 
 					}else{
 				?>
@@ -98,12 +110,7 @@ include $base_path . "assets/include/head.php"; ?>
 										<p class="mb-1 fw-semibold"><?=$b['title']?></p>
 									</div>
 								</a>
-    
-    
-
-								
 							<?php if($list_show<=0){break;} } ?>
-
 						</div>
 						
 						

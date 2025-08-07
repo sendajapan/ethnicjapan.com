@@ -40,7 +40,7 @@ $product_data = [
         'url' => $base_url . 'product?amaranth',
         'kicker' => 'Featured Super Foods',
         'title' => 'Amaranth',
-        'feature_img' => $base_url . 'assets/img/categories/amaranth2.webp',
+        'feature_img' => $base_url . 'assets/img/categories/amaranth.png',
         'content' => 'Amaranth is a gluten-free grain rich in protein, iron, and magnesium. Sourced from Peru, it supports bone health, reduces inflammation, and provides a robust nutritional profile that complements a healthy diet.'
     ],
     'sesame-seeds' => [

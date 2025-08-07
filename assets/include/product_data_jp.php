@@ -40,7 +40,7 @@ $product_data = [
         'url' => $base_url . 'product?amaranth',
         'kicker' => '注目の南米産スーパーフード',
         'title' => 'アマラサンス',
-        'feature_img' => $base_url . 'assets/img/categories/amaranth2.webp',
+        'feature_img' => $base_url . 'assets/img/categories/amaranth.png',
         'content' => 'アマランサスはグルテンフリーの穀物で、タンパク質、鉄分、マグネシウムが豊富に含まれています。ペルー産で、骨の健康をサポートし、炎症を抑え、健康的な食生活を補完する強力な栄養プロファイルを提供します。'
     ],
     'sesame-seeds' => [
