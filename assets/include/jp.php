@@ -206,7 +206,7 @@ $language["contact"] = "連絡先";
 $language["contact_title"] = "ニュースレターを購読";
 $language["contact_paragraph"] = "登録で、フレッシュな情報とビジネスチャンスをいち早くお届けします。";
 $language["contact_phone"] = "03-5826-7885";
-$language["contact_email"] = "info@ethnicjapan.com";
+$language["contact_email"] = "sales@ethnicjapan.com";
 $language["contact_address"] = "東京都台東区東上野5-24-9";
 $language["contact_submit"] = "送信";
 // About Us Page
