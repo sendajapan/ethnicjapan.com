@@ -19,7 +19,7 @@
             </div>
 
             <div class="copyright text-center">
-                <p style="padding-top:1rem;"><?= $language["footer_copyright_sign"]?>  <span><?= $language["footer_copyright"]?></span> <strong class="px-1 sitename"><?= $language["footer_logo"]?></strong> <span><?= $language["footer_rights"]?></span></p>
+                <p style="padding-top:1rem;"><?= $language["footer_copyright_sign"]?>  <span><?= $language["footer_copyright"]?></span> <strong class="px-1 sitename"><?= $language["footer_logo"]?></strong> <span><?= $language["footer_rights"]?></span> <a href="<?=$base_url?>privacy"><span><?= $language["footer_privacy"]?></span></a></p>
             </div>
         </div>
     </div>

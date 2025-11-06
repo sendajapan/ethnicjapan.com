@@ -1,11 +1,9 @@
 <?php include "assets/include/config.php"; 
 	if($lang=='jp'){
-		include $base_path . "assets/include/blog_data_jp.php" ;
 		include $base_path . "assets/include/recipe_data_jp.php";
     include $base_path . "assets/include/product_data_jp.php";
 		}
 	else{
-		include $base_path . "assets/include/blog_data.php" ;
 		include $base_path . "assets/include/recipe_data.php";
     include $base_path . "assets/include/product_data.php";
 	}
@@ -143,20 +141,10 @@ include ($base_path . "assets/include/head.php"); ?>
 
               <p class="lead mb-4"><?= $language["about_paragraph"]; ?></p>
 
-              <div class="personal-info">
-                <div class="row g-4">
-                  <div class="col-6">
-                    <div class="info-item">
-                      <span class="label"><img src="<?=$base_url?>assets/img/svg/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;"><?= $language["about_mission_title"]; ?></span>
-                      <span class="value"><?= $language["about_mission_paragraph"]; ?></span>
-                    </div>
-                  </div>
-
-                  <div class="col-6">
-                    <div class="info-item">
-                      <span class="label"><img src="<?=$base_url?>assets/img/svg/check-mark.svg" alt="" style="width: 30px; padding-right: 10px;"><?= $language["about_vision_title"]; ?></span>
-                      <span class="value"><?= $language["about_vision_paragraph"]; ?></span>
-                    </div>
+              <div class="row g-4">
+                <div class="col-6 mx-auto text-center">
+                  <div class="cta-button" data-aos="fade-up" data-aos-delay="300">
+                    <a href="<?= $base_url; ?>about" class="btn btn-outline"><?= $language["about_button"]; ?></a>
                   </div>
                 </div>
               </div>
@@ -190,7 +178,7 @@ include ($base_path . "assets/include/head.php"); ?>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
             <div class="skill-box h-100">
-              <img src="<?=$base_url?>assets/img/services/super-foods.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
+              <img src="<?=$base_url?>assets/img/services/cocoa.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
               <h3><?= $language["products"][1]["title"] ?></h3>
               <p><?= $language["products"][1]["paragraph"] ?></p>
               <a href="<?=$base_url?>products"><button class="buttons"><?= $language["products"][1]["button"] ?></button></a>
@@ -227,10 +215,15 @@ include ($base_path . "assets/include/head.php"); ?>
         <h2 style="font-size: 35px"><?= $language["promoting_organic"]; ?></h2>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <p class="mb-4"><?= $language["promoting_organic_paragraph"]; ?></p>
-          <div class="page-title"  id="products">
-            <h1><?= $language["featured_super_foods"]; ?></h1>
+      <div class="container pointers" data-aos="fade-up" data-aos-delay="100">
+          <p><?= $language["promoting_organic_paragraph"]; ?></p>
+          <p><img class="img-fluid me-2" src="<?=$base_url?>assets/img/svg/pointers.svg" alt=""><?= $language["promoting_organic_p1"]; ?></p>
+          <p><img class="img-fluid me-2" src="<?=$base_url?>assets/img/svg/pointers.svg" alt=""><?= $language["promoting_organic_p2"]; ?></p>
+          <p><img class="img-fluid me-2" src="<?=$base_url?>assets/img/svg/pointers.svg" alt=""><?= $language["promoting_organic_p3"]; ?></p>
+          <p class="mb-5"><?= $language["promoting_organic_paragraph_2"]; ?></p>
+
+          <div class="page-title mt-3"  id="products">
+            <h1 class="fw-bold"><?= $language["featured_super_foods"]; ?></h1>
           </div>
 
           <div class="row mt-3 skills-animation justify-content-md-center align-items-stretch">
@@ -275,7 +268,7 @@ include ($base_path . "assets/include/head.php"); ?>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
           <!-- Page Title -->
           <div class="page-title">
-                  <h1><?= $language["promoted_oils"] ?></h1>
+                  <h1 class="fw-bold"><?= $language["promoted_oils"] ?></h1>
                   <p class="mb-4 mt-5"><?= $language["promoted_oils_paragraph"] ?></p>
           </div><!-- End Page Title -->
         <div class="row skills-animation justify-content-md-center align-items-stretch">
@@ -372,7 +365,7 @@ include ($base_path . "assets/include/head.php"); ?>
                     <div class="info-item" style="width: 100%;">
 
                       <?php foreach ($language["why_choose_us_list"] as $item): ?>
-                        <p><img src="<?=$base_url?>assets/img/svg/check-mark.svg" alt="">
+                        <p><img src="<?=$base_url?>assets/img/svg/pointers.svg" alt="">
                           <?= $item ?>
                         </p>
                       <?php endforeach; ?>
@@ -390,47 +383,46 @@ include ($base_path . "assets/include/head.php"); ?>
 
 
 
-    <!-- Blog Section -->
+    <!-- Blog Section 
   <section id="portfolio" class="portfolio section">
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2><?= $language["blogs_title"] ?></h2>
-    <p><?= $language["insights_that_paragraph"] ?></p>
-  </div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row g-4 align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-      
-      <?php
-          $count = 0;
-          foreach ($blog_data as $key => $blog):
-            if ($count >= 2) break;
-            $count++; ?>
-      
-      <div class="col-lg-6 col-md-6">
-        <div class="portfolio-card h-100">
-          <a href="<?= $blog['url']; ?>" class="portfolio-link d-block h-100 text-decoration-none text-reset">
-            <div class="portfolio-image">
-              <img src="<?= $blog['feature_img']; ?>" class="img-fluid" alt="" loading="lazy">
-            </div>
-            <div class="portfolio-content">
-              <span class="category"><?= $blog['category']; ?></span>
-              <h3><?= $blog['title']; ?></h3>
-              <p><?= $blog['date']; ?></p>
-            </div>
-          </a>
-        </div>
-      </div><!-- End Blog Item -->
-      <?php endforeach; ?>
-
-
+    <div class="container section-title" data-aos="fade-up">
+      <h2><?//$language["blogs_title"] ?></h2>
+      <p><?// $language["insights_that_paragraph"] ?></p>
+    </div>
+  
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+      <div class="row g-4 align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+        
+        <?php
+            /*$count = 0;
+            foreach ($blog_data as $key => $blog):
+              if ($count >= 2) break;
+              $count++; */?>
+        
+        <div class="col-lg-6 col-md-6">
+          <div class="portfolio-card h-100">
+            <a href="<?// $blog['url']; ?>" class="portfolio-link d-block h-100 text-decoration-none text-reset">
+              <div class="portfolio-image">
+                <img src="<?// $blog['feature_img']; ?>" class="img-fluid" alt="" loading="lazy">
+              </div>
+              <div class="portfolio-content">
+                <span class="category"><?// $blog['category']; ?></span>
+                <h3><?// $blog['title']; ?></h3>
+                <p><?// $blog['date']; ?></p>
+              </div>
+            </a>
+          </div>
+        </div> 
+        <?php //endforeach; ?>
+  
+  
+      </div>
+  
     </div>
 
-  </div>
-
-  </section><!-- /Blog Section -->
+  </section> /Blog Section -->
 
 
       <!-- Recipe Section -->
@@ -468,7 +460,7 @@ include ($base_path . "assets/include/head.php"); ?>
 
         </div>
       </div>
-    </section><!-- /Blog Section -->
+    </section><!-- /Recipe Section -->
 
 
 
@@ -586,7 +578,7 @@ include ($base_path . "assets/include/head.php"); ?>
 
 
   
-    <!-- Contact Section -->
+    <!-- Contact Section
     <section id="contact" class="contact section light-background">
 
       <div class="container" >
@@ -594,34 +586,34 @@ include ($base_path . "assets/include/head.php"); ?>
         <div class="row g-5">
           <div class="col-lg-6">
             <div class="content" >
-              <div class="section-category mb-3"><?= $language["contact"] ?></div>
-              <h2 class="display-5 mb-4"><?= $language["contact_title"] ?></h2>
-              <p class="lead mb-4"><?= $language["contact_paragraph"] ?></p>
+              <div class="section-category mb-3"><?//= $language["contact"] ?></div>
+              <h2 class="display-5 mb-4"><?//= $language["contact_title"] ?></h2>
+              <p class="lead mb-4"><?//= $language["contact_paragraph"] ?></p>
 
               <div class="contact-info mt-5">
                 <div class="info-item d-flex mb-3">
                   <i class="bi bi-envelope-at me-3"></i>
-                  <span><?= $language["contact_email"] ?></span>
+                  <span><?//= $language["contact_email"] ?></span>
                 </div>
 
                 <div class="info-item d-flex mb-3">
                   <i class="bi bi-telephone me-3"></i>
-                  <span><?= $language["contact_phone"] ?></span>
+                  <span><?//= $language["contact_phone"] ?></span>
                 </div>
 
                 <div class="info-item d-flex mb-4">
                   <i class="bi bi-geo-alt me-3"></i>
-                  <span><?= $language["contact_address"] ?></span>
+                  <span><?//= $language["contact_address"] ?></span>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-6">
-            <div class="contact-form card" ><!--data-aos="fade-up" data-aos-delay="300"-->
+            <div class="contact-form card" > data-aos="fade-up" data-aos-delay="300"
               <div class="card-body p-4 p-lg-5">
 
-                <form action="<?=$base_url?>forms/contact" method="post" class="php-email-form">
+                <form action="<?//=$base_url?>forms/contact" method="post" class="php-email-form">
                   <div class="row gy-4">
 
                     <div class="col-12">
@@ -632,7 +624,7 @@ include ($base_path . "assets/include/head.php"); ?>
                       <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
                     </div>
 
-                    <!--<div class="col-12">
+                    <div class="col-12">
                       <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
                     </div>
 
@@ -643,9 +635,9 @@ include ($base_path . "assets/include/head.php"); ?>
                     <div class="col-12 text-center">
                       <div class="loading">Loading</div>
                       <div class="error-message"></div>
-                      <div class="sent-message">Your message has been sent. Thank you!</div>-->
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                      <button type="submit" class="btn btn-submit w-100"><?= $language["contact_submit"]?></button>
+                      <button type="submit" class="btn btn-submit w-100"><?//= $language["contact_submit"]?></button>
                     </div>
 
                   </div>
@@ -659,7 +651,7 @@ include ($base_path . "assets/include/head.php"); ?>
 
       </div>
 
-    </section><!-- /Contact Section -->
+    </section> /Contact Section -->
 
   </main>
 

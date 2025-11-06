@@ -18,7 +18,7 @@ include ($base_path . "assets/include/head.php"); ?>
       
       <div class="title-wrapper">
         <h1><?= $language["contact_us"] ?></h1>
-        <p></p>
+        <p><?= $language["contact_us_p"] ?></p>
       </div>
     </div><!-- End Page Title -->
 
@@ -55,18 +55,88 @@ include ($base_path . "assets/include/head.php"); ?>
     </section><!-- /Skills Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section light-background">
-
-    <!-- Section Title -->
-    <div class="container section-title">
-        <h2><?= $language["contact_us_message"] ?></h2>
-      </div> <!-- /End Section Title -->
-
-      <div class="container">
+    <section id="contact" class="contact light-background">
       
-        <div class="row g-5">
+      <div class="contact-form">
+        <!--<div class="card-body p-2 p-lg-3">-->
+
+          <div class="container my-5">
+            <div class="card shadow-sm p-4 mx-auto w-100 w-md-75 w-lg-50" style="max-width: 900px; border: none; border-radius: 12px; background: #fff;">
+              <h4 class="mb-4 text-center fw-semibold"><?= $language["contact_title"] ?></h4>
+          
+              <form class="row g-3 align-items-start php-email-form" method="post">
+                <!-- Company Name -->
+                <div class="col-md-3 text-md-end">
+                  <label for="companyName" class="col-form-label fw-semibold"><?= $language["contact_label1"] ?></label>
+                </div>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" id="companyName" placeholder="">
+                </div>
+          
+                <!-- Contact Person -->
+                <div class="col-md-3 text-md-end">
+                  <label for="contactPerson" class="col-form-label fw-semibold"><?= $language["contact_label2"] ?></label>
+                </div>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" id="contactPerson" placeholder="">
+                </div>
+          
+                <!-- Phone Number -->
+                <div class="col-md-3 text-md-end">
+                  <label for="phoneNumber" class="col-form-label fw-semibold"><?= $language["contact_label3"] ?></label>
+                </div>
+                <div class="col-md-9">
+                  <input type="tel" class="form-control" id="phoneNumber" placeholder="">
+                </div>
+          
+                <!-- Email Address -->
+                <div class="col-md-3 text-md-end">
+                  <label for="email" class="col-form-label fw-semibold"><?= $language["contact_label4"] ?></label>
+                </div>
+                <div class="col-md-9">
+                  <input type="email" class="form-control" id="email" placeholder="">
+                </div>
+          
+                <!-- Email Confirmation -->
+                <div class="col-md-3 text-md-end">
+                  <label for="confirmEmail" class="col-form-label fw-semibold"><?= $language["contact_label5"] ?></label>
+                </div>
+                <div class="col-md-9">
+                  <input type="email" class="form-control" id="confirmEmail" placeholder="">
+                </div>
+          
+                <!-- Inquiry Details -->
+                <div class="col-md-3 text-md-end">
+                  <label for="inquiryDetails" class="col-form-label fw-semibold"><?= $language["contact_label6"] ?></label>
+                </div>
+                <div class="col-md-9">
+                  <textarea class="form-control" id="inquiryDetails" rows="4" placeholder=""></textarea>
+                </div>
+          
+                <!-- Submit Button -->
+                <div class="col-12 text-center">
+                  <div class="loading"><?= $language["contact_us_loading"] ?></div>
+                  <div class="error-message"></div>
+                  <div class="sent-message"><?= $language["contact_us_sent_message"] ?></div>
+  
+                  <button type="submit" class="btn btn-submit w-100"><?= $language["contact_submit"]?></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+
+
+
+
+
+
+
+      <!--<div class="row g-5">
           <div class="col-lg-6">
-            <img src="<?=$base_url?>assets/img/services/meeting.webp" alt="" class="rounded mt-5 mr-3" style="width:30rem;">
+            <img src="<?//=$base_url?>assets/img/services/meeting.webp" alt="" class="rounded mt-5 mr-3" style="width:30rem;">
           </div>
       
           <div class="col-lg-6">
@@ -87,208 +157,7 @@ include ($base_path . "assets/include/head.php"); ?>
                     <div class="col-12">
                       <input type="text" class="form-control" name="phone" placeholder="Phone Number" required="">
                     </div>
-
-                    <div class="col-12">
-                    <select name="country" class="form-control" id="country">
-                      <option value="0" disabled selected style="color: grey;"><?= $language["contact_us_country"] ?></option>
-                      <option value="algeria"><?= $language["algeria"] ?></option>
-                      <option value="andorra"><?= $language["andorra"] ?></option>
-                      <option value="angola"><?= $language["angola"] ?></option>
-                      <option value="antigua_and_barbuda"><?= $language["antigua_and_barbuda"] ?></option>
-                      <option value="argentina"><?= $language["argentina"] ?></option>
-                      <option value="armenia"><?= $language["armenia"] ?></option>
-                      <option value="australia"><?= $language["australia"] ?></option>
-                      <option value="austria"><?= $language["austria"] ?></option>
-                      <option value="azerbaijan"><?= $language["azerbaijan"] ?></option>
-                      <option value="bahamas"><?= $language["bahamas"] ?></option>
-                      <option value="bahrain"><?= $language["bahrain"] ?></option>
-                      <option value="bangladesh"><?= $language["bangladesh"] ?></option>
-                      <option value="barbados"><?= $language["barbados"] ?></option>
-                      <option value="belarus"><?= $language["belarus"] ?></option>
-                      <option value="belgium"><?= $language["belgium"] ?></option>
-                      <option value="belize"><?= $language["belize"] ?></option>
-                      <option value="benin"><?= $language["benin"] ?></option>
-                      <option value="bhutan"><?= $language["bhutan"] ?></option>
-                      <option value="bolivia"><?= $language["bolivia"] ?></option>
-                      <option value="bosnia_and_herzegovina"><?= $language["bosnia_and_herzegovina"] ?></option>
-                      <option value="botswana"><?= $language["botswana"] ?></option>
-                      <option value="brazil"><?= $language["brazil"] ?></option>
-                      <option value="brunei"><?= $language["brunei"] ?></option>
-                      <option value="bulgaria"><?= $language["bulgaria"] ?></option>
-                      <option value="burkina_faso"><?= $language["burkina_faso"] ?></option>
-                      <option value="burundi"><?= $language["burundi"] ?></option>
-                      <option value="cabo_verde"><?= $language["cabo_verde"] ?></option>
-                      <option value="cambodia"><?= $language["cambodia"] ?></option>
-                      <option value="cameroon"><?= $language["cameroon"] ?></option>
-                      <option value="canada"><?= $language["canada"] ?></option>
-                      <option value="central_african_republic"><?= $language["central_african_republic"] ?></option>
-                      <option value="chad"><?= $language["chad"] ?></option>
-                      <option value="chile"><?= $language["chile"] ?></option>
-                      <option value="china"><?= $language["china"] ?></option>
-                      <option value="colombia"><?= $language["colombia"] ?></option>
-                      <option value="comoros"><?= $language["comoros"] ?></option>
-                      <option value="congo_brazzaville"><?= $language["congo_brazzaville"] ?></option>
-                      <option value="congo_kinshasa"><?= $language["congo_kinshasa"] ?></option>
-                      <option value="costa_rica"><?= $language["costa_rica"] ?></option>
-                      <option value="croatia"><?= $language["croatia"] ?></option>
-                      <option value="cuba"><?= $language["cuba"] ?></option>
-                      <option value="cyprus"><?= $language["cyprus"] ?></option>
-                      <option value="czech_republic"><?= $language["czech_republic"] ?></option>
-                      <option value="denmark"><?= $language["denmark"] ?></option>
-                      <option value="djibouti"><?= $language["djibouti"] ?></option>
-                      <option value="dominica"><?= $language["dominica"] ?></option>
-                      <option value="dominican_republic"><?= $language["dominican_republic"] ?></option>
-                      <option value="ecuador"><?= $language["ecuador"] ?></option>
-                      <option value="egypt"><?= $language["egypt"] ?></option>
-                      <option value="el_salvador"><?= $language["el_salvador"] ?></option>
-                      <option value="equatorial_guinea"><?= $language["equatorial_guinea"] ?></option>
-                      <option value="eritrea"><?= $language["eritrea"] ?></option>
-                      <option value="estonia"><?= $language["estonia"] ?></option>
-                      <option value="eswatini"><?= $language["eswatini"] ?></option>
-                      <option value="ethiopia"><?= $language["ethiopia"] ?></option>
-                      <option value="fiji"><?= $language["fiji"] ?></option>
-                      <option value="finland"><?= $language["finland"] ?></option>
-                      <option value="france"><?= $language["france"] ?></option>
-                      <option value="gabon"><?= $language["gabon"] ?></option>
-                      <option value="gambia"><?= $language["gambia"] ?></option>
-                      <option value="georgia"><?= $language["georgia"] ?></option>
-                      <option value="germany"><?= $language["germany"] ?></option>
-                      <option value="ghana"><?= $language["ghana"] ?></option>
-                      <option value="greece"><?= $language["greece"] ?></option>
-                      <option value="grenada"><?= $language["grenada"] ?></option>
-                      <option value="guatemala"><?= $language["guatemala"] ?></option>
-                      <option value="guinea"><?= $language["guinea"] ?></option>
-                      <option value="guinea_bissau"><?= $language["guinea_bissau"] ?></option>
-                      <option value="guyana"><?= $language["guyana"] ?></option>
-                      <option value="haiti"><?= $language["haiti"] ?></option>
-                      <option value="honduras"><?= $language["honduras"] ?></option>
-                      <option value="hungary"><?= $language["hungary"] ?></option>
-                      <option value="iceland"><?= $language["iceland"] ?></option>
-                      <option value="india"><?= $language["india"] ?></option>
-                      <option value="indonesia"><?= $language["indonesia"] ?></option>
-                      <option value="iran"><?= $language["iran"] ?></option>
-                      <option value="iraq"><?= $language["iraq"] ?></option>
-                      <option value="ireland"><?= $language["ireland"] ?></option>
-                      <option value="israel"><?= $language["israel"] ?></option>
-                      <option value="italy"><?= $language["italy"] ?></option>
-                      <option value="ivory_coast"><?= $language["ivory_coast"] ?></option>
-                      <option value="jamaica"><?= $language["jamaica"] ?></option>
-                      <option value="japan"><?= $language["japan"] ?></option>
-                      <option value="jordan"><?= $language["jordan"] ?></option>
-                      <option value="kazakhstan"><?= $language["kazakhstan"] ?></option>
-                      <option value="kenya"><?= $language["kenya"] ?></option>
-                      <option value="kiribati"><?= $language["kiribati"] ?></option>
-                      <option value="kosovo"><?= $language["kosovo"] ?></option>
-                      <option value="kuwait"><?= $language["kuwait"] ?></option>
-                      <option value="kyrgyzstan"><?= $language["kyrgyzstan"] ?></option>
-                      <option value="laos"><?= $language["laos"] ?></option>
-                      <option value="latvia"><?= $language["latvia"] ?></option>
-                      <option value="lebanon"><?= $language["lebanon"] ?></option>
-                      <option value="lesotho"><?= $language["lesotho"] ?></option>
-                      <option value="liberia"><?= $language["liberia"] ?></option>
-                      <option value="libya"><?= $language["libya"] ?></option>
-                      <option value="liechtenstein"><?= $language["liechtenstein"] ?></option>
-                      <option value="lithuania"><?= $language["lithuania"] ?></option>
-                      <option value="luxembourg"><?= $language["luxembourg"] ?></option>
-                      <option value="madagascar"><?= $language["madagascar"] ?></option>
-                      <option value="malawi"><?= $language["malawi"] ?></option>
-                      <option value="malaysia"><?= $language["malaysia"] ?></option>
-                      <option value="maldives"><?= $language["maldives"] ?></option>
-                      <option value="mali"><?= $language["mali"] ?></option>
-                      <option value="malta"><?= $language["malta"] ?></option>
-                      <option value="marshall_islands"><?= $language["marshall_islands"] ?></option>
-                      <option value="mauritania"><?= $language["mauritania"] ?></option>
-                      <option value="mauritius"><?= $language["mauritius"] ?></option>
-                      <option value="mexico"><?= $language["mexico"] ?></option>
-                      <option value="micronesia"><?= $language["micronesia"] ?></option>
-                      <option value="moldova"><?= $language["moldova"] ?></option>
-                      <option value="monaco"><?= $language["monaco"] ?></option>
-                      <option value="mongolia"><?= $language["mongolia"] ?></option>
-                      <option value="montenegro"><?= $language["montenegro"] ?></option>
-                      <option value="morocco"><?= $language["morocco"] ?></option>
-                      <option value="mozambique"><?= $language["mozambique"] ?></option>
-                      <option value="myanmar"><?= $language["myanmar"] ?></option>
-                      <option value="namibia"><?= $language["namibia"] ?></option>
-                      <option value="nauru"><?= $language["nauru"] ?></option>
-                      <option value="nepal"><?= $language["nepal"] ?></option>
-                      <option value="netherlands"><?= $language["netherlands"] ?></option>
-                      <option value="new_zealand"><?= $language["new_zealand"] ?></option>
-                      <option value="nicaragua"><?= $language["nicaragua"] ?></option>
-                      <option value="niger"><?= $language["niger"] ?></option>
-                      <option value="nigeria"><?= $language["nigeria"] ?></option>
-                      <option value="north_korea"><?= $language["north_korea"] ?></option>
-                      <option value="north_macedonia"><?= $language["north_macedonia"] ?></option>
-                      <option value="norway"><?= $language["norway"] ?></option>
-                      <option value="oman"><?= $language["oman"] ?></option>
-                      <option value="pakistan"><?= $language["pakistan"] ?></option>
-                      <option value="palau"><?= $language["palau"] ?></option>
-                      <option value="panama"><?= $language["panama"] ?></option>
-                      <option value="papua_new_guinea"><?= $language["papua_new_guinea"] ?></option>
-                      <option value="paraguay"><?= $language["paraguay"] ?></option>
-                      <option value="peru"><?= $language["peru"] ?></option>
-                      <option value="philippines"><?= $language["philippines"] ?></option>
-                      <option value="poland"><?= $language["poland"] ?></option>
-                      <option value="portugal"><?= $language["portugal"] ?></option>
-                      <option value="qatar"><?= $language["qatar"] ?></option>
-                      <option value="romania"><?= $language["romania"] ?></option>
-                      <option value="russia"><?= $language["russia"] ?></option>
-                      <option value="rwanda"><?= $language["rwanda"] ?></option>
-                      <option value="saint_kitts_and_nevis"><?= $language["saint_kitts_and_nevis"] ?></option>
-                      <option value="saint_lucia"><?= $language["saint_lucia"] ?></option>
-                      <option value="saint_vincent_and_the_grenadines"><?= $language["saint_vincent_and_the_grenadines"] ?></option>
-                      <option value="samoa"><?= $language["samoa"] ?></option>
-                      <option value="san_marino"><?= $language["san_marino"] ?></option>
-                      <option value="sao_tome_and_principe"><?= $language["sao_tome_and_principe"] ?></option>
-                      <option value="saudi_arabia"><?= $language["saudi_arabia"] ?></option>
-                      <option value="senegal"><?= $language["senegal"] ?></option>
-                      <option value="serbia"><?= $language["serbia"] ?></option>
-                      <option value="seychelles"><?= $language["seychelles"] ?></option>
-                      <option value="sierra_leone"><?= $language["sierra_leone"] ?></option>
-                      <option value="singapore"><?= $language["singapore"] ?></option>
-                      <option value="slovakia"><?= $language["slovakia"] ?></option>
-                      <option value="slovenia"><?= $language["slovenia"] ?></option>
-                      <option value="solomon_islands"><?= $language["solomon_islands"] ?></option>
-                      <option value="somalia"><?= $language["somalia"] ?></option>
-                      <option value="south_africa"><?= $language["south_africa"] ?></option>
-                      <option value="south_korea"><?= $language["south_korea"] ?></option>
-                      <option value="south_sudan"><?= $language["south_sudan"] ?></option>
-                      <option value="spain"><?= $language["spain"] ?></option>
-                      <option value="sri_lanka"><?= $language["sri_lanka"] ?></option>
-                      <option value="sudan"><?= $language["sudan"] ?></option>
-                      <option value="suriname"><?= $language["suriname"] ?></option>
-                      <option value="sweden"><?= $language["sweden"] ?></option>
-                      <option value="switzerland"><?= $language["switzerland"] ?></option>
-                      <option value="syria"><?= $language["syria"] ?></option>
-                      <option value="taiwan"><?= $language["taiwan"] ?></option>
-                      <option value="tajikistan"><?= $language["tajikistan"] ?></option>
-                      <option value="tanzania"><?= $language["tanzania"] ?></option>
-                      <option value="thailand"><?= $language["thailand"] ?></option>
-                      <option value="timor_leste"><?= $language["timor_leste"] ?></option>
-                      <option value="togo"><?= $language["togo"] ?></option>
-                      <option value="tonga"><?= $language["tonga"] ?></option>
-                      <option value="trinidad_and_tobago"><?= $language["trinidad_and_tobago"] ?></option>
-                      <option value="tunisia"><?= $language["tunisia"] ?></option>
-                      <option value="turkey"><?= $language["turkey"] ?></option>
-                      <option value="turkmenistan"><?= $language["turkmenistan"] ?></option>
-                      <option value="tuvalu"><?= $language["tuvalu"] ?></option>
-                      <option value="uganda"><?= $language["uganda"] ?></option>
-                      <option value="ukraine"><?= $language["ukraine"] ?></option>
-                      <option value="united_arab_emirates"><?= $language["united_arab_emirates"] ?></option>
-                      <option value="united_kingdom"><?= $language["united_kingdom"] ?></option>
-                      <option value="united_states"><?= $language["united_states"] ?></option>
-                      <option value="uruguay"><?= $language["uruguay"] ?></option>
-                      <option value="uzbekistan"><?= $language["uzbekistan"] ?></option>
-                      <option value="vanuatu"><?= $language["vanuatu"] ?></option>
-                      <option value="vatican_city"><?= $language["vatican_city"] ?></option>
-                      <option value="venezuela"><?= $language["venezuela"] ?></option>
-                      <option value="vietnam"><?= $language["vietnam"] ?></option>
-                      <option value="yemen"><?= $language["yemen"] ?></option>
-                      <option value="zambia"><?= $language["zambia"] ?></option>
-                      <option value="zimbabwe"><?= $language["zimbabwe"] ?></option>
-                    </select>
-    
-                    </div>
-      
+          
                     <div class="col-12">
                       <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
                     </div>
@@ -298,11 +167,11 @@ include ($base_path . "assets/include/head.php"); ?>
                     </div>
       
                     <div class="col-12 text-center">
-                      <div class="loading"><?= $language["contact_us_loading"] ?></div>
+                      <div class="loading"><?//= $language["contact_us_loading"] ?></div>
                       <div class="error-message"></div>
-                      <div class="sent-message"><?= $language["contact_us_sent_message"] ?></div>
+                      <div class="sent-message"><?//= $language["contact_us_sent_message"] ?></div>
       
-                      <button type="submit" class="btn btn-submit w-100"><?= $language["contact_submit"]?></button>
+                      <button type="submit" class="btn btn-submit w-100"><?//= $language["contact_submit"]?></button>
                     </div>
                   </div>
                 </form>
@@ -311,7 +180,14 @@ include ($base_path . "assets/include/head.php"); ?>
           </div>
         </div>
       </div>
-    </section><!-- /Contact Section -->
+    </section>/Contact Section -->
+
+
+
+
+
+
+
 
 
 

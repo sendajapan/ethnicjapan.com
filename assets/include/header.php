@@ -11,9 +11,8 @@
 	            <li><a href="<?= $base_url; ?>" class="item <?= ($currentPage == $base_url.'') ? 'active' : '' ?>"><?= $language["header_home"]; ?> </a></li>
 	            <li><a href="<?= $base_url; ?>about" class="item <?= ($currentPage == $base_url.'about') ? 'active' : '' ?>"><?= $language["header_about"]; ?> </a></li>
 	            <li><a href="<?= $base_url; ?>products" class="item <?= ($currentPage == $base_url.'products') ? 'active' : '' ?>"><?= $language["header_products"]; ?> </a></li>
-	            <li><a href="<?= $base_url; ?>blogs" class="item <?= ($currentPage == $base_url.'blogs') ? 'active' : '' ?>"><?= $language["header_blogs"]; ?> </a></li>
 	            <li><a href="<?= $base_url; ?>recipes" class="item <?= ($currentPage == $base_url.'recipes') ? 'active' : '' ?>"><?= $language["header_recipes"]; ?> </a></li>
-	            <li><a href="<?= $base_url; ?>testimonials" class="item <?= ($currentPage == $base_url.'testimonials') ? 'active' : '' ?>"><?= $language["header_testimonials"]; ?> </a></li>
+	            <li><a href="<?= $base_url; ?>wholesale" class="item <?= ($currentPage == $base_url.'wholesale') ? 'active' : '' ?>"><?= $language["header_wholesale"]; ?> </a></li>
 	            <li><a href="<?= $base_url; ?>contact" class="item <?= ($currentPage == $base_url.'contact') ? 'active' : '' ?> btn btn-outline"><?= $language["header_contact"]; ?> </a></li>
             
             

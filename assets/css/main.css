@@ -1002,7 +1002,7 @@ section,
 --------------------------------------------------------------*/
 .about .about-image {
   position: relative;
-  margin: 0px 30px;
+  margin: 0px 25px;
 }
 
 .about .about-image img {
@@ -1035,9 +1035,21 @@ section,
   margin-bottom: 1.5rem;
 }
 
+.about .about-content h4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
 .about .about-content .lead {
   font-size: 1.1rem;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+.pointers img{
+  width: 20px;
+  height: auto;
+  margin-right: 1rem;
 }
 
 .about .personal-info {
@@ -1108,7 +1120,7 @@ section,
 }
 .skills .skill-box {
   background-color: var(--surface-color);
-  padding: 0.8rem 1.8rem 0.8rem 0.8rem;
+  padding: 1rem;
   border-radius: 0px 0px 8px 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.079);
   justify-content: center;
@@ -1153,7 +1165,6 @@ section,
   font-size: 0.9rem;
   margin-bottom: 0.4rem;
   opacity: 0.6;
-  text-align: justify;
 }
 
 .skills .skill-box .progress {
@@ -1814,7 +1825,7 @@ section,
   transform: translateX(5px);
 }
 
-.contact .contact-form {
+/*.contact .contact-form {
   background-color: var(--surface-color);
   border: none;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
@@ -1838,7 +1849,7 @@ section,
 .contact .contact-form .form-control::placeholder,
 .contact .contact-form .form-select::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 50%);
-}
+}*/
 
 .contact .contact-form .btn-submit {
   background-color: var(--accent-color);
@@ -1856,6 +1867,43 @@ section,
 
 .contact .contact-form .btn-submit:active {
   transform: translateY(0);
+}
+
+
+.contact label{
+  color: var(--heading-color)
+}
+
+.form-control:focus {
+  border-color: #B66A50 !important;
+  box-shadow: 0 0 0 0.25rem rgba(182, 106, 80, 0.25) !important;
+  outline: none !important;
+}
+
+/* Custom button color */
+.custom-btn {
+  background-color: #B66A50;
+  border-color: #B66A50;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.custom-btn:hover,
+.custom-btn:focus {
+  background-color: #9e5d46;
+  border-color: #9e5d46;
+  box-shadow: 0 0 0 0.25rem rgba(182, 106, 80, 0.25);
+  color: #fff;
+}
+
+/* Reduce spacing between label and input */
+form .col-form-label {
+  padding-right: 0.5rem;
+}
+
+/* Card appearance */
+.card-body {
+  background-color: var(--background-color);
 }
 
 .main .map{
@@ -2197,8 +2245,63 @@ ol.colored li {
 
 
 /*--------------------------------------------------------------
+# Wholesale Section
+--------------------------------------------------------------*/
+.hero-banner {
+  min-height: 70vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: -130px; /* adjust this to your header's height */
+  padding-top: 150px; /* so text is not hidden under header */
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.35); /* dark overlay for readability */
+}
+
+.hero-banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-banner h3, 
+.hero-banner h4, 
+.hero-banner p {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.table th{
+  color: var(--heading-color);
+}
+
+.table td{
+  color: #2d2d2d;
+}
+
+.table-ing tbody tr:hover td,
+.table-ing tbody tr:hover th{
+  background-color: #f0ece0 !important;
+  opacity: 1 !important;
+  filter: none !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+
+/*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-/*.starter-section {
-   Add your styles here 
-}*/
+.info-item .fw-bold {
+  white-space: nowrap;
+  padding-right: 0.4rem;
+}
+
+.info-item img {
+  width: 20px;
+  height: auto;
+}
