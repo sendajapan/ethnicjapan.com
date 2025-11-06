@@ -170,7 +170,7 @@ include ($base_path . "assets/include/head.php"); ?>
 
           <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
             <div class="about-image">
-              <img src="<?=$base_url?>assets/img/services/scones.jpg" alt="Profile Image" class="img-fluid rounded-4">
+              <img src="<?=$base_url?>assets/img/services/pastries.jpg" alt="Profile Image" class="img-fluid rounded-4">
             </div>
           </div>
 
