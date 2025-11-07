@@ -55,7 +55,7 @@ $product_data = [
         'kicker' => '注目の南米産スーパーフード',
         'title' => 'チアプロテイン',
         'feature_img' => $base_url . 'assets/img/categories/protein.png',
-        'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+        'content' => ''
     ],
     'maca' => [
         'url' => $base_url . 'product?maca',
