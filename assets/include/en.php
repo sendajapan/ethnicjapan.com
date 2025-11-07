@@ -246,7 +246,7 @@ $language["faqs"] = [
 $language["contact_button"] = "Contact Us Here";
 
 // product page
-$language["product_page_title"] = "ETHNICの取扱い商品";
+$language["product_page_title"] = "ETHNIC Products";
 $language["product_page_why_choose_us"] = "Why Choose Us";
 $language["product_page_why_choose_us_paragraph"] = "With a diverse portfolio and a passion for excellence, ETHNIC LTD stands as a trusted partner across industries. Whether it’s strategic business consulting, real estate solutions, or high-quality product sourcing — we bring expertise, innovation, and dedication to every step. Our client-first approach, global outlook, and ethical foundation make us the ideal choice for long-term success.";
 $language["product_page_strengths"] = "Our Key Strengths:";

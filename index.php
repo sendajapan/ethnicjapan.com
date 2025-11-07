@@ -331,7 +331,7 @@ include ($base_path . "assets/include/head.php"); ?>
 
           <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
             <div class="about-image">
-              <img src="<?=$base_url?>assets/img/services/grain.jpg" alt="Profile Image" class="img-fluid rounded-4">
+              <img src="<?=$base_url?>assets/img/services/bg.png" alt="Profile Image" class="img-fluid rounded-4">
             </div>
           </div>
         </div>
@@ -348,7 +348,7 @@ include ($base_path . "assets/include/head.php"); ?>
         <div class="row align-items-center">
           <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
             <div class="about-image">
-              <img src="<?=$base_url?>assets/img/services/quinoa_bg.png" alt="Profile Image" class="img-fluid rounded-4">
+              <img src="<?=$base_url?>assets/img/services/salad.png" alt="Profile Image" class="img-fluid rounded-4">
             </div>
           </div>
         
