@@ -169,7 +169,7 @@ include ($base_path . "assets/include/head.php"); ?>
 
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box h-100">
-              <img src="<?=$base_url?>assets/img/services/organic-products.jpg" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
+              <img src="<?=$base_url?>assets/img/services/bg.png" alt="" style="width:15.8rem; height: 11.5rem; object-fit: cover; padding-bottom: 30px;">
               <h3><?= $language["products"][0]["title"] ?></h3>
               <p><?= $language["products"][0]["paragraph"] ?></p>
               <a href="#products"><button class="buttons"><?= $language["products"][0]["button"] ?></button></a>
@@ -348,7 +348,7 @@ include ($base_path . "assets/include/head.php"); ?>
         <div class="row align-items-center">
           <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
             <div class="about-image">
-              <img src="<?=$base_url?>assets/img/services/why-choose-us.jpg" alt="Profile Image" class="img-fluid rounded-4">
+              <img src="<?=$base_url?>assets/img/services/quinoa_bg.png" alt="Profile Image" class="img-fluid rounded-4">
             </div>
           </div>
         
