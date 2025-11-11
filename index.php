@@ -42,23 +42,23 @@ include ($base_path . "assets/include/head.php"); ?>
                   <div class="swiper-wrapper">
 
                       <div class="swiper-slide">
-                          <img src="<?=$base_url?>assets/img/slider/62f25f200ccd6qrrbi6.webp" class="img-fluid w-100" alt="">
-                      </div><!-- End Slide Item -->
+                          <img src="<?=$base_url?>assets/img/slider/slider-1.png" class="img-fluid w-100" alt="">
+                      </div> <!-- End Slide Item -->
+                      <!--<div class="swiper-slide">
+                          <img src="<?//=$base_url?>assets/img/slider/64be666e8d681t6kzgp.webp" class="img-fluid w-100" alt="">
+                      </div> End Slide Item 
                       <div class="swiper-slide">
-                          <img src="<?=$base_url?>assets/img/slider/64be666e8d681t6kzgp.webp" class="img-fluid w-100" alt="">
-                      </div><!-- End Slide Item -->
+                          <img src="<?//=$base_url?>assets/img/slider/64d12be1d03a5uaijpj.webp" class="img-fluid w-100" alt="">
+                      </div> End Slide Item 
                       <div class="swiper-slide">
-                          <img src="<?=$base_url?>assets/img/slider/64d12be1d03a5uaijpj.webp" class="img-fluid w-100" alt="">
-                      </div><!-- End Slide Item -->
+                          <img src="<?//=$base_url?>assets/img/slider/64f760c567462cfcruq.webp" class="img-fluid w-100" alt="">
+                      </div> End Slide Item 
                       <div class="swiper-slide">
-                          <img src="<?=$base_url?>assets/img/slider/64f760c567462cfcruq.webp" class="img-fluid w-100" alt="">
-                      </div><!-- End Slide Item -->
+                          <img src="<?//=$base_url?>assets/img/slider/64f7611d6ad008t4t6d.webp" class="img-fluid w-100" alt="">
+                      </div> End Slide Item 
                       <div class="swiper-slide">
-                          <img src="<?=$base_url?>assets/img/slider/64f7611d6ad008t4t6d.webp" class="img-fluid w-100" alt="">
-                      </div><!-- End Slide Item -->
-                      <div class="swiper-slide">
-                          <img src="<?=$base_url?>assets/img/slider/6310fbfdb4f56guzvzp.webp" class="img-fluid w-100" alt="">
-                      </div><!-- End Slide Item -->
+                          <img src="<?//=$base_url?>assets/img/slider/6310fbfdb4f56guzvzp.webp" class="img-fluid w-100" alt="">
+                      </div> End Slide Item -->
 
 
                   </div>
