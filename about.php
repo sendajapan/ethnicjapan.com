@@ -474,7 +474,7 @@ include ($base_path . "assets/include/head.php"); ?>
 
     </section>/Faq Section -->
 
-    <!-- Contact Section
+    <!-- Contact Sections
     <section id="contact" class="contact section light-background">
 
       <div class="container">
