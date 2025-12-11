@@ -70,7 +70,7 @@ include ($base_path . "assets/include/head.php"); ?>
                   <label for="companyName" class="col-form-label fw-semibold"><?= $language["contact_label1"] ?></label>
                 </div>
                 <div class="col-md-9">
-                  <input type="text" class="form-control" id="companyName" placeholder="">
+                  <input type="text" class="form-control" id="companyName" placeholder="" Required>
                 </div>
           
                 <!-- Contact Person -->
@@ -78,7 +78,7 @@ include ($base_path . "assets/include/head.php"); ?>
                   <label for="contactPerson" class="col-form-label fw-semibold"><?= $language["contact_label2"] ?></label>
                 </div>
                 <div class="col-md-9">
-                  <input type="text" class="form-control" id="contactPerson" placeholder="">
+                  <input type="text" class="form-control" id="contactPerson" placeholder="" Required>
                 </div>
           
                 <!-- Phone Number -->
@@ -86,7 +86,7 @@ include ($base_path . "assets/include/head.php"); ?>
                   <label for="phoneNumber" class="col-form-label fw-semibold"><?= $language["contact_label3"] ?></label>
                 </div>
                 <div class="col-md-9">
-                  <input type="tel" class="form-control" id="phoneNumber" placeholder="">
+                  <input type="tel" class="form-control" id="phoneNumber" placeholder="" Required>
                 </div>
           
                 <!-- Email Address -->
@@ -94,7 +94,7 @@ include ($base_path . "assets/include/head.php"); ?>
                   <label for="email" class="col-form-label fw-semibold"><?= $language["contact_label4"] ?></label>
                 </div>
                 <div class="col-md-9">
-                  <input type="email" class="form-control" id="email" placeholder="">
+                  <input type="email" class="form-control" id="email" placeholder="" Required>
                 </div>
           
                 <!-- Email Confirmation -->
@@ -102,7 +102,7 @@ include ($base_path . "assets/include/head.php"); ?>
                   <label for="confirmEmail" class="col-form-label fw-semibold"><?= $language["contact_label5"] ?></label>
                 </div>
                 <div class="col-md-9">
-                  <input type="email" class="form-control" id="confirmEmail" placeholder="">
+                  <input type="email" class="form-control" id="confirmEmail" placeholder="" Required>
                 </div>
           
                 <!-- Inquiry Details -->
@@ -110,7 +110,7 @@ include ($base_path . "assets/include/head.php"); ?>
                   <label for="inquiryDetails" class="col-form-label fw-semibold"><?= $language["contact_label6"] ?></label>
                 </div>
                 <div class="col-md-9">
-                  <textarea class="form-control" id="inquiryDetails" rows="4" placeholder=""></textarea>
+                  <textarea class="form-control" id="inquiryDetails" rows="4" placeholder="" Required></textarea>
                 </div>
           
                 <!-- Submit Button -->
