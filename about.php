@@ -220,7 +220,7 @@ include ($base_path . "assets/include/head.php"); ?>
               
                 <div class="row mb-1 align-items-start">
                   <div class="col-md-3 col-4 fw-bold d-flex align-items-center">
-                    <img class="img-fluid me-2" src="<?=$base_url?>assets/img/svg/pointers.svg" alt="">
+                    <img class="img-fluid me-2" src="<?=$base_url?>assets/img/svg/pointers.svg" alt="">   
                     <?= $language["about_us_page_profile_label_2"] ?>
                   </div>
                   <div class="col-md-9 col-8">
