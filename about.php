@@ -27,9 +27,9 @@ include ($base_path . "assets/include/head.php"); ?>
         <h1><?= $language["about_us_page_title"] ?></h1>
         <p><?= $language["about_us_page_paragraph"] ?></p>
       </div>
-    </div><!-- End Page Title -->
+    </div><!-- End Page Title -->  
 
-    <!-- About Section -->
+    <!-- About Section --->
     <section id="about" class="about section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
